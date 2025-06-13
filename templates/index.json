@@ -15,8 +15,7 @@
         "slide_exeqmw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BG.png",
-            "mobile_image": "shopify://shop_images/chiro-header_90949a43-8a53-4205-97c5-04b12cf2d882.png",
+            "image": "shopify://shop_images/3.webp",
             "slide_link": "",
             "video_background": false,
             "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -70,7 +69,6 @@
         "image_KjHUBc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/cbs.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -79,7 +77,6 @@
         "image_cdWXqx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/forbes.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -88,7 +85,6 @@
         "image_94pfVx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/fortune.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -97,7 +93,6 @@
         "image_B4Jgm3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/fox.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -106,7 +101,6 @@
         "image_A7WKC6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/nbc.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -115,7 +109,6 @@
         "image_PtqHt9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/market-watch.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -124,7 +117,6 @@
         "image_fJRFic": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/medium.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -133,7 +125,6 @@
         "image_B4yaCP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/yahoo-finance.png",
             "link": "",
             "heading": "",
             "text": ""
@@ -209,28 +200,24 @@
         "logo_QxDM4t": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Infographic.png",
             "link": ""
           }
         },
         "logo_3cjwbf": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Infographic-1.png",
             "link": ""
           }
         },
         "logo_GVCbEg": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Infographic-2.png",
             "link": ""
           }
         },
         "logo_wF6rRb": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Infographic-3.png",
             "link": ""
           }
         }
@@ -254,8 +241,6 @@
     "single_image_DqK7Uf": {
       "type": "single-image",
       "settings": {
-        "image": "shopify://shop_images/BG-2.png",
-        "image_mobile": "shopify://shop_images/chiro_teen_girl_having_chiropractic_back_adjustment_osteopathy_physiotherapy_kinesiology_bad_posture_2150779305_1000x800_1x_7bbe55c3-1799-4f3a-95aa-fd3a7c06e205.webp",
         "full_width": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -464,7 +449,6 @@
         "column_iyk3dE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_freedom_colour_576x1024_2x_e1bbc1b0-4c2e-4ac8-a736-f73acd42182b.webp",
             "image_full_width": false,
             "image_link": "shopify://products/freedom-patch",
             "retina": true,
@@ -477,7 +461,6 @@
         "column_PRJqQa": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_liberty_colour_576x1024_2x_70f6b5fa-bd42-453d-a058-32f76c251cdb.webp",
             "image_full_width": false,
             "image_link": "shopify://products/liberty-patch",
             "retina": true,
@@ -490,7 +473,6 @@
         "column_Vdm3ef": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_rem_colour_576x1024_2x_eef27c2f-4e5a-41aa-bbba-24dae61e50da.webp",
             "image_full_width": false,
             "image_link": "shopify://products/rem-patch",
             "retina": true,
@@ -503,7 +485,6 @@
         "column_tpnU8g": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_victory_colour_576x1024_2x_8cef2b11-a3db-4085-8918-f90f7576ec52.webp",
             "image_full_width": false,
             "image_link": "shopify://products/victory-patch",
             "retina": true,
@@ -516,7 +497,6 @@
         "column_NLFjUL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_focus_colour_576x1024_2x_42addf05-a82f-482d-ab1f-1465ca3b533f.webp",
             "image_full_width": false,
             "image_link": "shopify://products/focus-patch",
             "retina": true,
@@ -529,7 +509,6 @@
         "column_hgDaah": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_ignite_colour_576x1024_2x_fcf2834f-7631-44cd-9891-e2b714afb468.webp",
             "image_full_width": false,
             "image_link": "shopify://products/ignite-patch",
             "retina": true,
@@ -542,7 +521,6 @@
         "column_pM9Prw": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_kickit_colour_576x1024_2x_ada48259-3b46-4af3-a62f-0a598c712334.webp",
             "image_full_width": false,
             "image_link": "shopify://products/kick-it-patch",
             "retina": true,
@@ -555,7 +533,6 @@
         "column_WMGUAr": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_defend_colour_576x1024_2x_ff7b20e6-8aeb-400e-bbc3-fb7c6f0e4b32.webp",
             "image_full_width": false,
             "image_link": "shopify://products/defend-patch",
             "retina": true,
@@ -568,7 +545,6 @@
         "column_ehctJU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_joy_colour_576x1024_2x_08a03f11-4531-4067-8a80-744ffcf74d33.webp",
             "image_full_width": false,
             "image_link": "shopify://products/joy-patch",
             "retina": true,
@@ -581,7 +557,6 @@
         "column_m3Chgn": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_peace_colour_576x1024_2x_b4173f2b-40ec-461a-b33d-61cb323c3dd2.webp",
             "image_full_width": false,
             "image_link": "shopify://products/peace-patch",
             "retina": true,
@@ -594,7 +569,6 @@
         "column_TrQRzK": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_rocket_colour_576x1024_2x_e11daa7f-6354-4c5b-b436-7930ed8e176a.webp",
             "image_full_width": false,
             "image_link": "shopify://products/rocket-patch",
             "retina": true,
@@ -607,7 +581,6 @@
         "column_Y7jG6w": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_boost_colour_576x1024_2x_0bd20edb-8a8c-48db-863e-044a9a0a0639.webp",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -620,7 +593,6 @@
         "column_rNUzFz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_lumi_colour_576x1024_2x_d5e1d6c8-de6a-445a-a752-7d1179759cea.webp",
             "image_full_width": false,
             "image_link": "shopify://products/lumi-patch",
             "retina": true,
@@ -702,7 +674,6 @@
         "column_fqC6MD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Div_2x_726e1cd2-fa15-4c77-83ac-b9a469270a05.png",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -715,7 +686,6 @@
         "column_9FzUnj": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Div_2x-1.png",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -728,7 +698,6 @@
         "column_WkddP6": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Div_2x-2.png",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -941,7 +910,6 @@
         "text_4bAJcG"
       ],
       "settings": {
-        "image": "shopify://shop_images/scientist.png",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": false,
@@ -1049,7 +1017,6 @@
         "text_HhpcCd"
       ],
       "settings": {
-        "image": "shopify://shop_images/dhaliwai.png",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -1072,7 +1039,6 @@
         "column_6CXBRx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/drug-free.png",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1085,7 +1051,6 @@
         "column_3MtzJf": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/skinFree.png",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1167,7 +1132,6 @@
         "@media all and (max-width: 799px) {.image-with-text__content--inner {text-align: center; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/Col.png",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -1228,7 +1192,6 @@
         "@media all and (max-width: 799px) {.image-with-text__content--inner {text-align: center; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/chiro_liberty_colour_576x1024_2x_70f6b5fa-bd42-453d-a058-32f76c251cdb.webp",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -1251,7 +1214,6 @@
         "column_eHjbUT": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_jgudin_576x768_cb7aca5f-9b0b-466a-a692-dd883a08077b.webp",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1264,7 +1226,6 @@
         "column_XdVjHE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_jglazer_576x768_2x_5fb7fd00-1280-411d-9fd5-d1477583f4ca.webp",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1277,7 +1238,6 @@
         "column_EtwExY": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_spierre_576x768_2x_b24f08f1-346c-4b7a-a9c3-8ca2f3c0f738.webp",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1290,7 +1250,6 @@
         "column_fgBRnD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/chiro_kmosebach_576x768_2x_659c8222-4e52-4644-a22f-6b000014c168.webp",
             "image_full_width": false,
             "image_link": "",
             "retina": true,
@@ -1331,7 +1290,11 @@
       "custom_css": [
         "@media screen and (max-width: 600px) {form-embed {padding: 0 5%; }}"
       ],
-      "settings": {}
+      "settings": {
+        "section_width": "full-width-row",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
