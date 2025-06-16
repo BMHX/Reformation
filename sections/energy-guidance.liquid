@@ -1,22 +1,22 @@
 {{ 'section-energy-guidance.css' | asset_url | stylesheet_tag }}
 
-<div class="energy-guidance">
+<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}" style="background-color: {{ section.settings.background_color }};">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="energy-guidance__title">{{ section.settings.title }}</h2>
+      <h2 class="energy-guidance__title h1">{{ section.settings.title }}</h2>
     {% endif %}
     
     <div class="energy-guidance__container">
-      <div class="energy-guidance__scroll-container">
+      <div class="energy-guidance__grid">
         {%- for block in section.blocks -%}
           <div class="energy-guidance__item" {{ block.shopify_attributes }}>
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
               <div class="energy-guidance__icon-wrapper">
                 {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 80 | image_tag:
+                  {{ block.settings.image | image_url: width: 120 | image_tag:
                     loading: 'lazy',
-                    width: 80,
-                    height: 80,
+                    width: 120,
+                    height: 120,
                     class: 'energy-guidance__icon'
                   }}
                 {%- endif -%}
@@ -32,6 +32,95 @@
   </div>
 </div>
 
+<style>
+.energy-guidance {
+  padding: 3rem 0;
+  background: #2B2B2B;
+  color: #fff;
+}
+
+.energy-guidance__title {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.energy-guidance__container {
+  position: relative;
+  margin: 0 -1.5rem;
+  padding: 0 1.5rem;
+}
+
+.energy-guidance__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--items-per-row, 8), 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.energy-guidance__item {
+  text-align: center;
+}
+
+.energy-guidance__icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.energy-guidance__icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.energy-guidance__text {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 749px) {
+  .energy-guidance__container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .energy-guidance__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .energy-guidance__grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    width: max-content;
+  }
+
+  .energy-guidance__item {
+    flex: 0 0 auto;
+    width: 120px;
+  }
+
+  .energy-guidance__icon-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+</style>
+
 {% schema %}
 {
   "name": "能量指引",
@@ -45,20 +134,10 @@
       "default": "ENERGY GUIDANCE"
     },
     {
-      "type": "select",
-      "id": "title_alignment",
-      "label": "标题对齐方式",
-      "options": [
-        {
-          "value": "left",
-          "label": "靠左"
-        },
-        {
-          "value": "center",
-          "label": "居中"
-        }
-      ],
-      "default": "left"
+      "type": "color",
+      "id": "background_color",
+      "label": "背景颜色",
+      "default": "#2B2B2B"
     }
   ],
   "blocks": [
@@ -105,99 +184,4 @@
     }
   ]
 }
-{% endschema %}
-
-<style>
-.energy-guidance {
-  background-color: #2b2b2b;
-  color: #ffffff;
-  padding: 60px 0;
-}
-
-.energy-guidance__title {
-  font-size: 28px;
-  font-weight: 500;
-  margin: 0 0 40px;
-  letter-spacing: 0.05em;
-}
-
-.energy-guidance__container {
-  position: relative;
-  margin: 0 -20px;
-}
-
-.energy-guidance__scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 0 20px;
-  gap: 30px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-.energy-guidance__scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
-}
-
-.energy-guidance__item {
-  flex: 0 0 auto;
-  text-align: center;
-  scroll-snap-align: start;
-  width: auto;
-  min-width: 100px;
-}
-
-.energy-guidance__link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.energy-guidance__icon-wrapper {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color 0.3s ease;
-}
-
-.energy-guidance__icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
-
-.energy-guidance__text {
-  background: #ffffff;
-  color: #2b2b2b;
-  padding: 6px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  display: inline-block;
-  min-width: 80px;
-}
-
-.energy-guidance__item:hover .energy-guidance__icon-wrapper {
-  border-color: rgba(255, 255, 255, 0.8);
-}
-
-@media screen and (max-width: 749px) {
-  .energy-guidance {
-    padding: 40px 0;
-  }
-
-  .energy-guidance__title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-}
-</style> 
+{% endschema %} 
