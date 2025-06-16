@@ -35,7 +35,6 @@
         "5b1ab378-833d-4a94-a02e-8325ec1551d0",
         "2f7893ee-7b84-4f15-911a-801b94ffa38e"
       ],
-      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
@@ -50,12 +49,11 @@
       "type": "header",
       "settings": {
         "sticky_header": true,
-        "logo": "",
         "logo_height_range": 45,
         "logo_height_range_mobile": 30,
         "style": "style3",
         "header_shadow": "header--shadow-small",
-        "menu": "just-catalog",
+        "menu": "customer-account-main-menu",
         "cart_icon": "bag",
         "use_icon_account": false,
         "transparent_header": false,
