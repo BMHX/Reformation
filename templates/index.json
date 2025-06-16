@@ -245,6 +245,7 @@
         "guidance_item_NppaRd": {
           "type": "guidance_item",
           "settings": {
+            "image": "shopify://shop_images/1_5b8db255-0907-4155-ba53-97a8e96245c9.svg",
             "title": "能量",
             "link": ""
           }
@@ -252,7 +253,7 @@
         "guidance_item_7Dhjnp": {
           "type": "guidance_item",
           "settings": {
-            "image": "shopify://shop_images/6_4ebf1e7f-ec17-44b4-bbe5-1e231a5ff809.svg",
+            "image": "shopify://shop_images/2_b98b5338-8dcc-4678-8588-5ed0bd5c57df.svg",
             "title": "能量",
             "link": ""
           }
@@ -260,6 +261,7 @@
         "guidance_item_Hhk3CJ": {
           "type": "guidance_item",
           "settings": {
+            "image": "shopify://shop_images/3_0a22e25c-8bd1-402e-8ee8-7a537e6df1c5.svg",
             "title": "能量",
             "link": ""
           }
@@ -267,6 +269,39 @@
         "guidance_item_EKPPja": {
           "type": "guidance_item",
           "settings": {
+            "image": "shopify://shop_images/4_98702e3b-7ecc-4c5b-b805-5b468d395182.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_7XtF3c": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/5_487a8111-81e8-4e39-9480-ee549d6e8d20.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_y9VdtL": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/6_4ebf1e7f-ec17-44b4-bbe5-1e231a5ff809.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_VRCbKj": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/7_663bb3e3-ef10-44fd-b388-eb0e8883f53b.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_cG4p7y": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/8_a600439d-5d7f-41c7-bb70-79f4d7ab8a84.svg",
             "title": "能量",
             "link": ""
           }
@@ -276,18 +311,24 @@
         "guidance_item_NppaRd",
         "guidance_item_7Dhjnp",
         "guidance_item_Hhk3CJ",
-        "guidance_item_EKPPja"
+        "guidance_item_EKPPja",
+        "guidance_item_7XtF3c",
+        "guidance_item_y9VdtL",
+        "guidance_item_VRCbKj",
+        "guidance_item_cG4p7y"
       ],
+      "custom_css": [],
       "name": "能量指引",
       "settings": {
-        "title": "能量指引",
-        "title_alignment": "left",
-        "items_per_row": 4,
-        "background_color": "#f7f7f7",
-        "text_color": "#333333",
-        "title_color": "#000000",
-        "item_background_color": "#ffffff",
-        "full_width": false
+        "title": "energy-guidance",
+        "title_alignment_desktop": "left",
+        "title_alignment_mobile": "center",
+        "background_color": "#282828",
+        "title_color": "#ffffff",
+        "border_color": "rgba(0,0,0,0)",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#282828",
+        "full_width": true
       }
     },
     "single_image_DqK7Uf": {

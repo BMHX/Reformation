@@ -14,6 +14,7 @@
     "navigation_uppercase": true,
     "product_title_uppercase": true,
     "button_uppercase": true,
+    "color_body_bg": "#282828",
     "color_accent": "#151515",
     "outline_button_label": "#151515",
     "color_dots": "#151515",
