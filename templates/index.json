@@ -64,6 +64,152 @@
         "disable_bottom_spacing": false
       }
     },
+    "energy_guidance_dpjDJa": {
+      "type": "energy-guidance",
+      "blocks": {
+        "guidance_item_NppaRd": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/1_5b8db255-0907-4155-ba53-97a8e96245c9.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_7Dhjnp": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/2_b98b5338-8dcc-4678-8588-5ed0bd5c57df.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_Hhk3CJ": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/3_0a22e25c-8bd1-402e-8ee8-7a537e6df1c5.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_EKPPja": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/4_98702e3b-7ecc-4c5b-b805-5b468d395182.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_7XtF3c": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/5_487a8111-81e8-4e39-9480-ee549d6e8d20.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_y9VdtL": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/6_4ebf1e7f-ec17-44b4-bbe5-1e231a5ff809.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_VRCbKj": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/7_663bb3e3-ef10-44fd-b388-eb0e8883f53b.svg",
+            "title": "能量",
+            "link": ""
+          }
+        },
+        "guidance_item_cG4p7y": {
+          "type": "guidance_item",
+          "settings": {
+            "image": "shopify://shop_images/8_a600439d-5d7f-41c7-bb70-79f4d7ab8a84.svg",
+            "title": "能量",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "guidance_item_NppaRd",
+        "guidance_item_7Dhjnp",
+        "guidance_item_Hhk3CJ",
+        "guidance_item_EKPPja",
+        "guidance_item_7XtF3c",
+        "guidance_item_y9VdtL",
+        "guidance_item_VRCbKj",
+        "guidance_item_cG4p7y"
+      ],
+      "custom_css": [],
+      "name": "能量指引",
+      "settings": {
+        "title": "energy-guidance",
+        "title_alignment_desktop": "left",
+        "title_alignment_mobile": "center",
+        "background_color": "#282828",
+        "title_color": "#ffffff",
+        "border_color": "rgba(0,0,0,0)",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#282828",
+        "full_width": true
+      }
+    },
+    "image_with_text_overlay_YhY9f3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_HmGHyG": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_8wyynL": {
+          "type": "heading",
+          "settings": {
+            "text": "NEW YEAR BLESSINGS",
+            "heading_size": "h2"
+          }
+        },
+        "text_b9GFm8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring the mounts into your life.</p>",
+            "description_size": "medium"
+          }
+        },
+        "button_4WpEFg": {
+          "type": "button",
+          "settings": {
+            "button_text": "BLESS YOUR YEAR",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HmGHyG",
+        "heading_8wyynL",
+        "text_b9GFm8",
+        "button_4WpEFg"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/6.webp",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_width": "small",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 35,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "scrolling_images_pz8Jhe": {
       "type": "scrolling-images",
       "blocks": {
@@ -193,142 +339,6 @@
         "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "logo_list_7iCrzy": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_QxDM4t": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_3cjwbf": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_GVCbEg": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_wF6rRb": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_QxDM4t",
-        "logo_3cjwbf",
-        "logo_GVCbEg",
-        "logo_wF6rRb"
-      ],
-      "settings": {
-        "heading": "",
-        "description": "",
-        "columns": 4,
-        "mobile_swipe": false,
-        "center_align": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
-      }
-    },
-    "energy_guidance_dpjDJa": {
-      "type": "energy-guidance",
-      "blocks": {
-        "guidance_item_NppaRd": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/1_5b8db255-0907-4155-ba53-97a8e96245c9.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_7Dhjnp": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/2_b98b5338-8dcc-4678-8588-5ed0bd5c57df.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_Hhk3CJ": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/3_0a22e25c-8bd1-402e-8ee8-7a537e6df1c5.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_EKPPja": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/4_98702e3b-7ecc-4c5b-b805-5b468d395182.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_7XtF3c": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/5_487a8111-81e8-4e39-9480-ee549d6e8d20.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_y9VdtL": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/6_4ebf1e7f-ec17-44b4-bbe5-1e231a5ff809.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_VRCbKj": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/7_663bb3e3-ef10-44fd-b388-eb0e8883f53b.svg",
-            "title": "能量",
-            "link": ""
-          }
-        },
-        "guidance_item_cG4p7y": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/8_a600439d-5d7f-41c7-bb70-79f4d7ab8a84.svg",
-            "title": "能量",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "guidance_item_NppaRd",
-        "guidance_item_7Dhjnp",
-        "guidance_item_Hhk3CJ",
-        "guidance_item_EKPPja",
-        "guidance_item_7XtF3c",
-        "guidance_item_y9VdtL",
-        "guidance_item_VRCbKj",
-        "guidance_item_cG4p7y"
-      ],
-      "custom_css": [],
-      "name": "能量指引",
-      "settings": {
-        "title": "energy-guidance",
-        "title_alignment_desktop": "left",
-        "title_alignment_mobile": "center",
-        "background_color": "#282828",
-        "title_color": "#ffffff",
-        "border_color": "rgba(0,0,0,0)",
-        "button_bg_color": "#ffffff",
-        "button_text_color": "#282828",
-        "full_width": true
       }
     },
     "single_image_DqK7Uf": {
@@ -1392,10 +1402,10 @@
   },
   "order": [
     "16479477632637c9a7",
+    "energy_guidance_dpjDJa",
+    "image_with_text_overlay_YhY9f3",
     "scrolling_images_pz8Jhe",
     "rich_text_PHEiUg",
-    "logo_list_7iCrzy",
-    "energy_guidance_dpjDJa",
     "single_image_DqK7Uf",
     "rich_text_nDJV67",
     "tabbed_content_k9UT3r",
