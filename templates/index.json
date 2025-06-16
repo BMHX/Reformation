@@ -15,7 +15,7 @@
         "slide_exeqmw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/4.webp",
+            "image": "shopify://shop_images/20250617030422.png",
             "mobile_image": "shopify://shop_images/5.webp",
             "slide_link": "",
             "video_background": true,
@@ -29,8 +29,8 @@
             "text_alignment": "left",
             "content_size": "medium",
             "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "overlay_opacity": 33,
+            "overlay_gradient": "",
             "button_1_text": "Get Started",
             "button_1_link": "#shopify-section-template--17345908670662__1734368449c16b1f2d",
             "button_1_outline": false,
@@ -61,7 +61,7 @@
         "autoplay_length": 10,
         "transition": "swipe",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "energy_guidance_dpjDJa": {
