@@ -1,31 +1,40 @@
 {{ 'section-energy-guidance.css' | asset_url | stylesheet_tag }}
 
-<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}">
+<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}" style="
+  --energy-bg-color: {{ section.settings.background_color }};
+  --energy-text-color: {{ section.settings.text_color }};
+  --energy-title-color: {{ section.settings.title_color }};
+  --energy-item-bg: {{ section.settings.item_background_color }};
+">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="energy-guidance__title h1">{{ section.settings.title }}</h2>
+      <h2 class="energy-guidance__title h1" style="text-align: {{ section.settings.title_alignment }};">{{ section.settings.title }}</h2>
     {% endif %}
     
     <div class="energy-guidance__grid" style="--items-per-row: {{ section.settings.items_per_row }};">
-      {%- for block in section.blocks -%}
-        <div class="energy-guidance__item" {{ block.shopify_attributes }}>
-          {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
-            <div class="energy-guidance__icon-wrapper">
-              {%- if block.settings.image != blank -%}
-                {{ block.settings.image | image_url: width: 120 | image_tag:
-                  loading: 'lazy',
-                  width: 120,
-                  height: 120,
-                  class: 'energy-guidance__icon'
-                }}
+      <div class="energy-guidance__slider">
+        {%- for block in section.blocks -%}
+          <div class="energy-guidance__item" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
+              <div class="energy-guidance__icon-wrapper">
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 120 | image_tag:
+                    loading: 'lazy',
+                    width: 120,
+                    height: 120,
+                    class: 'energy-guidance__icon'
+                  }}
+                {%- endif -%}
+              </div>
+              {%- if block.settings.title != blank -%}
+                <div class="energy-guidance__text-wrapper">
+                  <div class="energy-guidance__text h3">{{ block.settings.title }}</div>
+                </div>
               {%- endif -%}
-            </div>
-            {%- if block.settings.title != blank -%}
-              <div class="energy-guidance__text h3">{{ block.settings.title }}</div>
-            {%- endif -%}
-          {% if block.settings.link != blank %}</a>{% endif %}
-        </div>
-      {%- endfor -%}
+            {% if block.settings.link != blank %}</a>{% endif %}
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </div>
@@ -43,13 +52,57 @@
       "default": "能量指引"
     },
     {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "标题对齐方式",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "居中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "left"
+    },
+    {
       "type": "range",
       "id": "items_per_row",
       "min": 2,
       "max": 8,
       "step": 1,
       "default": 4,
-      "label": "每行显示数量"
+      "label": "桌面端每行显示数量"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "背景颜色",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "文字颜色",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "标题颜色",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "文字背景颜色",
+      "default": "#ffffff"
     },
     {
       "type": "checkbox",
@@ -107,20 +160,25 @@
 <style>
 .energy-guidance {
   margin: 3rem 0;
+  background-color: var(--energy-bg-color);
+  color: var(--energy-text-color);
 }
 
 .energy-guidance--full-width {
   margin: 0;
-  background: #f7f7f7;
   padding: 3rem 0;
 }
 
 .energy-guidance__title {
-  text-align: center;
   margin-bottom: 2rem;
+  color: var(--energy-title-color);
 }
 
 .energy-guidance__grid {
+  position: relative;
+}
+
+.energy-guidance__slider {
   display: grid;
   grid-template-columns: repeat(var(--items-per-row, 4), 1fr);
   gap: 2rem;
@@ -130,6 +188,7 @@
 .energy-guidance__item {
   text-align: center;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .energy-guidance__item:hover {
@@ -170,20 +229,50 @@
   transform: scale(1.1);
 }
 
-.energy-guidance__text {
+.energy-guidance__text-wrapper {
+  background-color: var(--energy-item-bg);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
   margin-top: 1rem;
+}
+
+.energy-guidance__text {
+  margin: 0;
   font-weight: 500;
 }
 
 @media screen and (max-width: 749px) {
-  .energy-guidance__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+  .energy-guidance__title {
+    text-align: center !important;
+  }
+
+  .energy-guidance__slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+    gap: 1rem;
+    grid-template-columns: none;
+  }
+
+  .energy-guidance__slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .energy-guidance__item {
+    flex: 0 0 auto;
+    width: 200px;
+    scroll-snap-align: start;
   }
   
   .energy-guidance__icon-wrapper {
     width: 100px;
     height: 100px;
+  }
+
+  .energy-guidance__text-wrapper {
+    padding: 0.6rem 0.8rem;
   }
 }
 </style> 
