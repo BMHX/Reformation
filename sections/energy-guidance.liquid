@@ -1,9 +1,15 @@
 {{ 'section-energy-guidance.css' | asset_url | stylesheet_tag }}
 
-<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}" style="background-color: {{ section.settings.background_color }};">
+<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}" style="
+  --energy-bg-color: {{ section.settings.background_color }};
+  --energy-title-color: {{ section.settings.title_color }};
+  --energy-border-color: {{ section.settings.border_color }};
+  --energy-button-bg: {{ section.settings.button_bg_color }};
+  --energy-button-text: {{ section.settings.button_text_color }};
+">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="energy-guidance__title h1">{{ section.settings.title }}</h2>
+      <h2 class="energy-guidance__title h1" style="text-align: {{ section.settings.title_alignment_desktop }};">{{ section.settings.title }}</h2>
     {% endif %}
     
     <div class="energy-guidance__container">
@@ -35,12 +41,11 @@
 <style>
 .energy-guidance {
   padding: 3rem 0;
-  background: #2B2B2B;
-  color: #fff;
+  background: var(--energy-bg-color, #2B2B2B);
 }
 
 .energy-guidance__title {
-  color: #fff;
+  color: var(--energy-title-color, #fff);
   margin-bottom: 3rem;
   font-size: 2rem;
 }
@@ -62,15 +67,26 @@
   text-align: center;
 }
 
+.energy-guidance__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .energy-guidance__icon-wrapper {
   width: 120px;
   height: 120px;
   margin: 0 auto 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--energy-border-color, rgba(255, 255, 255, 0.2));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.energy-guidance__item:hover .energy-guidance__icon-wrapper {
+  transform: translateY(-5px);
 }
 
 .energy-guidance__icon {
@@ -80,8 +96,8 @@
 }
 
 .energy-guidance__text {
-  background: #fff;
-  color: #000;
+  background: var(--energy-button-bg, #fff);
+  color: var(--energy-button-text, #000);
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   display: inline-block;
@@ -90,6 +106,10 @@
 }
 
 @media screen and (max-width: 749px) {
+  .energy-guidance__title {
+    text-align: {{ section.settings.title_alignment_mobile }} !important;
+  }
+  
   .energy-guidance__container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -134,10 +154,80 @@
       "default": "ENERGY GUIDANCE"
     },
     {
+      "type": "select",
+      "id": "title_alignment_desktop",
+      "label": "桌面端标题对齐方式",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "居中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment_mobile",
+      "label": "移动端标题对齐方式",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "居中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "center"
+    },
+    {
       "type": "color",
       "id": "background_color",
       "label": "背景颜色",
       "default": "#2B2B2B"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "标题颜色",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "图标边框颜色",
+      "default": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "按钮背景颜色",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "按钮文字颜色",
+      "default": "#000000"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "全宽显示",
+      "default": false
     }
   ],
   "blocks": [
