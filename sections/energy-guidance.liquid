@@ -1,35 +1,28 @@
 {{ 'section-energy-guidance.css' | asset_url | stylesheet_tag }}
 
-<div class="energy-guidance{% if section.settings.full_width %} energy-guidance--full-width{% endif %}" style="
-  --energy-bg-color: {{ section.settings.background_color }};
-  --energy-text-color: {{ section.settings.text_color }};
-  --energy-title-color: {{ section.settings.title_color }};
-  --energy-item-bg: {{ section.settings.item_background_color }};
-">
+<div class="energy-guidance">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="energy-guidance__title h1" style="text-align: {{ section.settings.title_alignment }};">{{ section.settings.title }}</h2>
+      <h2 class="energy-guidance__title">{{ section.settings.title }}</h2>
     {% endif %}
     
-    <div class="energy-guidance__grid" style="--items-per-row: {{ section.settings.items_per_row }};">
-      <div class="energy-guidance__slider">
+    <div class="energy-guidance__container">
+      <div class="energy-guidance__scroll-container">
         {%- for block in section.blocks -%}
           <div class="energy-guidance__item" {{ block.shopify_attributes }}>
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
               <div class="energy-guidance__icon-wrapper">
                 {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 120 | image_tag:
+                  {{ block.settings.image | image_url: width: 80 | image_tag:
                     loading: 'lazy',
-                    width: 120,
-                    height: 120,
+                    width: 80,
+                    height: 80,
                     class: 'energy-guidance__icon'
                   }}
                 {%- endif -%}
               </div>
               {%- if block.settings.title != blank -%}
-                <div class="energy-guidance__text-wrapper">
-                  <div class="energy-guidance__text h3">{{ block.settings.title }}</div>
-                </div>
+                <div class="energy-guidance__text">{{ block.settings.title }}</div>
               {%- endif -%}
             {% if block.settings.link != blank %}</a>{% endif %}
           </div>
@@ -49,7 +42,7 @@
       "type": "text",
       "id": "title",
       "label": "标题",
-      "default": "能量指引"
+      "default": "ENERGY GUIDANCE"
     },
     {
       "type": "select",
@@ -63,52 +56,9 @@
         {
           "value": "center",
           "label": "居中"
-        },
-        {
-          "value": "right",
-          "label": "靠右"
         }
       ],
       "default": "left"
-    },
-    {
-      "type": "range",
-      "id": "items_per_row",
-      "min": 2,
-      "max": 8,
-      "step": 1,
-      "default": 4,
-      "label": "桌面端每行显示数量"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "背景颜色",
-      "default": "#f7f7f7"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "文字颜色",
-      "default": "#333333"
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "标题颜色",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "item_background_color",
-      "label": "文字背景颜色",
-      "default": "#ffffff"
-    },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "全宽显示",
-      "default": false
     }
   ],
   "blocks": [
@@ -159,40 +109,44 @@
 
 <style>
 .energy-guidance {
-  margin: 3rem 0;
-  background-color: var(--energy-bg-color);
-  color: var(--energy-text-color);
-}
-
-.energy-guidance--full-width {
-  margin: 0;
-  padding: 3rem 0;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 60px 0;
 }
 
 .energy-guidance__title {
-  margin-bottom: 2rem;
-  color: var(--energy-title-color);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 40px;
+  letter-spacing: 0.05em;
 }
 
-.energy-guidance__grid {
+.energy-guidance__container {
   position: relative;
+  margin: 0 -20px;
 }
 
-.energy-guidance__slider {
-  display: grid;
-  grid-template-columns: repeat(var(--items-per-row, 4), 1fr);
-  gap: 2rem;
-  justify-items: center;
+.energy-guidance__scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 20px;
+  gap: 30px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.energy-guidance__scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .energy-guidance__item {
+  flex: 0 0 auto;
   text-align: center;
-  transition: transform 0.3s ease;
-  width: 100%;
-}
-
-.energy-guidance__item:hover {
-  transform: translateY(-5px);
+  scroll-snap-align: start;
+  width: auto;
+  min-width: 100px;
 }
 
 .energy-guidance__link {
@@ -202,81 +156,48 @@
 }
 
 .energy-guidance__icon-wrapper {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 1rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
   border-radius: 50%;
-  overflow: hidden;
-  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.energy-guidance__item:hover .energy-guidance__icon-wrapper {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
 }
 
 .energy-guidance__icon {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.energy-guidance__item:hover .energy-guidance__icon {
-  transform: scale(1.1);
-}
-
-.energy-guidance__text-wrapper {
-  background-color: var(--energy-item-bg);
-  border-radius: 50px;
-  padding: 0.5rem 1.5rem;
-  margin-top: 1rem;
-  display: inline-block;
+  filter: brightness(0) invert(1);
 }
 
 .energy-guidance__text {
-  margin: 0;
+  background: #ffffff;
+  color: #2b2b2b;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 14px;
   font-weight: 500;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  white-space: nowrap;
+  display: inline-block;
+  min-width: 80px;
+}
+
+.energy-guidance__item:hover .energy-guidance__icon-wrapper {
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 749px) {
+  .energy-guidance {
+    padding: 40px 0;
+  }
+
   .energy-guidance__title {
-    text-align: center !important;
-  }
-
-  .energy-guidance__slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 1rem 0;
-    gap: 1rem;
-    grid-template-columns: none;
-  }
-
-  .energy-guidance__slider::-webkit-scrollbar {
-    display: none;
-  }
-
-  .energy-guidance__item {
-    flex: 0 0 auto;
-    width: 200px;
-    scroll-snap-align: start;
-  }
-  
-  .energy-guidance__icon-wrapper {
-    width: 100px;
-    height: 100px;
-  }
-
-  .energy-guidance__text-wrapper {
-    padding: 0.4rem 1.2rem;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 </style> 
