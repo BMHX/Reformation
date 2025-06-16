@@ -201,7 +201,7 @@
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
-        "content_width": "small",
+        "content_width": "large",
         "content_position": "bottom-center",
         "text_alignment": "center",
         "overlay_color": "#000000",
