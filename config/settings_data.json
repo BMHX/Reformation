@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "heading_font": "montserrat_n9",
-    "body_font": "montserrat_n5",
+    "heading_font": "poppins_n4",
+    "body_font": "poppins_n4",
     "navigation_uppercase": true,
     "product_title_uppercase": true,
     "button_uppercase": true,
