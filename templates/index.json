@@ -199,7 +199,7 @@
         "section_width": "full-width-row-full",
         "image": "shopify://shop_images/6.webp",
         "image_parallax": false,
-        "desktop_height": "desktop-height-550",
+        "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-500",
         "content_width": "large",
         "content_position": "bottom-center",
