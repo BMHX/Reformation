@@ -54,7 +54,7 @@
         "@media all and (max-width: 600px) {.line-child, .slideshow__slide-content {text-align: center !important; } .slideshow__slide-inner, .slideshow__slide-content {padding-bottom: 0 !important; }}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-750",
+        "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
@@ -145,7 +145,7 @@
       "custom_css": [],
       "name": "能量指引",
       "settings": {
-        "title": "energy-guidance",
+        "title": "Energy Guidance",
         "title_alignment_desktop": "left",
         "title_alignment_mobile": "center",
         "background_color": "#282828",
@@ -153,7 +153,7 @@
         "border_color": "rgba(0,0,0,0)",
         "button_bg_color": "#ffffff",
         "button_text_color": "#282828",
-        "full_width": true
+        "full_width": false
       }
     },
     "image_with_text_overlay_YhY9f3": {
