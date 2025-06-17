@@ -54,14 +54,14 @@
         "@media all and (max-width: 600px) {.line-child, .slideshow__slide-content {text-align: center !important; } .slideshow__slide-inner, .slideshow__slide-content {padding-bottom: 0 !important; }}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-image",
+        "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 10,
         "transition": "swipe",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "energy_guidance_dpjDJa": {
