@@ -98,7 +98,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/8_f4aaa53d-cfdb-4f42-9d60-37b7754a2eba.svg",
-            "title": "能量",
+            "title": "PEACE",
             "link": ""
           }
         },
@@ -106,7 +106,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/7_df617f81-0b21-48dc-b910-6c1eb96c6b98.svg",
-            "title": "能量",
+            "title": "PURE",
             "link": ""
           }
         },
@@ -114,7 +114,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/5_f45c5c6d-3baa-4804-91f1-3744be3d5d2c.svg",
-            "title": "能量",
+            "title": "WEALTH",
             "link": ""
           }
         },
@@ -122,7 +122,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/6_139595e5-f832-4651-a98b-bfdc2a98f5ac.svg",
-            "title": "能量",
+            "title": "NOBLE",
             "link": ""
           }
         },
@@ -130,7 +130,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/3_5dea0636-5546-4896-baee-9803bad853d9.svg",
-            "title": "能量",
+            "title": "EMOTION",
             "link": ""
           }
         },
@@ -138,7 +138,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/4_3fe84cdb-19e3-4430-a3aa-fa38e870f3d0.svg",
-            "title": "能量",
+            "title": "HOPE",
             "link": ""
           }
         },
@@ -146,7 +146,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/9.svg",
-            "title": "能量",
+            "title": "BLESS",
             "link": ""
           }
         },
@@ -154,7 +154,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/1_43a64c37-2756-4355-a5b0-0f503f1aa95c.svg",
-            "title": "能量",
+            "title": "LUCKY",
             "link": ""
           }
         }
@@ -169,12 +169,14 @@
         "guidance_item_VRCbKj",
         "guidance_item_cG4p7y"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h2 {font-size: 45px;}"
+      ],
       "name": "能量指引",
       "settings": {
         "title": "Energy Guidance",
         "title_alignment_desktop": "left",
-        "title_alignment_mobile": "center",
+        "title_alignment_mobile": "left",
         "background_color": "#282828",
         "title_color": "#ffffff",
         "border_color": "rgba(0,0,0,0)",
