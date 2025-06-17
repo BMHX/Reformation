@@ -169,9 +169,7 @@
         "guidance_item_VRCbKj",
         "guidance_item_cG4p7y"
       ],
-      "custom_css": [
-        "h2 {font-size: 45px;}"
-      ],
+      "custom_css": [],
       "name": "能量指引",
       "settings": {
         "title": "Energy Guidance",
