@@ -34,7 +34,7 @@
     "cart_recommendations": false,
     "predictive_search_enabled": false,
     "email_terms_conditions_enable": true,
-    "lazy_loading": false,
+    "lazy_loading": true,
     "favicon": "",
     "sections": {
       "announcement-bar": {

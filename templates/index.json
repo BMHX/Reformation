@@ -16,8 +16,6 @@
           "type": "slide",
           "name": "banner",
           "settings": {
-            "image": "shopify://shop_images/3.png",
-            "mobile_image": "shopify://shop_images/4.png",
             "slide_link": "",
             "video_background": true,
             "video": "",
@@ -45,16 +43,17 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/10_654b5970-89c2-4c5c-9e16-e87312881712.webp",
+            "mobile_image": "shopify://shop_images/4.png",
             "slide_link": "",
             "video_background": false,
             "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "subheading": "Add a tagline",
             "heading": "Slide Heading",
-            "heading_size": "h1-xlarge",
+            "heading_size": "h1",
             "content": "Add descriptive text for your slide here.",
             "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
+            "content_position": "middle-left",
+            "text_alignment": "left",
             "content_size": "medium",
             "overlay_color": "#000000",
             "overlay_opacity": 70,
@@ -88,7 +87,7 @@
         "full_width": true,
         "autoplay": false,
         "autoplay_length": 10,
-        "transition": "swipe",
+        "transition": "fade",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
