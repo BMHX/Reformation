@@ -181,7 +181,7 @@
         "border_color": "rgba(0,0,0,0)",
         "button_bg_color": "#ffffff",
         "button_text_color": "#282828",
-        "full_width": false
+        "full_width": true
       }
     },
     "image_with_text_overlay_YhY9f3": {
