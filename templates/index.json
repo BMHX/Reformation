@@ -100,7 +100,8 @@
           "settings": {
             "image": "shopify://shop_images/8_f4aaa53d-cfdb-4f42-9d60-37b7754a2eba.svg",
             "title": "PEACE",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_7Dhjnp": {
@@ -108,7 +109,8 @@
           "settings": {
             "image": "shopify://shop_images/7_df617f81-0b21-48dc-b910-6c1eb96c6b98.svg",
             "title": "PURE",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_Hhk3CJ": {
@@ -116,7 +118,8 @@
           "settings": {
             "image": "shopify://shop_images/5_f45c5c6d-3baa-4804-91f1-3744be3d5d2c.svg",
             "title": "WEALTH",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_EKPPja": {
@@ -124,7 +127,8 @@
           "settings": {
             "image": "shopify://shop_images/6_139595e5-f832-4651-a98b-bfdc2a98f5ac.svg",
             "title": "NOBLE",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_7XtF3c": {
@@ -132,7 +136,8 @@
           "settings": {
             "image": "shopify://shop_images/3_5dea0636-5546-4896-baee-9803bad853d9.svg",
             "title": "EMOTION",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_y9VdtL": {
@@ -140,7 +145,8 @@
           "settings": {
             "image": "shopify://shop_images/4_3fe84cdb-19e3-4430-a3aa-fa38e870f3d0.svg",
             "title": "HOPE",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_VRCbKj": {
@@ -148,7 +154,8 @@
           "settings": {
             "image": "shopify://shop_images/9.svg",
             "title": "BLESS",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         },
         "guidance_item_cG4p7y": {
@@ -156,7 +163,8 @@
           "settings": {
             "image": "shopify://shop_images/1_43a64c37-2756-4355-a5b0-0f503f1aa95c.svg",
             "title": "LUCKY",
-            "link": ""
+            "link": "",
+            "highlight": false
           }
         }
       },
@@ -170,7 +178,11 @@
         "guidance_item_VRCbKj",
         "guidance_item_cG4p7y"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "/* 移除外层圆形边框 */.energy-guidance__icon-wrapper {border: none;}",
+        "/* 放大图片 */.energy-guidance__icon {width: 100%; height: 100%;}",
+        "/* 高亮项目样式调整 */.energy-guidance__item--highlighted .energy-guidance__icon-wrapper {background: #e6a93d; border: none;}"
+      ],
       "name": "能量指引",
       "settings": {
         "title": "Energy Guidance",
