@@ -142,7 +142,7 @@
       "settings": {
         "title": "",
         "subtitle": "",
-        "stripe_height": 5,
+        "stripe_height": 6,
         "full_width": true
       }
     },
