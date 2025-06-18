@@ -92,6 +92,60 @@
         "disable_bottom_spacing": true
       }
     },
+    "color_stripes_fxjCEW": {
+      "type": "color-stripes",
+      "blocks": {
+        "stripe_VQhTHg": {
+          "type": "stripe",
+          "settings": {
+            "color": "#24305c",
+            "width": 25
+          }
+        },
+        "stripe_ehw9Ta": {
+          "type": "stripe",
+          "settings": {
+            "color": "#efefef",
+            "width": 25
+          }
+        },
+        "stripe_kwFDEB": {
+          "type": "stripe",
+          "settings": {
+            "color": "#7f2625",
+            "width": 25
+          }
+        },
+        "stripe_7T9RAP": {
+          "type": "stripe",
+          "settings": {
+            "color": "#638351",
+            "width": 25
+          }
+        },
+        "stripe_NmmVkU": {
+          "type": "stripe",
+          "settings": {
+            "color": "#cb9737",
+            "width": 25
+          }
+        }
+      },
+      "block_order": [
+        "stripe_VQhTHg",
+        "stripe_ehw9Ta",
+        "stripe_kwFDEB",
+        "stripe_7T9RAP",
+        "stripe_NmmVkU"
+      ],
+      "name": "彩色条纹",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "stripe_height": 5,
+        "full_width": true
+      }
+    },
     "energy_guidance_dpjDJa": {
       "type": "energy-guidance",
       "blocks": {
@@ -1442,6 +1496,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "color_stripes_fxjCEW",
     "energy_guidance_dpjDJa",
     "image_with_text_overlay_YhY9f3",
     "scrolling_images_pz8Jhe",
