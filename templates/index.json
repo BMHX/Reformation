@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "16479477632637c9a7": {
+    "slideshow_6aEVKR": {
       "type": "slideshow",
       "blocks": {
-        "slide_exeqmw": {
+        "slide_thBHwy": {
           "type": "slide",
           "name": "banner",
           "settings": {
@@ -29,7 +29,7 @@
             "text_alignment": "left",
             "content_size": "medium",
             "overlay_color": "#000000",
-            "overlay_opacity": 33,
+            "overlay_opacity": 100,
             "overlay_gradient": "",
             "button_1_text": "Get Started",
             "button_1_link": "#shopify-section-template--17345908670662__1734368449c16b1f2d",
@@ -39,7 +39,7 @@
             "button_2_outline": false
           }
         },
-        "slide_RLbcnx": {
+        "slide_XzhGA4": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/10_654b5970-89c2-4c5c-9e16-e87312881712.webp",
@@ -57,7 +57,7 @@
             "content_size": "medium",
             "overlay_color": "#000000",
             "overlay_opacity": 70,
-            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "overlay_gradient": "linear-gradient(180deg, rgba(21, 21, 21, 1), rgba(0, 0, 0, 0.4) 100%)",
             "button_1_text": "Shop Now",
             "button_1_link": "",
             "button_1_outline": true,
@@ -68,9 +68,33 @@
         }
       },
       "block_order": [
-        "slide_exeqmw",
-        "slide_RLbcnx"
+        "slide_thBHwy",
+        "slide_XzhGA4"
       ],
+      "custom_css": [
+        ".slideshow__slide-overlay {background: none !important;}",
+        "h1 {font-weight: 900;}",
+        "h1,p {color: black;}",
+        ".button.white:hover {color: var(--color-body); border-color: #fff;}",
+        ".button.white {border-color: var(--color-body); color: #fff;}",
+        ".button.white:before {background: #fff;}",
+        ".button.white {background: var(--color-body);}",
+        "@media all and (max-width: 600px) {.line-child, .slideshow__slide-content {text-align: center !important; } .slideshow__slide-inner, .slideshow__slide-content {padding-bottom: 0 !important; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16479477632637c9a7": {
+      "type": "slideshow",
       "custom_css": [
         ".slideshow__slide-overlay {background: none !important;}",
         "h1 {font-weight: 900;}",
@@ -1429,6 +1453,7 @@
     }
   },
   "order": [
+    "slideshow_6aEVKR",
     "16479477632637c9a7",
     "energy_guidance_dpjDJa",
     "image_with_text_overlay_YhY9f3",
