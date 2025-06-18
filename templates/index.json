@@ -180,8 +180,8 @@
       ],
       "custom_css": [
         "/* 移除外层圆形边框 */.energy-guidance__icon-wrapper {border: none;}",
-        "/* 放大图片 */.energy-guidance__icon {width: 100%; height: 100%;}",
-        "/* 高亮项目样式调整 */.energy-guidance__item--highlighted .energy-guidance__icon-wrapper {background: #e6a93d; border: none;}"
+        " /* 放大图片 */.energy-guidance__icon {width: 120%; height: 120%;}",
+        " /* 高亮项目样式调整 */.energy-guidance__item--highlighted .energy-guidance__icon-wrapper {background: #e6a93d; border: none;}"
       ],
       "name": "能量指引",
       "settings": {
