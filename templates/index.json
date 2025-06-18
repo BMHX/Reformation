@@ -138,12 +138,13 @@
         "stripe_7T9RAP",
         "stripe_NmmVkU"
       ],
+      "custom_css": [],
       "name": "彩色条纹",
       "settings": {
         "title": "",
         "subtitle": "",
         "stripe_height": 6,
-        "full_width": true
+        "full_width": false
       }
     },
     "energy_guidance_dpjDJa": {
