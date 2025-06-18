@@ -1,0 +1,42 @@
+.color-stripes-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.color-stripes-container.color-stripes--full-width {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+.color-stripes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.color-stripes-container.color-stripes--full-width .color-stripes {
+  border-radius: 0;
+}
+
+.color-stripe {
+  height: var(--stripe-height, 20px);
+  transition: all 0.3s ease;
+}
+
+.color-stripe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 749px) {
+  .color-stripes {
+    flex-wrap: wrap;
+  }
+  
+  .color-stripe {
+    min-width: 50%;
+  }
+} 

@@ -9,7 +9,7 @@
 ">
   <div class="page-width">
     {% if section.settings.title != blank %}
-      <h2 class="energy-guidance__title h1" style="text-align: {{ section.settings.title_alignment_desktop }};">{{ section.settings.title }}</h2>
+      <h2 class="energy-guidance__title h1 font-weight-bold" style="text-align: {{ section.settings.title_alignment_desktop }};">{{ section.settings.title }}</h2>
     {% endif %}
     
     <div class="energy-guidance__container">
@@ -19,10 +19,10 @@
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
               <div class="energy-guidance__icon-wrapper">
                 {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 120 | image_tag:
+                  {{ block.settings.image | image_url: width: 150 | image_tag:
                     loading: 'lazy',
-                    width: 120,
-                    height: 120,
+                    width: 150,
+                    height: 150,
                     class: 'energy-guidance__icon'
                   }}
                 {%- endif -%}
@@ -42,30 +42,37 @@
 .energy-guidance {
   padding: 3rem 0;
   background: var(--energy-bg-color, #2B2B2B);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .energy-guidance__title {
   color: var(--energy-title-color, #fff);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   font-size: 2rem;
-  padding: 0 5rem;
+  padding: 0;
+  font-weight: bold;
 }
 
 .energy-guidance__container {
   position: relative;
-  margin: 0 -1.5rem;
-  padding: 0 7rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 100%;
 }
 
 .energy-guidance__grid {
   display: grid;
-  grid-template-columns: repeat(var(--items-per-row, 8), 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
   justify-items: center;
+  max-width: 100%;
 }
 
 .energy-guidance__item {
   text-align: center;
+  max-width: 100%;
 }
 
 .energy-guidance__link {
@@ -75,9 +82,9 @@
 }
 
 .energy-guidance__icon-wrapper {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 1rem;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,11 +111,13 @@
   display: inline-block;
   font-size: 0.9rem;
   line-height: 1.2;
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 749px) {
   .energy-guidance__title {
     text-align: {{ section.settings.title_alignment_mobile }} !important;
+    font-size: 1.7rem;
   }
   
   .energy-guidance__container {
@@ -116,6 +125,7 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    padding: 0;
   }
 
   .energy-guidance__container::-webkit-scrollbar {
@@ -126,18 +136,19 @@
     display: flex;
     grid-template-columns: none;
     gap: 1.5rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     width: max-content;
   }
 
   .energy-guidance__item {
     flex: 0 0 auto;
-    width: 120px;
+    width: 130px;
   }
 
   .energy-guidance__icon-wrapper {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0.3rem;
   }
 }
 </style>

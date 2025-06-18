@@ -1,0 +1,124 @@
+{% comment %}
+  @name: 彩色条纹
+  @description: 显示一个可自定义的彩色条纹组件
+{% endcomment %}
+
+{{ 'color-stripes.css' | asset_url | stylesheet_tag }}
+
+<div class="color-stripes-container{% if section.settings.full_width %} color-stripes--full-width{% endif %}">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <div class="section-header text-center">
+        <h2 class="h1">{{ section.settings.title | escape }}</h2>
+        {% if section.settings.subtitle != blank %}
+          <div class="rte">{{ section.settings.subtitle }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="color-stripes" style="--stripe-height: {{ section.settings.stripe_height }}px;">
+      {% for block in section.blocks %}
+        <div class="color-stripe" 
+          style="background-color: {{ block.settings.color }}; 
+                 width: {{ block.settings.width }}%;"
+          {{ block.shopify_attributes }}>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "彩色条纹",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "标题",
+      "default": "彩色条纹"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "副标题"
+    },
+    {
+      "type": "range",
+      "id": "stripe_height",
+      "min": 5,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "条纹高度",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "全宽显示",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stripe",
+      "name": "彩色条纹",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "条纹颜色",
+          "default": "#3498db"
+        },
+        {
+          "type": "range",
+          "id": "width",
+          "min": 5,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "条纹宽度",
+          "default": 25
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "彩色条纹",
+      "blocks": [
+        {
+          "type": "stripe",
+          "settings": {
+            "color": "#3498db",
+            "width": 25
+          }
+        },
+        {
+          "type": "stripe",
+          "settings": {
+            "color": "#2ecc71",
+            "width": 25
+          }
+        },
+        {
+          "type": "stripe",
+          "settings": {
+            "color": "#f1c40f",
+            "width": 25
+          }
+        },
+        {
+          "type": "stripe",
+          "settings": {
+            "color": "#e74c3c",
+            "width": 25
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 
