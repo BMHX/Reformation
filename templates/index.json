@@ -179,9 +179,9 @@
         "guidance_item_cG4p7y"
       ],
       "custom_css": [
-        "/* 移除外层圆形边框 */.energy-guidance__icon-wrapper {border: none;}",
-        " /* 放大图片 */.energy-guidance__icon {width: 120%; height: 120%;}",
-        " /* 高亮项目样式调整 */.energy-guidance__item--highlighted .energy-guidance__icon-wrapper {background: #e6a93d; border: none;}"
+        ".energy-guidance__icon-wrapper {border: none;}",
+        ".energy-guidance__icon {width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;}",
+        ".energy-guidance__icon-wrapper {padding: 0; overflow: visible;}"
       ],
       "name": "能量指引",
       "settings": {
