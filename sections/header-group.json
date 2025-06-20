@@ -41,30 +41,6 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "megamenu_UmtncP": {
-          "type": "megamenu",
-          "settings": {
-            "position": "3",
-            "promo_1_image": "shopify://shop_images/1_611e1278-f027-42f9-8ce8-49e6a2a2145b.png",
-            "promo_1_heading": "Promotion heading",
-            "promo_1_link_label": "Shop",
-            "promo_1_link": "shopify://collections",
-            "promo_2_heading": "Promotion heading",
-            "promo_2_link_label": "Shop",
-            "promo_2_link": "",
-            "promo_3_heading": "Promotion heading",
-            "promo_3_link_label": "Shop",
-            "promo_3_link": "",
-            "promo_4_heading": "Promotion heading",
-            "promo_4_link_label": "Shop",
-            "promo_4_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "megamenu_UmtncP"
-      ],
       "settings": {
         "sticky_header": true,
         "logo": "shopify://shop_images/2.png",
