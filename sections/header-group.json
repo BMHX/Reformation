@@ -46,6 +46,7 @@
           "type": "megamenu",
           "settings": {
             "position": "3",
+            "promo_1_image": "shopify://shop_images/1_611e1278-f027-42f9-8ce8-49e6a2a2145b.png",
             "promo_1_heading": "Promotion heading",
             "promo_1_link_label": "Shop",
             "promo_1_link": "shopify://collections",
