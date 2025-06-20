@@ -20,7 +20,6 @@
         "show_subcollections": false,
         "make_heading_uppercase": true,
         "text_alignment": "center",
-        "image": "",
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
@@ -58,9 +57,10 @@
         "pagination_type": "infinite",
         "enable_filtering": false,
         "enable_sorting": false,
-        "show_counts": true,
+        "show_counts": false,
         "filter_color_swatches": false,
-        "facets_desktop": "sidebar"
+        "facets_desktop": "sidebar",
+        "sidebar_size": "medium"
       }
     },
     "166366972953e881f5": {
