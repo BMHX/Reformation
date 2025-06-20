@@ -316,6 +316,7 @@
       "custom_css": [
         ".scrolling-images--content {display: none;}"
       ],
+      "name": "BEST SELLER",
       "settings": {
         "image_ratio": "adapt",
         "column_spacing": "none",
