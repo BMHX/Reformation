@@ -42,18 +42,27 @@
     "header": {
       "type": "header",
       "blocks": {
-        "menu_badge_wDBfTP": {
-          "type": "menu_badge",
+        "megamenu_UmtncP": {
+          "type": "megamenu",
           "settings": {
-            "badge_position": "2",
-            "text": "",
-            "color_bg": "#d3ece2",
-            "color_text": "#272422"
+            "position": "2",
+            "promo_1_heading": "Promotion heading",
+            "promo_1_link_label": "Shop",
+            "promo_1_link": "shopify://collections",
+            "promo_2_heading": "Promotion heading",
+            "promo_2_link_label": "Shop",
+            "promo_2_link": "",
+            "promo_3_heading": "Promotion heading",
+            "promo_3_link_label": "Shop",
+            "promo_3_link": "",
+            "promo_4_heading": "Promotion heading",
+            "promo_4_link_label": "Shop",
+            "promo_4_link": ""
           }
         }
       },
       "block_order": [
-        "menu_badge_wDBfTP"
+        "megamenu_UmtncP"
       ],
       "settings": {
         "sticky_header": true,
