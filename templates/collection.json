@@ -11,6 +11,7 @@
   "sections": {
     "main-collection-banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "custom_css": [
         ".collection-banner--title {font-weight: 900 !important;}"
       ],
