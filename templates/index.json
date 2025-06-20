@@ -306,46 +306,19 @@
             "heading": "",
             "text": ""
           }
-        },
-        "image_PtqHt9": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
-        },
-        "image_fJRFic": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
-        },
-        "image_B4yaCP": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
         }
       },
       "block_order": [
         "image_KjHUBc",
         "image_94pfVx",
-        "image_A7WKC6",
-        "image_PtqHt9",
-        "image_fJRFic",
-        "image_B4yaCP"
+        "image_A7WKC6"
       ],
       "custom_css": [
         ".scrolling-images--content {display: none;}"
       ],
       "settings": {
         "image_ratio": "adapt",
-        "column_spacing": "large",
+        "column_spacing": "none",
         "image_alignment": "center",
         "direction": "left",
         "speed": "30s",
