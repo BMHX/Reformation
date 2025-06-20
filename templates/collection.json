@@ -54,7 +54,7 @@
       "settings": {
         "full_width": false,
         "products_per_page": 20,
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "pagination_type": "infinite",
         "enable_filtering": false,
         "enable_sorting": false,
