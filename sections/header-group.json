@@ -45,7 +45,7 @@
         "megamenu_UmtncP": {
           "type": "megamenu",
           "settings": {
-            "position": "2",
+            "position": "3",
             "promo_1_heading": "Promotion heading",
             "promo_1_link_label": "Shop",
             "promo_1_link": "shopify://collections",
