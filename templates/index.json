@@ -277,54 +277,23 @@
         "disable_bottom_spacing": true
       }
     },
-    "scrolling_images_pz8Jhe": {
-      "type": "scrolling-images",
-      "blocks": {
-        "image_KjHUBc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_17d54e8f-5dbf-48ce-9756-bf807e1b4977.png",
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
-        },
-        "image_94pfVx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_ce276867-a27c-4ed7-b312-60bfdf0387a1.png",
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
-        },
-        "image_A7WKC6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_da1a2026-23e6-4f0b-8274-6397c950da1b.png",
-            "link": "",
-            "heading": "",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_KjHUBc",
-        "image_94pfVx",
-        "image_A7WKC6"
-      ],
-      "custom_css": [
-        ".scrolling-images--content {display: none;}"
-      ],
-      "name": "BEST SELLER",
+    "featured_collection_jg6MAR": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "image_ratio": "adapt",
-        "column_spacing": "none",
-        "image_alignment": "center",
-        "direction": "left",
-        "speed": "30s",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "heading": "BEST SELLERS",
+        "heading_left": false,
+        "description": "<p><a href=\"/collections/all\" title=\"所有产品\">view all</a></p>",
+        "full_width": true,
+        "collection": "frontpage",
+        "display_type": "grid",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     },
     "rich_text_PHEiUg": {
@@ -1431,7 +1400,7 @@
     "color_stripes_fxjCEW",
     "energy_guidance_dpjDJa",
     "image_with_text_overlay_YhY9f3",
-    "scrolling_images_pz8Jhe",
+    "featured_collection_jg6MAR",
     "rich_text_PHEiUg",
     "single_image_DqK7Uf",
     "rich_text_nDJV67",
