@@ -52,7 +52,7 @@
         "cart_icon": "bag",
         "use_icon_account": true,
         "transparent_header": true,
-        "transparent_header_border": true,
+        "transparent_header_border": false,
         "transparent_header_background": false,
         "transparent_header_background_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.01) 60%)",
         "show_language_switcher": true,
