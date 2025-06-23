@@ -34,7 +34,7 @@
             "button_1_text": "Shop Now",
             "button_1_link": "shopify://collections",
             "button_1_outline": true,
-            "button_2_text": "Shop Now",
+            "button_2_text": "",
             "button_2_link": "",
             "button_2_outline": false
           }
