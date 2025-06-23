@@ -43,9 +43,9 @@
       "type": "header",
       "settings": {
         "sticky_header": true,
-        "logo": "shopify://shop_images/2.png",
-        "logo_height_range": 45,
-        "logo_height_range_mobile": 30,
+        "logo": "shopify://shop_images/9.png",
+        "logo_height_range": 75,
+        "logo_height_range_mobile": 50,
         "style": "style3",
         "header_shadow": "header--shadow-none",
         "menu": "customer-account-main-menu",
