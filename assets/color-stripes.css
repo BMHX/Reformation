@@ -33,15 +33,11 @@
 @media screen and (max-width: 749px) {
   .color-stripes {
     flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   .color-stripe {
-    min-width: initial;
-    flex-shrink: 0;
-    scroll-snap-align: start;
+    flex: 1;
+    min-width: 0;
   }
 } 
