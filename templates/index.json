@@ -34,10 +34,10 @@
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "button_color": "#d89847",
-            "button_text_color": "#ffffff",
+            "button_text_color": "#000000",
             "button_1_text": "Shop Now",
             "button_1_link": "shopify://collections",
-            "button_1_outline": false,
+            "button_1_outline": true,
             "button_2_text": "",
             "button_2_link": "",
             "button_2_outline": false
