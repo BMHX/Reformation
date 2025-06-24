@@ -325,6 +325,42 @@
         "disable_bottom_spacing": false
       }
     },
+    "rich_text_eFr83i": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_chXHBH": {
+          "type": "heading",
+          "settings": {
+            "text": "Himalayan jewelry",
+            "size": "h3"
+          }
+        },
+        "button_EkTMhB": {
+          "type": "button",
+          "settings": {
+            "link_label": "EXPLORE MORE",
+            "link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_chXHBH",
+        "button_EkTMhB"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#ffffff",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "media_grid_BDhbXr": {
       "type": "media-grid",
       "blocks": {
@@ -1136,267 +1172,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "image_with_text_e4iEjt": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_4PpLLj": {
-          "type": "heading",
-          "settings": {
-            "text": "Super Patch VTT<br>The Profound Made Simple",
-            "heading_size": "h4"
-          }
-        },
-        "text_4bAJcG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>VTT is our proprietary development and breakthrough in Nobel Prize-winning, haptic science. The VTT is a system of skin sensation and perception that is activated by a complex series of ridges specially designed and imprinted on every Super Patch product.  These ridges activate receptors and ion channels in the skin, through touch, that transmit signals that interact with the CNS helping optimize the various neural networks that regulate our wellness.  Science has always known that the skin and brain connection is crucial in how we live, experience the world, and survive.  Super Patch has hacked the skin-to-brain connection in developing VTT.</p>",
-            "description_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4PpLLj",
-        "text_4bAJcG"
-      ],
-      "settings": {
-        "use_video": false,
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_autoplay": false,
-        "video_controls": false,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "section_width": "full-width-row-full",
-        "layout": "image_first",
-        "content_position": "text-center",
-        "color_bg": "#f7f7f7",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "multicolumn_RzjLCI": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_RxnyWH": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Haptic Vibrotactile Trigger Technology – Disrupting the Neuromatrix to Reduce Pain Severity and Interference",
-            "text": "<p><strong>Anesthesia & Pain Research<br/></strong>J. Gudin <strong>· </strong>D. Dietze <strong>· </strong>G. Dhaliwal <strong>· </strong>P. Hurwitz</p>",
-            "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0642/5588/5510/files/Haptic-Vibrotactile-Trigger-Technology-Disrupting-the-Neuromatrix-to-Reduce-Pain-Severity-and-Interference.pdf?v=1734472120"
-          }
-        },
-        "column_pkPJai": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Plantar Neuro-Receptor Activation In Improving Overall Clinical Function and Decreasing Pain and Stiffness in TKA – RCT Study",
-            "text": "<p><strong>VOXX HPT Clinical Studies<br/></strong>M. Woolfrey <strong>· </strong>C. Bolton <strong>· </strong>K. Woolfrey <strong>· </strong>D. Warchuk</p>",
-            "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0642/5588/5510/files/Plantar-Neuro-Receptor-Activation-In-Improving-Overall-Clinical-Function-and-Decreasing-Pain-and-Stiffness-in-TKA-RCT-Study.pdf?v=1734472120"
-          }
-        },
-        "column_rn9gAQ": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Changes in Electroencephalogram (EEG) – Neuromatrix and Pain Modulation – Vibrotactile Trigger Technology",
-            "text": "<p><strong>Anesthesia & Pain Research<br/></strong>B. S. Dhaliwal <strong>· </strong>J. Haddad <strong>· </strong>M. Debrincat <strong>· </strong>P. Hurwitz</p>",
-            "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0642/5588/5510/files/Changes-in-Electroencephalogram-EEG-Neuromatrix-and-Pain-Modulation-Vibrotactile-Trigger-Technology.pdf?v=1734472120"
-          }
-        }
-      },
-      "block_order": [
-        "column_RxnyWH",
-        "column_pkPJai",
-        "column_rn9gAQ"
-      ],
-      "custom_css": [
-        "h2.h3 {font-weight: 700;}",
-        "h4.h5 {font-weight: 700; font-size: 18px; line-height: 27px;}",
-        ".multicolumn__column {background: #f7f7f7; padding: 15px;}",
-        "@media all and (max-width: 799px) {.multicolumn__column {margin-bottom: 20px; }}",
-        "@media all and (min-width: 800px) {.multicolumn__column {padding: 30px; } .multicolumn__column:nth-of-type(2) {border-left: 10px solid white; border-right: 10px solid white; }}"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "description": "",
-        "full_width": false,
-        "display_type": "grid",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "text_alignment": "left",
-        "heading_size": "h5",
-        "mobile_swipe": false,
-        "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "image_with_text_ahjM6H": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_9769YT": {
-          "type": "heading",
-          "settings": {
-            "text": "Where It All Began",
-            "heading_size": "h4"
-          }
-        },
-        "text_HhpcCd": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Jay Dhaliwal. Founder and CEO</strong></p><p>Our origin story is simple.  A son wanted to help his mother with her wellness.</p><p>Super Patch Founder, Jay Dhaliwal, dedicated himself to understanding the mind-body connection in seeking various treatments for his mother’s MS. His journey led him to understand the cutting-edge of neural coding – how the mind processes information and how these processes can be used to activate and regulate brain-to-body equilibrium. Over the past 15 years, Jay has developed proprietary technologies that allow him to decode various neural networks integral to human wellness and performance.  He was able to take those learnings and develop VTT, the cornerstone of the Super Patch Products.</p><p>His journey has provided breakthroughs and products that have been presented at leading congresses and symposiums across the world.  The products he has developed have and continue to change the lives of millions of people.  His solitary journey to help his mother has become a global movement in drug-free health and wellness.</p>",
-            "description_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading_9769YT",
-        "text_HhpcCd"
-      ],
-      "settings": {
-        "use_video": false,
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "section_width": "full-width-row-full",
-        "layout": "text_first",
-        "content_position": "text-center",
-        "color_bg": "#f7f7f7",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "multicolumn_YXpKeP": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_6CXBRx": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "100% Drug-Free",
-            "text": "<p>No Acetaminophen. No Ibuprofen. No Opioid Medications. No CBD.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3MtzJf": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Medical 3M Material",
-            "text": "<p>Certified Skin Safe. Hypo-allergenic. Non-GMO. Paraben-free. Gluten-free. Latex-free.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_6CXBRx",
-        "column_3MtzJf"
-      ],
-      "custom_css": [
-        ".section-multicolumn .multicolumn {padding: 35px 0; background: #f7f7f7;}",
-        ".multicolumn__column {background: #fff; border-right: 10px solid #f7f7f7; padding-top: 20px; padding-bottom: 20px;}",
-        ".multicolumn__column + .multicolumn__column {border-left: 10px solid #f7f7f7; border-right: 0;}",
-        ".multicolumn__column p {margin: 0;}",
-        "h2.h3 {font-weight: 900;}",
-        "@media all and (max-width: 799px) {.multicolumn__column {margin-bottom: 20px; border: 0; } .multicolumn__column + .multicolumn__column {border: 0; }}"
-      ],
-      "settings": {
-        "heading": "Super Patch Can Work For You",
-        "heading_left": false,
-        "description": "<p>Support your chiropractic practice revenue flow with complementary performance and wellness solutions that are natural, non-invasive, hypo-allergenic, and 100% drug-free. Demonstrate your leading-edge, wellness knowledge and preeminent level of care. Simple to order online. And delivered to your office. Plus, our product displays are attractive and ergonomic for your waiting room.</p>",
-        "full_width": false,
-        "display_type": "grid",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "text_alignment": "center",
-        "heading_size": "h6",
-        "mobile_swipe": false,
-        "show_progress_bar": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "image_with_text_YqLmFH": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_8rYRwk": {
-          "type": "heading",
-          "settings": {
-            "text": "Improvement in balance & stability Using a Novel Sensory Application",
-            "heading_size": "h3"
-          }
-        },
-        "text_KRkLgj": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Haptic Vibrotactile Trigger Technology</strong></p>",
-            "description_size": "medium"
-          }
-        },
-        "text_kKYwGQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Read this in-depth study to review VVT’s balance and stability improvements including up to 27% in test subjects.</p>",
-            "description_size": "medium"
-          }
-        },
-        "button_4hVKEd": {
-          "type": "button",
-          "settings": {
-            "button_text": "Download",
-            "button_link": "https://cdn.shopify.com/s/files/1/0642/5588/5510/files/Improvement-in-Balance-and-Stability-Using-a-Novel-Sensory-Application-Haptic-Vibrotactile-Trigger-Technology.pdf?v=1734472120"
-          }
-        }
-      },
-      "block_order": [
-        "heading_8rYRwk",
-        "text_KRkLgj",
-        "text_kKYwGQ",
-        "button_4hVKEd"
-      ],
-      "custom_css": [
-        "img {object-fit: contain;}",
-        "@media all and (max-width: 799px) {.image-with-text__content--inner {text-align: center; }}"
-      ],
-      "settings": {
-        "use_video": false,
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
-        "height": "small",
-        "desktop_image_width": "small",
-        "section_width": "grid",
-        "layout": "image_first",
-        "content_position": "text-left",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "image_with_text_X8t6ge": {
       "type": "image-with-text",
       "blocks": {
@@ -1553,6 +1328,7 @@
     "image_with_text_overlay_YhY9f3",
     "featured_collection_jg6MAR",
     "featured_collection_46J8kx",
+    "rich_text_eFr83i",
     "media_grid_BDhbXr",
     "rich_text_PHEiUg",
     "single_image_DqK7Uf",
@@ -1564,11 +1340,6 @@
     "16615358507b6ff1a8",
     "rich_text_cJqTaY",
     "multicolumn_RzjLCH",
-    "image_with_text_e4iEjt",
-    "multicolumn_RzjLCI",
-    "image_with_text_ahjM6H",
-    "multicolumn_YXpKeP",
-    "image_with_text_YqLmFH",
     "image_with_text_X8t6ge",
     "multicolumn_bYDpTj",
     "1734368449c16b1f2d"
