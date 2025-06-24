@@ -325,6 +325,128 @@
         "disable_bottom_spacing": false
       }
     },
+    "media_grid_BDhbXr": {
+      "type": "media-grid",
+      "blocks": {
+        "media_HnqG3r": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/2_16642740-964a-4b63-b20f-c855ba9edd28.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_4e4qMn": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_yNX9AK": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_w7PV8k": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_HnqG3r",
+        "media_4e4qMn",
+        "media_yNX9AK",
+        "media_w7PV8k"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "grid",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "small",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "rich_text_PHEiUg": {
       "type": "rich-text",
       "blocks": {
@@ -1431,6 +1553,7 @@
     "image_with_text_overlay_YhY9f3",
     "featured_collection_jg6MAR",
     "featured_collection_46J8kx",
+    "media_grid_BDhbXr",
     "rich_text_PHEiUg",
     "single_image_DqK7Uf",
     "rich_text_nDJV67",
