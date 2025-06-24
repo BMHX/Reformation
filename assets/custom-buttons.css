@@ -7,27 +7,45 @@
 
 /* 全局按钮样式覆盖 */
 .button,
-input[type="submit"] {
+input[type="submit"],
+#wrapper .button,
+html body .button,
+html body input[type="submit"] {
   border-radius: 0 !important;
   background-color: #D89847 !important;
   border-color: #D89847 !important;
   color: #ffffff !important;
+  transition: all 0.25s ease !important;
 }
 
 .button:hover,
 .button:focus,
 input[type="submit"]:hover,
-input[type="submit"]:focus {
+input[type="submit"]:focus,
+#wrapper .button:hover,
+#wrapper .button:focus,
+html body .button:hover,
+html body .button:focus,
+html body input[type="submit"]:hover,
+html body input[type="submit"]:focus {
   background-color: #282828 !important;
   border-color: #282828 !important;
   color: #D89847 !important;
+  opacity: 1 !important;
 }
 
-/* 保留默认的按钮动画效果 */
+/* 覆盖默认的按钮动画效果 */
+.button:before,
+input[type="submit"]:before {
+  display: none !important;
+}
 
 /* 轮廓按钮样式 */
 .button.outline,
-input[type="submit"].outline {
+input[type="submit"].outline,
+#wrapper .button.outline,
+html body .button.outline,
+html body input[type="submit"].outline {
   background-color: transparent !important;
   border-color: #D89847 !important;
   color: #D89847 !important;
@@ -36,7 +54,13 @@ input[type="submit"].outline {
 .button.outline:hover,
 .button.outline:focus,
 input[type="submit"].outline:hover,
-input[type="submit"].outline:focus {
+input[type="submit"].outline:focus,
+#wrapper .button.outline:hover,
+#wrapper .button.outline:focus,
+html body .button.outline:hover,
+html body .button.outline:focus,
+html body input[type="submit"].outline:hover,
+html body input[type="submit"].outline:focus {
   background-color: #282828 !important;
   border-color: #282828 !important;
   color: #D89847 !important;
