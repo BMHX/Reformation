@@ -126,20 +126,11 @@
     "energy_guidance_dpjDJa": {
       "type": "energy-guidance",
       "blocks": {
-        "guidance_item_NppaRd": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/8_f4aaa53d-cfdb-4f42-9d60-37b7754a2eba.svg",
-            "title": "PEACE",
-            "link": "",
-            "highlight": false
-          }
-        },
         "guidance_item_7Dhjnp": {
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/7_df617f81-0b21-48dc-b910-6c1eb96c6b98.svg",
-            "title": "PURE",
+            "title": "appearance",
             "link": "",
             "highlight": false
           }
@@ -153,11 +144,11 @@
             "highlight": false
           }
         },
-        "guidance_item_EKPPja": {
+        "guidance_item_NppaRd": {
           "type": "guidance_item",
           "settings": {
-            "image": "shopify://shop_images/6_139595e5-f832-4651-a98b-bfdc2a98f5ac.svg",
-            "title": "NOBLE",
+            "image": "shopify://shop_images/8_f4aaa53d-cfdb-4f42-9d60-37b7754a2eba.svg",
+            "title": "Thangka",
             "link": "",
             "highlight": false
           }
@@ -166,25 +157,7 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/3_5dea0636-5546-4896-baee-9803bad853d9.svg",
-            "title": "EMOTION",
-            "link": "",
-            "highlight": false
-          }
-        },
-        "guidance_item_y9VdtL": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/4_3fe84cdb-19e3-4430-a3aa-fa38e870f3d0.svg",
-            "title": "HOPE",
-            "link": "",
-            "highlight": false
-          }
-        },
-        "guidance_item_VRCbKj": {
-          "type": "guidance_item",
-          "settings": {
-            "image": "shopify://shop_images/9.svg",
-            "title": "BLESS",
+            "title": "love",
             "link": "",
             "highlight": false
           }
@@ -193,20 +166,17 @@
           "type": "guidance_item",
           "settings": {
             "image": "shopify://shop_images/1_43a64c37-2756-4355-a5b0-0f503f1aa95c.svg",
-            "title": "LUCKY",
+            "title": "cause",
             "link": "",
             "highlight": false
           }
         }
       },
       "block_order": [
-        "guidance_item_NppaRd",
         "guidance_item_7Dhjnp",
         "guidance_item_Hhk3CJ",
-        "guidance_item_EKPPja",
+        "guidance_item_NppaRd",
         "guidance_item_7XtF3c",
-        "guidance_item_y9VdtL",
-        "guidance_item_VRCbKj",
         "guidance_item_cG4p7y"
       ],
       "custom_css": [
@@ -354,7 +324,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ffffff",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -381,10 +351,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -406,10 +376,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -431,10 +401,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -456,10 +426,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -512,7 +482,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ffffff",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -539,10 +509,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -564,10 +534,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -589,10 +559,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -614,10 +584,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -670,7 +640,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ffffff",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -697,10 +667,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -722,10 +692,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -747,10 +717,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -772,10 +742,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
