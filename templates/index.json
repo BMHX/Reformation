@@ -489,6 +489,153 @@
         "disable_bottom_spacing": false
       }
     },
+    "media_grid_hiqQkg": {
+      "type": "media-grid",
+      "blocks": {
+        "media_g3CDRx": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_KbaapV": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_BfkpLE": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_bmMK36": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_WjQUrb": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "Heading",
+            "heading_size": "h4",
+            "text": "Block text",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_g3CDRx",
+        "media_KbaapV",
+        "media_BfkpLE",
+        "media_bmMK36",
+        "media_WjQUrb"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "medium",
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "media_grid_mtPUyn": {
       "type": "media-grid",
       "blocks": {
@@ -767,46 +914,6 @@
         "mobile_swipe": false,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
-      }
-    },
-    "rich_text_PHEiUg": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_tn8XiX": {
-          "type": "heading",
-          "settings": {
-            "text": "Leverage our tech with your practice",
-            "size": "h2"
-          }
-        },
-        "text_eLC3LM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At The Super Patch Company, we believe in the power of the human body to heal and thrive naturally, just like the chiropractic field. Our innovative Vibrotactile Trigger Technology (VTT) aligns perfectly with chiropractic principles, offering Drug-free, non-invasive solutions to help the body achieve balance, reduce pain, and promote overall well-being.</p><p>Our revolutionary, researched based, VTT patches use a unique sensory pattern that, when in contact with the skin, triggers a response in the brain's neural networks. This helps the body naturally improve mobility, balance, and manage pain—instantly. Like chiropractic care, which works to optimize nervous system function by removing interference, our patches stimulate the body’s natural healing processes. Together, they form a powerful synergy that can offer enhanced benefits to your patients.</p>",
-            "custom_liquid": "",
-            "size": "text-size-regular"
-          }
-        }
-      },
-      "block_order": [
-        "heading_tn8XiX",
-        "text_eLC3LM"
-      ],
-      "custom_css": [
-        "h3.h2 {text-transform: uppercase;}",
-        ".row {margin: 35px 0;}",
-        ".rte,p:last-of-type {margin: 0;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "single_image_DqK7Uf": {
@@ -1617,10 +1724,10 @@
     "rich_text_eFr83i",
     "media_grid_BDhbXr",
     "rich_text_wCFTx7",
+    "media_grid_hiqQkg",
     "media_grid_mtPUyn",
     "rich_text_KGhM7Y",
     "media_grid_YQGgbi",
-    "rich_text_PHEiUg",
     "single_image_DqK7Uf",
     "rich_text_nDJV67",
     "tabbed_content_k9UT3r",
