@@ -21,7 +21,7 @@
     "color_header_text": "#151515",
     "solid_button_background": "#000000",
     "solid_button_label": "#000000",
-    "outline_button_label": "#ffffff",
+    "outline_button_label": "#000000",
     "color_price": "#d29346",
     "color_price_discounted": "#ee3b45",
     "color_stars": "#FD9A52",

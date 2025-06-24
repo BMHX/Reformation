@@ -255,7 +255,7 @@
           "settings": {
             "button_text": "BLESS YOUR YEAR",
             "button_link": "",
-            "button_outline": false
+            "button_outline": true
           }
         }
       },
