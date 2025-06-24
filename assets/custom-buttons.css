@@ -5,14 +5,55 @@
   border-radius: 0 !important;
 }
 
+/* 全局按钮样式覆盖 */
+.button,
+input[type="submit"] {
+  border-radius: 0 !important;
+  background-color: #D89847 !important;
+  border-color: #D89847 !important;
+  color: #ffffff !important;
+}
+
+.button:hover,
+.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #282828 !important;
+  border-color: #282828 !important;
+  color: #D89847 !important;
+}
+
+/* 覆盖默认的按钮动画效果 */
+.button:before,
+input[type="submit"]:before {
+  display: none !important;
+}
+
+/* 轮廓按钮样式 */
+.button.outline,
+input[type="submit"].outline {
+  background-color: transparent !important;
+  border-color: #D89847 !important;
+  color: #D89847 !important;
+}
+
+.button.outline:hover,
+.button.outline:focus,
+input[type="submit"].outline:hover,
+input[type="submit"].outline:focus {
+  background-color: #282828 !important;
+  border-color: #282828 !important;
+  color: #D89847 !important;
+}
+
 /* 自定义按钮颜色变量 */
 .button-custom {
-  --button-bg-color: #000000;
+  --button-bg-color: #D89847;
   --button-text-color: #ffffff;
-  --button-border-color: #000000;
-  --button-hover-bg-color: #ffffff;
-  --button-hover-text-color: #000000;
-  --button-hover-border-color: #000000;
+  --button-border-color: #D89847;
+  --button-hover-bg-color: #282828;
+  --button-hover-text-color: #D89847;
+  --button-hover-border-color: #282828;
 }
 
 /* 应用自定义颜色 */
@@ -38,12 +79,7 @@
 
 .button-custom.button.outline:hover,
 .button-custom.button.outline:focus {
-  background-color: var(--button-bg-color) !important;
-  color: var(--button-hover-bg-color) !important;
-  border-color: var(--button-border-color) !important;
-}
-
-/* 覆盖默认的按钮动画效果 */
-.button-custom.button:before {
-  display: none !important;
+  background-color: var(--button-hover-bg-color) !important;
+  color: var(--button-hover-text-color) !important;
+  border-color: var(--button-hover-border-color) !important;
 } 
