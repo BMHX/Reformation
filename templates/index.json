@@ -483,6 +483,322 @@
         "disable_bottom_spacing": false
       }
     },
+    "rich_text_wCFTx7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kJz83y": {
+          "type": "heading",
+          "settings": {
+            "text": "CRYSTALS",
+            "size": "h3"
+          }
+        },
+        "button_CjRzWw": {
+          "type": "button",
+          "settings": {
+            "link_label": "EXPLORE MORE",
+            "link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_kJz83y",
+        "button_CjRzWw"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#ffffff",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_mtPUyn": {
+      "type": "media-grid",
+      "blocks": {
+        "media_WAxjGT": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/2_16642740-964a-4b63-b20f-c855ba9edd28.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_miNRUL": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_8tGbak": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_ggYJRN": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_WAxjGT",
+        "media_miNRUL",
+        "media_8tGbak",
+        "media_ggYJRN"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "grid",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "small",
+        "mobile_swipe": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_KGhM7Y": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kQkA8d": {
+          "type": "heading",
+          "settings": {
+            "text": "ARTISAN SOUL COLLECTION",
+            "size": "h3"
+          }
+        },
+        "button_zhEaC8": {
+          "type": "button",
+          "settings": {
+            "link_label": "EXPLORE MORE",
+            "link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_kQkA8d",
+        "button_zhEaC8"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#ffffff",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "media_grid_YQGgbi": {
+      "type": "media-grid",
+      "blocks": {
+        "media_rDXiL4": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/2_16642740-964a-4b63-b20f-c855ba9edd28.jpg",
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 2,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_xgfinG": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 2,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_dpdLxm": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "media_bLrxxE": {
+          "type": "media",
+          "settings": {
+            "slide_link": "",
+            "use_video": false,
+            "video_autoplay": true,
+            "column": 1,
+            "row": 1,
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "badge_text": "",
+            "color_badge_text": "#FFFFFF",
+            "color_badge_bg": "#E32626",
+            "color_text": "#252525",
+            "color_bg": "#F1F1F1",
+            "color_bg_gradient": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_rDXiL4",
+        "media_xgfinG",
+        "media_dpdLxm",
+        "media_bLrxxE"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "section_width": "grid",
+        "desktop_height": 300,
+        "mobile_height": 250,
+        "column_spacing": "small",
+        "mobile_swipe": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "rich_text_PHEiUg": {
       "type": "rich-text",
       "blocks": {
@@ -1330,6 +1646,10 @@
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_BDhbXr",
+    "rich_text_wCFTx7",
+    "media_grid_mtPUyn",
+    "rich_text_KGhM7Y",
+    "media_grid_YQGgbi",
     "rich_text_PHEiUg",
     "single_image_DqK7Uf",
     "rich_text_nDJV67",
