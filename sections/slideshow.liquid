@@ -1,4 +1,5 @@
 {{- 'slideshow.css' | asset_url | stylesheet_tag -}}
+{{- 'custom-buttons.css' | asset_url | stylesheet_tag -}}
 {%- liquid
 	assign desktop_height = section.settings.desktop_height
 	assign mobile_height = section.settings.mobile_height
@@ -164,12 +165,34 @@
 							{% endif %}
 							{% if block.settings.button_1_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button white{% if block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}" style="background-color: {% unless block.settings.button_1_outline %}{{ button_color }}{% else %}transparent{% endunless %}; color: {{ button_text_color }}; border-color: {{ button_color }}"><span>{{ block.settings.button_1_text }}</span></a>
+								<a class="button button-square button-custom white{% if block.settings.button_1_outline %} outline{%- endif %}" 
+									href="{{ block.settings.button_1_link }}" 
+									role="button" 
+									title="{{ block.settings.button_1_text | escape }}"
+									style="--button-bg-color: {{ block.settings.button_bg_color | default: button_color }};
+										--button-text-color: {{ block.settings.button_text_color | default: button_text_color }};
+										--button-border-color: {{ block.settings.button_border_color | default: button_color }};
+										--button-hover-bg-color: {{ block.settings.button_hover_bg_color | default: '#ffffff' }};
+										--button-hover-text-color: {{ block.settings.button_hover_text_color | default: '#000000' }};
+										--button-hover-border-color: {{ block.settings.button_hover_border_color | default: button_color }};">
+									<span>{{ block.settings.button_1_text }}</span>
+								</a>
 							</div>
 			        {% endif %}
 							{% if block.settings.button_2_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button white{% if block.settings.button_2_outline %} outline{%- endif %}" href="{{ block.settings.button_2_link }}" role="button" title="{{ block.settings.button_2_text | escape }}" style="background-color: {% unless block.settings.button_2_outline %}{{ button_color }}{% else %}transparent{% endunless %}; color: {{ button_text_color }}; border-color: {{ button_color }}"><span>{{ block.settings.button_2_text }}</span></a>
+								<a class="button button-square button-custom white{% if block.settings.button_2_outline %} outline{%- endif %}" 
+									href="{{ block.settings.button_2_link }}" 
+									role="button" 
+									title="{{ block.settings.button_2_text | escape }}"
+									style="--button-bg-color: {{ block.settings.button_bg_color | default: button_color }};
+										--button-text-color: {{ block.settings.button_text_color | default: button_text_color }};
+										--button-border-color: {{ block.settings.button_border_color | default: button_color }};
+										--button-hover-bg-color: {{ block.settings.button_hover_bg_color | default: '#ffffff' }};
+										--button-hover-text-color: {{ block.settings.button_hover_text_color | default: '#000000' }};
+										--button-hover-border-color: {{ block.settings.button_hover_border_color | default: button_color }};">
+									<span>{{ block.settings.button_2_text }}</span>
+								</a>
 							</div>
 			        {% endif %}
 							{% if block.settings.slide_link != blank %}
@@ -540,46 +563,82 @@
           },
 					{
 			      "type": "header",
-			      "content": "Button 1"
+			      "content": "按钮 1"
 			    },
           {
             "id": "button_1_text",
             "type": "text",
-            "label": "Label",
+            "label": "按钮文本",
             "default": "Shop Now",
 						"info": "Leave the label blank to hide the button."
           },
           {
             "id": "button_1_link",
             "type": "url",
-            "label": "Link"
+            "label": "按钮链接"
           },
 					{
 		        "type": "checkbox",
 		        "id": "button_1_outline",
-		        "label": "Use outline button style",
+		        "label": "使用轮廓按钮样式",
 		        "default": true
 		      },
+          {
+            "type": "color",
+            "id": "button_bg_color",
+            "label": "按钮背景颜色",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "button_text_color",
+            "label": "按钮文本颜色",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "button_border_color",
+            "label": "按钮边框颜色",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "button_hover_bg_color",
+            "label": "悬浮背景颜色",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "button_hover_text_color",
+            "label": "悬浮文本颜色",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "button_hover_border_color",
+            "label": "悬浮边框颜色",
+            "default": "#000000"
+          },
 					{
 			      "type": "header",
-			      "content": "Button 2"
+			      "content": "按钮 2"
 			    },
           {
             "id": "button_2_text",
             "type": "text",
-            "label": "Label",
+            "label": "按钮文本",
             "default": "Shop Now",
 						"info": "Leave the label blank to hide the button."
           },
           {
             "id": "button_2_link",
             "type": "url",
-            "label": "Link"
+            "label": "按钮链接"
           },
 					{
 		        "type": "checkbox",
 		        "id": "button_2_outline",
-		        "label": "Use outline button style",
+		        "label": "使用轮廓按钮样式",
 		        "default": false
 		      }
         ]

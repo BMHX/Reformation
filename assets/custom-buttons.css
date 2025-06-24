@@ -1,0 +1,49 @@
+/* 自定义按钮样式 */
+.button-square,
+.button-square.button,
+.button-square.outline {
+  border-radius: 0 !important;
+}
+
+/* 自定义按钮颜色变量 */
+.button-custom {
+  --button-bg-color: #000000;
+  --button-text-color: #ffffff;
+  --button-border-color: #000000;
+  --button-hover-bg-color: #ffffff;
+  --button-hover-text-color: #000000;
+  --button-hover-border-color: #000000;
+}
+
+/* 应用自定义颜色 */
+.button-custom.button {
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-text-color) !important;
+  border-color: var(--button-border-color) !important;
+}
+
+.button-custom.button:hover,
+.button-custom.button:focus {
+  background-color: var(--button-hover-bg-color) !important;
+  color: var(--button-hover-text-color) !important;
+  border-color: var(--button-hover-border-color) !important;
+}
+
+/* 轮廓按钮样式 */
+.button-custom.button.outline {
+  background-color: transparent !important;
+  color: var(--button-bg-color) !important;
+  border-color: var(--button-border-color) !important;
+}
+
+.button-custom.button.outline:hover,
+.button-custom.button.outline:focus {
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-hover-bg-color) !important;
+  border-color: var(--button-border-color) !important;
+}
+
+/* 覆盖默认的按钮动画效果 */
+.button-custom.button:before {
+  display: none !important;
+} 

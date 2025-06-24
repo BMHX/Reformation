@@ -1,4 +1,5 @@
 {{- 'image-with-text-overlay.css' | asset_url | stylesheet_tag -}}
+{{- 'custom-buttons.css' | asset_url | stylesheet_tag -}}
 {%- liquid
 	assign section_width = section.settings.section_width
 	assign image = section.settings.image
@@ -85,7 +86,19 @@
 								<div class="rte description-size--{{ block.settings.description_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
-									<a class="button white{% if block.settings.button_outline %} outline{%- endif %}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									<a class="button button-square button-custom white{% if block.settings.button_outline %} outline{%- endif %}" 
+										href="{{ block.settings.button_link }}" 
+										role="button" 
+										title="{{ block.settings.button_text | escape }}" 
+										{{ block.shopify_attributes }}
+										style="--button-bg-color: {{ block.settings.button_bg_color | default: '#000000' }};
+											--button-text-color: {{ block.settings.button_text_color | default: '#ffffff' }};
+											--button-border-color: {{ block.settings.button_border_color | default: '#000000' }};
+											--button-hover-bg-color: {{ block.settings.button_hover_bg_color | default: '#ffffff' }};
+											--button-hover-text-color: {{ block.settings.button_hover_text_color | default: '#000000' }};
+											--button-hover-border-color: {{ block.settings.button_hover_border_color | default: '#000000' }};">
+										<span>{{ block.settings.button_text }}</span>
+									</a>
 								{% endif %}
 							{% when 'space' %}
 		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
@@ -384,20 +397,64 @@
 					{
 						"id": "button_text",
 						"type": "text",
-						"label": "Button label",
+						"label": "按钮文本",
 						"default": "Shop Now",
 						"info": "Leave the label blank to hide the button."
 					},
 					{
 						"id": "button_link",
 						"type": "url",
-						"label": "Button link"
+						"label": "按钮链接"
 					},
 					{
 						"type": "checkbox",
 						"id": "button_outline",
-						"label": "Use outline button style",
+						"label": "使用轮廓按钮样式",
 						"default": false
+					},
+					{
+						"type": "header",
+						"content": "按钮颜色"
+					},
+					{
+						"type": "color",
+						"id": "button_bg_color",
+						"label": "背景颜色",
+						"default": "#000000"
+					},
+					{
+						"type": "color",
+						"id": "button_text_color",
+						"label": "文本颜色",
+						"default": "#ffffff"
+					},
+					{
+						"type": "color",
+						"id": "button_border_color",
+						"label": "边框颜色",
+						"default": "#000000"
+					},
+					{
+						"type": "header",
+						"content": "鼠标悬浮颜色"
+					},
+					{
+						"type": "color",
+						"id": "button_hover_bg_color",
+						"label": "悬浮背景颜色",
+						"default": "#ffffff"
+					},
+					{
+						"type": "color",
+						"id": "button_hover_text_color",
+						"label": "悬浮文本颜色",
+						"default": "#000000"
+					},
+					{
+						"type": "color",
+						"id": "button_hover_border_color",
+						"label": "悬浮边框颜色",
+						"default": "#000000"
 					}
         ]
       },
