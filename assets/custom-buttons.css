@@ -23,11 +23,7 @@ input[type="submit"]:focus {
   color: #D89847 !important;
 }
 
-/* 覆盖默认的按钮动画效果 */
-.button:before,
-input[type="submit"]:before {
-  display: none !important;
-}
+/* 保留默认的按钮动画效果 */
 
 /* 轮廓按钮样式 */
 .button.outline,
