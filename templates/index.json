@@ -255,7 +255,13 @@
           "settings": {
             "button_text": "BLESS YOUR YEAR",
             "button_link": "",
-            "button_outline": true
+            "button_outline": false,
+            "button_bg_color": "#d89847",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg_color": "#282828",
+            "button_hover_text_color": "#d89847",
+            "button_hover_border_color": "#000000"
           }
         }
       },
