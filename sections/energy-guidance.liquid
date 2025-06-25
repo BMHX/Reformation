@@ -61,16 +61,18 @@
   margin: 0 auto;
   padding: 0;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .energy-guidance__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(var(--item-count, 8), 120px);
   gap: 1rem;
   justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 0 3rem;
+  width: auto;
+  max-width: 100%;
 }
 
 .energy-guidance__item {
@@ -134,9 +136,10 @@
 
 @media screen and (max-width: 990px) {
   .energy-guidance__grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    max-width: 800px;
+    grid-template-columns: repeat(auto-fill, 120px);
     gap: 1.5rem;
+    width: auto;
+    max-width: 800px;
   }
 }
 
