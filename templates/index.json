@@ -197,66 +197,6 @@
         "full_width": false
       }
     },
-    "image_with_text_overlay_YhY9f3": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_HmGHyG": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_8wyynL": {
-          "type": "heading",
-          "settings": {
-            "text": "NEW YEAR BLESSINGS",
-            "heading_size": "h2"
-          }
-        },
-        "text_b9GFm8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Bring the mounts into your life.</p>",
-            "description_size": "small"
-          }
-        },
-        "button_4WpEFg": {
-          "type": "button",
-          "settings": {
-            "button_text": "BLESS YOUR YEAR",
-            "button_link": "",
-            "button_outline": false,
-            "button_bg_color": "#d89847",
-            "button_text_color": "#ffffff",
-            "button_border_color": "#d89847",
-            "button_hover_bg_color": "#282828",
-            "button_hover_text_color": "#d89847",
-            "button_hover_border_color": "#282828"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_HmGHyG",
-        "heading_8wyynL",
-        "text_b9GFm8",
-        "button_4WpEFg"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/6.webp",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-450",
-        "mobile_height": "mobile-height-500",
-        "content_width": "large",
-        "content_position": "bottom-center",
-        "text_alignment": "center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 35,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "featured_collection_jg6MAR": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -329,6 +269,66 @@
         "color_links": "#151515",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_YhY9f3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_HmGHyG": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_8wyynL": {
+          "type": "heading",
+          "settings": {
+            "text": "NEW YEAR BLESSINGS",
+            "heading_size": "h2"
+          }
+        },
+        "text_b9GFm8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring the mounts into your life.</p>",
+            "description_size": "small"
+          }
+        },
+        "button_4WpEFg": {
+          "type": "button",
+          "settings": {
+            "button_text": "BLESS YOUR YEAR",
+            "button_link": "",
+            "button_outline": false,
+            "button_bg_color": "#d89847",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#d89847",
+            "button_hover_bg_color": "#282828",
+            "button_hover_text_color": "#d89847",
+            "button_hover_border_color": "#282828"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HmGHyG",
+        "heading_8wyynL",
+        "text_b9GFm8",
+        "button_4WpEFg"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/6.webp",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "content_width": "large",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 35,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "media_grid_BDhbXr": {
@@ -508,10 +508,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -533,10 +533,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -558,10 +558,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -583,10 +583,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -608,10 +608,10 @@
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#FFFFFF",
-            "color_badge_bg": "#E32626",
+            "color_badge_text": "#ffffff",
+            "color_badge_bg": "#e32626",
             "color_text": "#252525",
-            "color_bg": "#F1F1F1",
+            "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -1718,8 +1718,8 @@
     "16479477632637c9a7",
     "color_stripes_fxjCEW",
     "energy_guidance_dpjDJa",
-    "image_with_text_overlay_YhY9f3",
     "featured_collection_jg6MAR",
+    "image_with_text_overlay_YhY9f3",
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_BDhbXr",
