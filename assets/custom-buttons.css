@@ -18,6 +18,7 @@ html body input[type="submit"] {
   transition: all 0.25s ease !important;
   overflow: hidden !important;
   position: relative !important;
+  z-index: 1 !important;
 }
 
 .button:hover,
@@ -43,19 +44,20 @@ html body input[type="submit"]:before {
   content: "" !important;
   display: block !important;
   position: absolute !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  left: -5% !important;
-  width: 125% !important;
-  height: 100% !important;
+  top: -1px !important;
+  bottom: -1px !important;
+  left: -10% !important;
+  width: 120% !important;
+  height: calc(100% + 2px) !important;
   background: #282828 !important;
   opacity: 1 !important;
-  z-index: 5 !important;
+  z-index: -1 !important;
   transform-origin: bottom left !important;
   backface-visibility: hidden !important;
   transform: rotate3d(0, 0, 1, 6deg) translate3d(-1.2em, 110%, 0) !important;
   transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1) !important;
   will-change: transform !important;
+  border-radius: 0 !important;
 }
 
 .button:hover:before,
@@ -64,6 +66,16 @@ input[type="submit"]:hover:before,
 html body .button:hover:before,
 html body input[type="submit"]:hover:before {
   transform: rotate3d(0, 0, 1, 0) translateZ(0) !important;
+}
+
+/* 确保按钮文本在动画上方 */
+.button span,
+input[type="submit"] span,
+#wrapper .button span,
+html body .button span,
+html body input[type="submit"] span {
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 /* 轮廓按钮样式 */
