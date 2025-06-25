@@ -16,6 +16,8 @@ html body input[type="submit"] {
   border-color: #D89847 !important;
   color: #ffffff !important;
   transition: all 0.25s ease !important;
+  overflow: hidden !important;
+  position: relative !important;
 }
 
 .button:hover,
@@ -38,7 +40,30 @@ input[type="submit"]:before,
 #wrapper .button:before,
 html body .button:before,
 html body input[type="submit"]:before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: -5% !important;
+  width: 125% !important;
+  height: 100% !important;
   background: #282828 !important;
+  opacity: 1 !important;
+  z-index: 5 !important;
+  transform-origin: bottom left !important;
+  backface-visibility: hidden !important;
+  transform: rotate3d(0, 0, 1, 6deg) translate3d(-1.2em, 110%, 0) !important;
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1) !important;
+  will-change: transform !important;
+}
+
+.button:hover:before,
+input[type="submit"]:hover:before,
+#wrapper .button:hover:before,
+html body .button:hover:before,
+html body input[type="submit"]:hover:before {
+  transform: rotate3d(0, 0, 1, 0) translateZ(0) !important;
 }
 
 /* 轮廓按钮样式 */
@@ -62,7 +87,7 @@ html body .button.outline:hover,
 html body .button.outline:focus,
 html body input[type="submit"].outline:hover,
 html body input[type="submit"].outline:focus {
-  background-color: #282828 !important;
+  background-color: transparent !important;
   border-color: #282828 !important;
   color: #D89847 !important;
 }
