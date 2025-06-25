@@ -187,7 +187,7 @@
       "name": "能量指引",
       "settings": {
         "title": "Energy Guidance",
-        "title_alignment_desktop": "left",
+        "title_alignment_desktop": "center",
         "title_alignment_mobile": "center",
         "background_color": "#282828",
         "title_color": "#ffffff",
@@ -212,61 +212,6 @@
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "featured_collection_46J8kx": {
-      "type": "featured-collection",
-      "name": "Featured collection",
-      "settings": {
-        "heading": "NEW ARRIVALS",
-        "heading_left": false,
-        "description": "<p>View ALL</p>",
-        "full_width": true,
-        "collection": "new-arrivals",
-        "display_type": "grid",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "rich_text_eFr83i": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_chXHBH": {
-          "type": "heading",
-          "settings": {
-            "text": "HIMALAYAN JEWELRY",
-            "size": "h3"
-          }
-        },
-        "button_EkTMhB": {
-          "type": "button",
-          "settings": {
-            "link_label": "EXPLORE MORE",
-            "link": "",
-            "button_outline": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_chXHBH",
-        "button_EkTMhB"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "section_width": "grid",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#ffffff",
-        "color_links": "#151515",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -329,6 +274,61 @@
         "overlay_opacity": 35,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
+      }
+    },
+    "featured_collection_46J8kx": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "NEW ARRIVALS",
+        "heading_left": false,
+        "description": "<p>View ALL</p>",
+        "full_width": true,
+        "collection": "new-arrivals",
+        "display_type": "grid",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_eFr83i": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_chXHBH": {
+          "type": "heading",
+          "settings": {
+            "text": "HIMALAYAN JEWELRY",
+            "size": "h3"
+          }
+        },
+        "button_EkTMhB": {
+          "type": "button",
+          "settings": {
+            "link_label": "EXPLORE MORE",
+            "link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_chXHBH",
+        "button_EkTMhB"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#ffffff",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     },
     "media_grid_BDhbXr": {
