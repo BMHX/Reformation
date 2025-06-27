@@ -343,21 +343,21 @@
             "video_autoplay": true,
             "column": 1,
             "row": 1,
-            "heading": "Heading",
+            "heading": "Woven",
             "heading_size": "h4",
-            "text": "Block text",
+            "text": "",
             "button_text": "",
             "button_link": "",
             "content_position": "middle-center",
             "text_alignment": "center",
             "badge_text": "",
-            "color_badge_text": "#ffffff",
+            "color_badge_text": "#561a1a",
             "color_badge_bg": "#e32626",
-            "color_text": "#252525",
+            "color_text": "#ffffff",
             "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "media_KbaapV": {
@@ -369,9 +369,9 @@
             "video_autoplay": true,
             "column": 2,
             "row": 2,
-            "heading": "Heading",
+            "heading": "Natural Gemstones",
             "heading_size": "h4",
-            "text": "Block text",
+            "text": "",
             "button_text": "",
             "button_link": "",
             "content_position": "middle-center",
@@ -379,11 +379,11 @@
             "badge_text": "",
             "color_badge_text": "#ffffff",
             "color_badge_bg": "#e32626",
-            "color_text": "#252525",
+            "color_text": "#ffffff",
             "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "media_BfkpLE": {
@@ -395,9 +395,9 @@
             "video_autoplay": true,
             "column": 1,
             "row": 1,
-            "heading": "Heading",
+            "heading": "Leather",
             "heading_size": "h4",
-            "text": "Block text",
+            "text": "",
             "button_text": "",
             "button_link": "",
             "content_position": "middle-center",
@@ -405,11 +405,11 @@
             "badge_text": "",
             "color_badge_text": "#ffffff",
             "color_badge_bg": "#e32626",
-            "color_text": "#252525",
+            "color_text": "#ffffff",
             "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "media_bmMK36": {
@@ -421,9 +421,9 @@
             "video_autoplay": true,
             "column": 1,
             "row": 1,
-            "heading": "Heading",
+            "heading": "Wooden",
             "heading_size": "h4",
-            "text": "Block text",
+            "text": "",
             "button_text": "",
             "button_link": "",
             "content_position": "middle-center",
@@ -431,11 +431,11 @@
             "badge_text": "",
             "color_badge_text": "#ffffff",
             "color_badge_bg": "#e32626",
-            "color_text": "#252525",
+            "color_text": "#ffffff",
             "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "media_WjQUrb": {
@@ -447,9 +447,9 @@
             "video_autoplay": true,
             "column": 1,
             "row": 1,
-            "heading": "Heading",
+            "heading": "Metal",
             "heading_size": "h4",
-            "text": "Block text",
+            "text": "",
             "button_text": "",
             "button_link": "",
             "content_position": "middle-center",
@@ -457,11 +457,11 @@
             "badge_text": "",
             "color_badge_text": "#ffffff",
             "color_badge_bg": "#e32626",
-            "color_text": "#252525",
+            "color_text": "#ffffff",
             "color_bg": "#f1f1f1",
             "color_bg_gradient": "",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         }
       },
