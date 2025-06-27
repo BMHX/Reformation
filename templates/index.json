@@ -364,7 +364,7 @@
           "type": "media",
           "settings": {
             "image": "shopify://shop_images/1_3592bd4c-498d-445c-8296-5e3e8c42bc24.png",
-            "slide_link": "",
+            "slide_link": "shopify://products/九灵狐",
             "use_video": false,
             "video_autoplay": true,
             "column": 2,
@@ -472,6 +472,7 @@
         "media_bmMK36",
         "media_WjQUrb"
       ],
+      "custom_css": [],
       "name": "Media grid",
       "settings": {
         "section_width": "full-width-row",

@@ -11,6 +11,7 @@
   "current": {
     "heading_font": "poppins_n4",
     "body_font": "poppins_n4",
+    "body_font_scale": 100,
     "navigation_uppercase": true,
     "product_title_uppercase": true,
     "button_uppercase": true,
