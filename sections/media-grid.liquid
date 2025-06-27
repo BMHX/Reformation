@@ -52,7 +52,7 @@
 				</div>
 				<div class="media-grid--content text-{{ text_alignment }}">
 					{% if block.settings.heading != blank %}
-						<div class="media-grid--heading {{ heading_size }}">{{ block.settings.heading | newline_to_br }}</div>
+						<div class="media-grid--heading {{ heading_size }}{% if block.settings.bold_heading %} bold-heading{% endif %}">{{ block.settings.heading | newline_to_br }}</div>
 					{% endif %}
 					{% if block.settings.text != blank %}
 						<p>{{ block.settings.text | newline_to_br }}</p>
@@ -248,6 +248,12 @@
 							}
 						],
 						"default": "h4"
+					},
+					{
+						"type": "checkbox",
+						"id": "bold_heading",
+						"label": "加粗标题",
+						"default": false
 					},
 					{
             "type": "textarea",

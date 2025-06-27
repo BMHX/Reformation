@@ -1,5 +1,3 @@
-
-
 .media-grid--item.has-link--true .media-grid--bg img,
 .media-grid--item.has-link--true .media-grid--bg video {
   transition: all 1s cubic-bezier(0.104, 0.204, 0.492, 1); }
@@ -122,6 +120,9 @@
 .media-grid--heading {
   color: var(--color-body);
   margin-bottom: 5px; }
+
+.media-grid--heading.bold-heading {
+  font-weight: 700; }
 
 .media-grid--link {
   position: absolute;
