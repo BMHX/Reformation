@@ -496,8 +496,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/1_3592bd4c-498d-445c-8296-5e3e8c42bc24.png",
-            "title": "幻灯片标题",
-            "text": "<p>分享您的产品或客户评价</p>"
+            "title": "Which Negative Energy is Draining You?",
+            "text": ""
           }
         },
         "slide_P9fCdw": {
@@ -524,8 +524,11 @@
       ],
       "name": "滚动展示",
       "settings": {
-        "title": "滚动展示",
-        "subtitle": "<p>分享您的顾客反馈或产品亮点</p>",
+        "title": "Which Negative Energy is Draining You?",
+        "subtitle": "",
+        "content_bg_color": "#ffffffe6",
+        "content_title_color": "#000000",
+        "content_text_color": "#333333",
         "autoplay": true,
         "autoplay_speed": 5000,
         "button_text": "查看更多",
