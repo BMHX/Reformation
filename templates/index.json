@@ -489,14 +489,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "single_image_DqK7Uf": {
-      "type": "single-image",
-      "settings": {
-        "full_width": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "rich_text_nDJV67": {
       "type": "rich-text",
       "blocks": {
@@ -547,7 +539,7 @@
             "text": "<p><strong>Back Pain</strong><br/>Relief & Ongoing Prevention</p>",
             "text_columns": "1",
             "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n  <a href=\"{{ all_products['freedom-patch'].url }}\">\n    <img src=\"{{ all_products['freedom-patch'].featured_image | image_url: width: 175 }}\" alt=\"药师佛\">\n    <p>药师佛</p>\n  </a>\n  <a href=\"{{ all_products['liberty-patch'].url }}\">\n    <img src=\"{{ all_products['liberty-patch'].featured_image | image_url: width: 175 }}\" alt=\"药师佛\">\n    <p>药师佛</p>\n  </a>\n  <a href=\"{{ all_products['rem-patch'].url }}\">\n    <img src=\"{{ all_products['rem-patch'].featured_image | image_url: width: 175 }}\" alt=\"药师佛\">\n    <p>药师佛</p>\n  </a>\n</div>"
+            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to : all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n</div>"
           }
         },
         "tab_8R4bak": {
@@ -704,7 +696,7 @@
             "image_link": "shopify://products/freedom-patch",
             "retina": true,
             "title": "",
-            "text": "<p>Pain relief is a natural fit for many of  your patients. This patch is applied as close as possible to the source of pain  or discomfort. The neural response  helps activate the brain’s pain management capabilities. </p>",
+            "text": "<p>Workplace emotional manipulation</p>",
             "link_label": "",
             "link": ""
           }
@@ -716,7 +708,7 @@
             "image_link": "shopify://products/liberty-patch",
             "retina": true,
             "title": "",
-            "text": "<p>Your patients want to move more confidently. This patch is designed to help trigger the brain-to-body neural response for enhanced balance and stability.</p>",
+            "text": "<p>Toxic attachments from past relationships</p>",
             "link_label": "",
             "link": ""
           }
@@ -728,7 +720,7 @@
             "image_link": "shopify://products/rem-patch",
             "retina": true,
             "title": "",
-            "text": "<p>It goes without saying that sleep can be the first casualty of musculoskeletal disorders. This patch helps activate the brain’s natural sleep stimulation for longer, deeper slumber. Can be used in conjunction with Freedom. </p>",
+            "text": "<p>Toxic attachments from past relationships</p>",
             "link_label": "",
             "link": ""
           }
@@ -740,7 +732,7 @@
             "image_link": "shopify://products/victory-patch",
             "retina": true,
             "title": "",
-            "text": "<p>For active lifestyle patients looking to level up their physical capabilities. Increased power, agility, speed and other benefits may be activated. </p>",
+            "text": "<p>Toxic attachments from past relationships</p>",
             "link_label": "",
             "link": ""
           }
@@ -771,6 +763,7 @@
         },
         "column_pM9Prw": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image_full_width": false,
             "image_link": "shopify://products/kick-it-patch",
@@ -874,9 +867,9 @@
         "h2.h3 {font-weight: 900; margin-bottom: 16px;}"
       ],
       "settings": {
-        "heading": "Which Patches Make Sense<br>For Your Practice?",
+        "heading": "Which Negative Energy is Draining You?",
         "heading_left": false,
-        "description": "<p>Super Patch products may be just as helpful for your patients, depending on the benefits they require from their treatment. Each of our patches can be used at the same time with our other patches without affecting efficacy. Explore our entire selection of safe, natural, non-invasive, hypo-allergenic, and 100% drug-free patches.</p>",
+        "description": "<p>Workplace emotional manipulation<br/>Toxic attachments from past relationships<br/>Social exhaustion and burnout<br/>Financial instability or loss<br/>Homelessness (physical or spiritual)</p>",
         "full_width": false,
         "display_type": "carousel",
         "image_ratio": "adapt",
@@ -1138,66 +1131,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "image_with_text_X8t6ge": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_X7UKGB": {
-          "type": "heading",
-          "settings": {
-            "text": "Better Balance. Longer Life. ",
-            "heading_size": "h3"
-          }
-        },
-        "text_Ft8g4e": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Chiropractic Treatment & Super Patch. Partners in Longevity.</strong></p>",
-            "description_size": "medium"
-          }
-        },
-        "text_XexHjj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As we age, our mobility can be greatly affected by chronic injuries leading to more sedentary lifestyles and hastening the end of life. Research demonstrates that when balance and stability are enhanced in adults, mobility is improved or maintained, and this can be a major contributing factor to longer life expectancy.</p><p>Liberty Super Patch is designed to help support balance and stability and is the ideal complement to chiropractic treatment.  </p>",
-            "description_size": "medium"
-          }
-        },
-        "button_BTiwAX": {
-          "type": "button",
-          "settings": {
-            "button_text": "Get Started",
-            "button_link": "#shopify-section-template--17345908670662__1734368449c16b1f2d"
-          }
-        }
-      },
-      "block_order": [
-        "heading_X7UKGB",
-        "text_Ft8g4e",
-        "text_XexHjj",
-        "button_BTiwAX"
-      ],
-      "custom_css": [
-        "img {object-fit: contain;}",
-        "@media all and (min-width: 800px) {.image-with-text__inner {padding-left: 0; } .image-with-text__content--inner {margin: 0; max-width: max-content; }}",
-        "@media all and (max-width: 799px) {.image-with-text__content--inner {text-align: center; }}"
-      ],
-      "settings": {
-        "use_video": false,
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
-        "height": "large",
-        "desktop_image_width": "small",
-        "section_width": "grid",
-        "layout": "text_first",
-        "content_position": "text-left",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
-      }
-    },
     "multicolumn_bYDpTj": {
       "type": "multicolumn",
       "blocks": {
@@ -1296,7 +1229,6 @@
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_hiqQkg",
-    "single_image_DqK7Uf",
     "rich_text_nDJV67",
     "tabbed_content_k9UT3r",
     "multicolumn_Epa33H",
@@ -1305,7 +1237,6 @@
     "16615358507b6ff1a8",
     "rich_text_cJqTaY",
     "multicolumn_RzjLCH",
-    "image_with_text_X8t6ge",
     "multicolumn_bYDpTj",
     "1734368449c16b1f2d"
   ]
