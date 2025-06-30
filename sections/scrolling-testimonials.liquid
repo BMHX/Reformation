@@ -30,12 +30,12 @@
               {{ 'lifestyle-1' | placeholder_svg_tag: 'scrolling-testimonials__image placeholder-svg' }}
             {% endif %}
             
-            <div class="scrolling-testimonials__content">
+            <div class="scrolling-testimonials__content" style="{% if section.settings.content_bg_color != blank %}background-color: {{ section.settings.content_bg_color }};{% endif %}">
               {% if block.settings.title != blank %}
-                <h3 class="scrolling-testimonials__content-title">{{ block.settings.title }}</h3>
+                <h3 class="scrolling-testimonials__content-title" style="{% if section.settings.content_title_color != blank %}color: {{ section.settings.content_title_color }};{% endif %}">{{ block.settings.title }}</h3>
               {% endif %}
               {% if block.settings.text != blank %}
-                <div class="scrolling-testimonials__content-text">{{ block.settings.text }}</div>
+                <div class="scrolling-testimonials__content-text" style="{% if section.settings.content_text_color != blank %}color: {{ section.settings.content_text_color }};{% endif %}">{{ block.settings.text }}</div>
               {% endif %}
             </div>
           </div>
@@ -67,11 +67,11 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // 获取所有需要的元素
-  const sliderContainer = document.querySelector('.scrolling-testimonials__slider-container');
-  const slider = document.querySelector('.scrolling-testimonials__slider');
-  const slides = Array.from(document.querySelectorAll('.scrolling-testimonials__slide'));
-  const prevBtn = document.querySelector('.scrolling-testimonials__nav--prev');
-  const nextBtn = document.querySelector('.scrolling-testimonials__nav--next');
+  const sliderContainer = document.querySelector('#{{ section_id }} .scrolling-testimonials__slider-container');
+  const slider = document.querySelector('#{{ section_id }} .scrolling-testimonials__slider');
+  const slides = Array.from(document.querySelectorAll('#{{ section_id }} .scrolling-testimonials__slide'));
+  const prevBtn = document.querySelector('#{{ section_id }} .scrolling-testimonials__nav--prev');
+  const nextBtn = document.querySelector('#{{ section_id }} .scrolling-testimonials__nav--next');
   
   // 如果没有足够的幻灯片，隐藏导航按钮
   if (!slider || slides.length <= 1) {
@@ -86,24 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const autoplayDelay = {{ section.settings.autoplay_speed }};
   const shouldAutoplay = {{ section.settings.autoplay | json }};
   
-  // 克隆第一个和最后一个幻灯片，添加到相应的位置
-  const firstSlideClone = slides[0].cloneNode(true);
-  const lastSlideClone = slides[slides.length - 1].cloneNode(true);
-  
-  slider.appendChild(firstSlideClone);
-  slider.insertBefore(lastSlideClone, slides[0]);
-  
-  // 重新获取所有幻灯片（包括克隆的）
-  const allSlides = Array.from(document.querySelectorAll('.scrolling-testimonials__slide'));
-  
-  // 初始位置设置为第一个真实幻灯片（索引1，因为0是克隆的最后一个）
-  currentIndex = 1;
-  
   // 更新滑块位置的函数
   function updateSliderPosition(animate = true) {
-    if (!slider || !allSlides.length) return;
+    if (!slider || !slides.length) return;
     
-    const slideWidth = allSlides[0].offsetWidth;
+    const slideWidth = slides[0].offsetWidth;
     
     if (animate) {
       slider.style.transition = 'transform 0.5s ease';
@@ -114,28 +101,17 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
   }
   
-  // 处理无限滚动
-  function handleInfiniteScroll() {
-    if (currentIndex === 0) {
-      // 如果是克隆的最后一个幻灯片，跳转到真实的最后一个
-      setTimeout(() => {
-        slider.style.transition = 'none';
-        currentIndex = allSlides.length - 2;
-        updateSliderPosition(false);
-      }, 500);
-    } else if (currentIndex === allSlides.length - 1) {
-      // 如果是克隆的第一个幻灯片，跳转到真实的第一个
-      setTimeout(() => {
-        slider.style.transition = 'none';
-        currentIndex = 1;
-        updateSliderPosition(false);
-      }, 500);
-    }
-  }
-  
   // 切换到指定幻灯片
   function goToSlide(index) {
-    currentIndex = index;
+    // 实现循环
+    if (index < 0) {
+      currentIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+    
     updateSliderPosition();
   }
   
@@ -143,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function startAutoplay() {
     if (autoplayInterval) clearInterval(autoplayInterval);
     
-    if (allSlides.length <= 1) return;
+    if (slides.length <= 1) return;
     
     autoplayInterval = setInterval(function() {
       goToSlide(currentIndex + 1);
@@ -171,9 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
       stopAutoplay();
     });
   }
-  
-  // 监听过渡结束事件
-  slider.addEventListener('transitionend', handleInfiniteScroll);
   
   // 监听窗口大小变化
   window.addEventListener('resize', function() {
@@ -219,6 +192,32 @@ document.addEventListener('DOMContentLoaded', function() {
       "default": "<p>分享您的顾客反馈或产品亮点</p>"
     },
     {
+      "type": "header",
+      "content": "颜色设置"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "内容背景颜色",
+      "default": "rgba(255, 255, 255, 0.9)"
+    },
+    {
+      "type": "color",
+      "id": "content_title_color",
+      "label": "内容标题颜色",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "content_text_color",
+      "label": "内容文本颜色",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "滑块设置"
+    },
+    {
       "type": "checkbox",
       "id": "autoplay",
       "label": "自动播放",
@@ -233,6 +232,10 @@ document.addEventListener('DOMContentLoaded', function() {
       "unit": "ms",
       "label": "自动播放速度",
       "default": 5000
+    },
+    {
+      "type": "header",
+      "content": "按钮设置"
     },
     {
       "type": "text",
