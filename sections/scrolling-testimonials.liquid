@@ -1,83 +1,67 @@
 {{ 'scrolling-testimonials.css' | asset_url | stylesheet_tag }}
 
-{%- liquid
-  assign heading = section.settings.heading
-  assign subheading = section.settings.subheading
-  assign background_color = section.settings.background_color
-  assign text_color = section.settings.text_color
-  assign autoplay = section.settings.autoplay
-  assign autoplay_speed = section.settings.autoplay_speed | times: 1000
-  assign button_text = section.settings.button_text
-  assign button_link = section.settings.button_link
--%}
+{% assign section_id = 'scrolling-testimonials-' | append: section.id %}
 
-<div class="scrolling-testimonials" style="background-color: {{ background_color }}; color: {{ text_color }};">
-  <div class="scrolling-testimonials__inner">
+<div class="scrolling-testimonials" id="{{ section_id }}">
+  {% if section.settings.title != blank or section.settings.subtitle != blank %}
     <div class="scrolling-testimonials__header">
-      {% if heading != blank %}
-        <h2 class="scrolling-testimonials__heading">{{ heading }}</h2>
+      {% if section.settings.title != blank %}
+        <h2 class="scrolling-testimonials__title">{{ section.settings.title }}</h2>
       {% endif %}
-      {% if subheading != blank %}
-        <div class="scrolling-testimonials__subheading">{{ subheading }}</div>
+      {% if section.settings.subtitle != blank %}
+        <div class="scrolling-testimonials__subtitle">{{ section.settings.subtitle }}</div>
       {% endif %}
     </div>
-
-    <div class="scrolling-testimonials__slider-container">
-      <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--prev" aria-label="上一个">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      
-      <div class="scrolling-testimonials__slider">
-        {% for block in section.blocks %}
-          {%- liquid
-            assign image = block.settings.image
-            assign heading = block.settings.heading
-            assign text = block.settings.text
-          -%}
-          <div class="scrolling-testimonials__slide" {{ block.shopify_attributes }}>
-            <div class="scrolling-testimonials__slide-inner">
-              {% if image != blank %}
-                <div class="scrolling-testimonials__image-container">
-                  {% render 'responsive-image', image: image, sizes: '600x' %}
-                </div>
+  {% endif %}
+  
+  <div class="scrolling-testimonials__slider-container">
+    <div class="scrolling-testimonials__slider">
+      {% for block in section.blocks %}
+        <div class="scrolling-testimonials__slide" {{ block.shopify_attributes }}>
+          <div class="scrolling-testimonials__image-container">
+            {% if block.settings.image != blank %}
+              <img 
+                src="{{ block.settings.image | img_url: '1400x' }}"
+                alt="{{ block.settings.image.alt | escape }}"
+                loading="lazy"
+                class="scrolling-testimonials__image"
+              >
+            {% else %}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'scrolling-testimonials__image placeholder-svg' }}
+            {% endif %}
+            
+            <div class="scrolling-testimonials__content">
+              {% if block.settings.title != blank %}
+                <h3 class="scrolling-testimonials__content-title">{{ block.settings.title }}</h3>
               {% endif %}
-              
-              <div class="scrolling-testimonials__content">
-                {% if heading != blank %}
-                  <h3 class="scrolling-testimonials__slide-heading">{{ heading }}</h3>
-                {% endif %}
-                {% if text != blank %}
-                  <div class="scrolling-testimonials__text">{{ text }}</div>
-                {% endif %}
-              </div>
+              {% if block.settings.text != blank %}
+                <div class="scrolling-testimonials__content-text">{{ block.settings.text }}</div>
+              {% endif %}
             </div>
           </div>
-        {% endfor %}
-      </div>
-      
-      <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--next" aria-label="下一个">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-    </div>
-
-    <div class="scrolling-testimonials__footer">
-      {% if section.settings.footer_text != blank %}
-        <div class="scrolling-testimonials__footer-text">{{ section.settings.footer_text }}</div>
-      {% endif %}
-      
-      {% if section.settings.button_text != blank %}
-        <div class="scrolling-testimonials__button-container">
-          <a href="{{ section.settings.button_link }}" class="scrolling-testimonials__button">
-            {{ section.settings.button_text }}
-          </a>
         </div>
-      {% endif %}
+      {% endfor %}
     </div>
+    
+    <button class="scrolling-testimonials__nav scrolling-testimonials__nav--prev" aria-label="{{ 'sections.slideshow.previous_slide' | t }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+      </svg>
+    </button>
+    <button class="scrolling-testimonials__nav scrolling-testimonials__nav--next" aria-label="{{ 'sections.slideshow.next_slide' | t }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+      </svg>
+    </button>
   </div>
+  
+  {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+    <div class="scrolling-testimonials__button-container">
+      <a href="{{ section.settings.button_link }}" class="scrolling-testimonials__button">
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  {% endif %}
 </div>
 
 <script>
@@ -85,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 获取所有需要的元素
   const sliderContainer = document.querySelector('.scrolling-testimonials__slider-container');
   const slider = document.querySelector('.scrolling-testimonials__slider');
-  const slides = document.querySelectorAll('.scrolling-testimonials__slide');
+  const slides = Array.from(document.querySelectorAll('.scrolling-testimonials__slide'));
   const prevBtn = document.querySelector('.scrolling-testimonials__nav--prev');
   const nextBtn = document.querySelector('.scrolling-testimonials__nav--next');
   
@@ -99,27 +83,59 @@ document.addEventListener('DOMContentLoaded', function() {
   // 设置变量
   let currentIndex = 0;
   let autoplayInterval;
-  const autoplayDelay = {{ autoplay_speed }};
-  const shouldAutoplay = {{ autoplay | json }};
+  const autoplayDelay = {{ section.settings.autoplay_speed }};
+  const shouldAutoplay = {{ section.settings.autoplay | json }};
+  
+  // 克隆第一个和最后一个幻灯片，添加到相应的位置
+  const firstSlideClone = slides[0].cloneNode(true);
+  const lastSlideClone = slides[slides.length - 1].cloneNode(true);
+  
+  slider.appendChild(firstSlideClone);
+  slider.insertBefore(lastSlideClone, slides[0]);
+  
+  // 重新获取所有幻灯片（包括克隆的）
+  const allSlides = Array.from(document.querySelectorAll('.scrolling-testimonials__slide'));
+  
+  // 初始位置设置为第一个真实幻灯片（索引1，因为0是克隆的最后一个）
+  currentIndex = 1;
   
   // 更新滑块位置的函数
-  function updateSliderPosition() {
-    if (!slider || !slides.length) return;
+  function updateSliderPosition(animate = true) {
+    if (!slider || !allSlides.length) return;
     
-    const slideWidth = slides[0].offsetWidth;
+    const slideWidth = allSlides[0].offsetWidth;
+    
+    if (animate) {
+      slider.style.transition = 'transform 0.5s ease';
+    } else {
+      slider.style.transition = 'none';
+    }
+    
     slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+  
+  // 处理无限滚动
+  function handleInfiniteScroll() {
+    if (currentIndex === 0) {
+      // 如果是克隆的最后一个幻灯片，跳转到真实的最后一个
+      setTimeout(() => {
+        slider.style.transition = 'none';
+        currentIndex = allSlides.length - 2;
+        updateSliderPosition(false);
+      }, 500);
+    } else if (currentIndex === allSlides.length - 1) {
+      // 如果是克隆的第一个幻灯片，跳转到真实的第一个
+      setTimeout(() => {
+        slider.style.transition = 'none';
+        currentIndex = 1;
+        updateSliderPosition(false);
+      }, 500);
+    }
   }
   
   // 切换到指定幻灯片
   function goToSlide(index) {
-    if (index < 0) {
-      currentIndex = slides.length - 1;
-    } else if (index >= slides.length) {
-      currentIndex = 0;
-    } else {
-      currentIndex = index;
-    }
-    
+    currentIndex = index;
     updateSliderPosition();
   }
   
@@ -127,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function startAutoplay() {
     if (autoplayInterval) clearInterval(autoplayInterval);
     
-    if (slides.length <= 1) return;
+    if (allSlides.length <= 1) return;
     
     autoplayInterval = setInterval(function() {
       goToSlide(currentIndex + 1);
@@ -156,8 +172,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  // 监听过渡结束事件
+  slider.addEventListener('transitionend', handleInfiniteScroll);
+  
   // 监听窗口大小变化
-  window.addEventListener('resize', updateSliderPosition);
+  window.addEventListener('resize', function() {
+    updateSliderPosition(false);
+  });
   
   // 鼠标悬停时暂停自动播放
   if (sliderContainer) {
@@ -170,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // 初始化
-  updateSliderPosition();
+  updateSliderPosition(false);
   
   // 如果需要自动播放，启动它
   if (shouldAutoplay) {
@@ -182,37 +203,20 @@ document.addEventListener('DOMContentLoaded', function() {
 {% schema %}
 {
   "name": "滚动展示",
-  "class": "section-scrolling-testimonials",
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
       "type": "text",
-      "id": "heading",
+      "id": "title",
       "label": "标题",
-      "default": "In addition to whatever you may be currently experiencing, have you ever encountered any of the following challenges?"
+      "default": "滚动展示"
     },
     {
       "type": "richtext",
-      "id": "subheading",
+      "id": "subtitle",
       "label": "副标题",
-      "default": "<p>在这里添加您的副标题文本</p>"
-    },
-    {
-      "type": "richtext",
-      "id": "footer_text",
-      "label": "底部文本",
-      "default": "<p>Life can be challenging, and we all face obstacles that can cause stress and anxiety. Whether you're a teacher struggling to engage students, a salesperson feeling pressure to meet targets, or an entrepreneur seeking growth for your business, we understand the unique challenges you face.</p>"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "背景颜色",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "文字颜色",
-      "default": "#333333"
+      "default": "<p>分享您的顾客反馈或产品亮点</p>"
     },
     {
       "type": "checkbox",
@@ -223,17 +227,18 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       "type": "range",
       "id": "autoplay_speed",
-      "label": "自动播放速度（秒）",
-      "min": 3,
-      "max": 10,
-      "step": 1,
-      "default": 5
+      "min": 3000,
+      "max": 9000,
+      "step": 500,
+      "unit": "ms",
+      "label": "自动播放速度",
+      "default": 5000
     },
     {
       "type": "text",
       "id": "button_text",
       "label": "按钮文字",
-      "default": "了解更多"
+      "default": "查看更多"
     },
     {
       "type": "url",
@@ -243,8 +248,8 @@ document.addEventListener('DOMContentLoaded', function() {
   ],
   "blocks": [
     {
+      "name": "幻灯片",
       "type": "slide",
-      "name": "滑块",
       "settings": [
         {
           "type": "image_picker",
@@ -253,15 +258,15 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
           "type": "text",
-          "id": "heading",
+          "id": "title",
           "label": "标题",
-          "default": "Couple & Relationship Issues"
+          "default": "幻灯片标题"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "文本内容",
-          "default": "<p>Gain clarity on compatibility with your partner's personality traits, communication styles, and emotional needs.</p>"
+          "label": "文本",
+          "default": "<p>分享您的产品或客户评价</p>"
         }
       ]
     }
