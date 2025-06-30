@@ -547,7 +547,7 @@
             "text": "<p><strong>Back Pain</strong><br/>Relief & Ongoing Prevention</p>",
             "text_columns": "1",
             "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to : all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n</div>"
+            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to : all_products['药师佛'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n</div>"
           }
         },
         "tab_8R4bak": {
