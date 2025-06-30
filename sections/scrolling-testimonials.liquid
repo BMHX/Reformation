@@ -7,6 +7,8 @@
   assign text_color = section.settings.text_color
   assign autoplay = section.settings.autoplay
   assign autoplay_speed = section.settings.autoplay_speed | times: 1000
+  assign button_text = section.settings.button_text
+  assign button_link = section.settings.button_link
 -%}
 
 <div class="scrolling-testimonials" style="background-color: {{ background_color }}; color: {{ text_color }};">
@@ -22,7 +24,9 @@
 
     <div class="scrolling-testimonials__slider-container">
       <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--prev" aria-label="上一个">
-        <span class="icon">{% render 'svg-icons', icon: 'chevron-left' %}</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
       
       <div class="scrolling-testimonials__slider">
@@ -54,7 +58,9 @@
       </div>
       
       <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--next" aria-label="下一个">
-        <span class="icon">{% render 'svg-icons', icon: 'chevron-right' %}</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
     </div>
 
@@ -62,93 +68,115 @@
       {% if section.settings.footer_text != blank %}
         <div class="scrolling-testimonials__footer-text">{{ section.settings.footer_text }}</div>
       {% endif %}
+      
+      {% if section.settings.button_text != blank %}
+        <div class="scrolling-testimonials__button-container">
+          <a href="{{ section.settings.button_link }}" class="scrolling-testimonials__button">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.scrolling-testimonials__slider');
-    const slides = document.querySelectorAll('.scrolling-testimonials__slide');
-    const prevBtn = document.querySelector('.scrolling-testimonials__nav--prev');
-    const nextBtn = document.querySelector('.scrolling-testimonials__nav--next');
-    let currentIndex = 0;
-    let autoplayInterval;
-    const autoplayDelay = {{ autoplay_speed }};
-    const shouldAutoplay = {{ autoplay | json }};
+document.addEventListener('DOMContentLoaded', function() {
+  // 获取所有需要的元素
+  const sliderContainer = document.querySelector('.scrolling-testimonials__slider-container');
+  const slider = document.querySelector('.scrolling-testimonials__slider');
+  const slides = document.querySelectorAll('.scrolling-testimonials__slide');
+  const prevBtn = document.querySelector('.scrolling-testimonials__nav--prev');
+  const nextBtn = document.querySelector('.scrolling-testimonials__nav--next');
+  
+  // 如果没有足够的幻灯片，隐藏导航按钮
+  if (!slider || slides.length <= 1) {
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+    return;
+  }
+  
+  // 设置变量
+  let currentIndex = 0;
+  let autoplayInterval;
+  const autoplayDelay = {{ autoplay_speed }};
+  const shouldAutoplay = {{ autoplay | json }};
+  
+  // 更新滑块位置的函数
+  function updateSliderPosition() {
+    if (!slider || !slides.length) return;
     
-    // 确保有幻灯片
-    if (slides.length <= 1) {
-      prevBtn.style.display = 'none';
-      nextBtn.style.display = 'none';
-      return;
+    const slideWidth = slides[0].offsetWidth;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+  
+  // 切换到指定幻灯片
+  function goToSlide(index) {
+    if (index < 0) {
+      currentIndex = slides.length - 1;
+    } else if (index >= slides.length) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
     }
     
-    function updateSlider() {
-      if (!slides.length) return;
-      const slideWidth = slides[0].offsetWidth;
-      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-      console.log('Sliding to index:', currentIndex, 'Width:', slideWidth);
-    }
+    updateSliderPosition();
+  }
+  
+  // 自动播放功能
+  function startAutoplay() {
+    if (autoplayInterval) clearInterval(autoplayInterval);
     
-    function goToSlide(index) {
-      if (index < 0) {
-        currentIndex = slides.length - 1;
-      } else if (index >= slides.length) {
-        currentIndex = 0;
-      } else {
-        currentIndex = index;
-      }
-      updateSlider();
-    }
+    if (slides.length <= 1) return;
     
-    function startAutoplay() {
-      stopAutoplay();
-      if (slides.length <= 1) return;
-      autoplayInterval = setInterval(() => {
-        goToSlide(currentIndex + 1);
-      }, autoplayDelay);
+    autoplayInterval = setInterval(function() {
+      goToSlide(currentIndex + 1);
+    }, autoplayDelay);
+  }
+  
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
     }
-    
-    function stopAutoplay() {
-      if (autoplayInterval) {
-        clearInterval(autoplayInterval);
-      }
-    }
-    
-    // 添加事件监听器
-    prevBtn.addEventListener('click', function(e) {
-      e.preventDefault();
+  }
+  
+  // 添加按钮点击事件
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
       goToSlide(currentIndex - 1);
       stopAutoplay();
-      console.log('Previous button clicked, going to index:', currentIndex);
     });
-    
-    nextBtn.addEventListener('click', function(e) {
-      e.preventDefault();
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
       goToSlide(currentIndex + 1);
       stopAutoplay();
-      console.log('Next button clicked, going to index:', currentIndex);
     });
-    
-    // 初始化
-    updateSlider();
-    if (shouldAutoplay && slides.length > 1) {
-      startAutoplay();
-    }
-    
-    // 窗口大小改变时重新计算
-    window.addEventListener('resize', updateSlider);
-    
-    // 鼠标悬停时暂停自动播放
-    const sliderContainer = document.querySelector('.scrolling-testimonials__slider-container');
+  }
+  
+  // 监听窗口大小变化
+  window.addEventListener('resize', updateSliderPosition);
+  
+  // 鼠标悬停时暂停自动播放
+  if (sliderContainer) {
     sliderContainer.addEventListener('mouseenter', stopAutoplay);
-    sliderContainer.addEventListener('mouseleave', () => {
-      if (shouldAutoplay && slides.length > 1) {
+    sliderContainer.addEventListener('mouseleave', function() {
+      if (shouldAutoplay) {
         startAutoplay();
       }
     });
-  });
+  }
+  
+  // 初始化
+  updateSliderPosition();
+  
+  // 如果需要自动播放，启动它
+  if (shouldAutoplay) {
+    startAutoplay();
+  }
+});
 </script>
 
 {% schema %}
@@ -200,6 +228,17 @@
       "max": 10,
       "step": 1,
       "default": 5
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "按钮文字",
+      "default": "了解更多"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按钮链接"
     }
   ],
   "blocks": [
