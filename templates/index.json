@@ -489,6 +489,49 @@
         "disable_bottom_spacing": false
       }
     },
+    "scrolling_testimonials_wbYixk": {
+      "type": "scrolling-testimonials",
+      "blocks": {
+        "slide_knD8BT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_3592bd4c-498d-445c-8296-5e3e8c42bc24.png",
+            "title": "幻灯片标题",
+            "text": "<p>分享您的产品或客户评价</p>"
+          }
+        },
+        "slide_P9fCdw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_60cf4ff8-8879-42a1-a651-7fb04b802e28.png",
+            "title": "幻灯片标题",
+            "text": "<p>分享您的产品或客户评价</p>"
+          }
+        },
+        "slide_tNwf7y": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_8d2d9afc-5115-4c8b-85f4-e6f02fcd04dd.png",
+            "title": "幻灯片标题",
+            "text": "<p>分享您的产品或客户评价</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_knD8BT",
+        "slide_P9fCdw",
+        "slide_tNwf7y"
+      ],
+      "name": "滚动展示",
+      "settings": {
+        "title": "滚动展示",
+        "subtitle": "<p>分享您的顾客反馈或产品亮点</p>",
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "button_text": "查看更多",
+        "button_link": ""
+      }
+    },
     "rich_text_nDJV67": {
       "type": "rich-text",
       "blocks": {
@@ -1229,6 +1272,7 @@
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_hiqQkg",
+    "scrolling_testimonials_wbYixk",
     "rich_text_nDJV67",
     "tabbed_content_k9UT3r",
     "multicolumn_Epa33H",
