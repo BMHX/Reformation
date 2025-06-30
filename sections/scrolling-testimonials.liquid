@@ -22,7 +22,7 @@
 
     <div class="scrolling-testimonials__slider-container">
       <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--prev" aria-label="上一个">
-        {% render 'svg-icons', icon: 'chevron-left' %}
+        <span class="icon">{% render 'svg-icons', icon: 'chevron-left' %}</span>
       </button>
       
       <div class="scrolling-testimonials__slider">
@@ -54,7 +54,7 @@
       </div>
       
       <button type="button" class="scrolling-testimonials__nav scrolling-testimonials__nav--next" aria-label="下一个">
-        {% render 'svg-icons', icon: 'chevron-right' %}
+        <span class="icon">{% render 'svg-icons', icon: 'chevron-right' %}</span>
       </button>
     </div>
 
@@ -68,7 +68,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.scrolling-testimonials__slider');
+    const slider = document.querySelector('.scrolling-testimonials__slider');
     const slides = document.querySelectorAll('.scrolling-testimonials__slide');
     const prevBtn = document.querySelector('.scrolling-testimonials__nav--prev');
     const nextBtn = document.querySelector('.scrolling-testimonials__nav--next');
@@ -77,9 +77,18 @@
     const autoplayDelay = {{ autoplay_speed }};
     const shouldAutoplay = {{ autoplay | json }};
     
+    // 确保有幻灯片
+    if (slides.length <= 1) {
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+      return;
+    }
+    
     function updateSlider() {
+      if (!slides.length) return;
       const slideWidth = slides[0].offsetWidth;
-      container.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      console.log('Sliding to index:', currentIndex, 'Width:', slideWidth);
     }
     
     function goToSlide(index) {
@@ -95,6 +104,7 @@
     
     function startAutoplay() {
       stopAutoplay();
+      if (slides.length <= 1) return;
       autoplayInterval = setInterval(() => {
         goToSlide(currentIndex + 1);
       }, autoplayDelay);
@@ -106,19 +116,24 @@
       }
     }
     
-    prevBtn.addEventListener('click', () => {
+    // 添加事件监听器
+    prevBtn.addEventListener('click', function(e) {
+      e.preventDefault();
       goToSlide(currentIndex - 1);
       stopAutoplay();
+      console.log('Previous button clicked, going to index:', currentIndex);
     });
     
-    nextBtn.addEventListener('click', () => {
+    nextBtn.addEventListener('click', function(e) {
+      e.preventDefault();
       goToSlide(currentIndex + 1);
       stopAutoplay();
+      console.log('Next button clicked, going to index:', currentIndex);
     });
     
     // 初始化
     updateSlider();
-    if (shouldAutoplay) {
+    if (shouldAutoplay && slides.length > 1) {
       startAutoplay();
     }
     
@@ -128,7 +143,11 @@
     // 鼠标悬停时暂停自动播放
     const sliderContainer = document.querySelector('.scrolling-testimonials__slider-container');
     sliderContainer.addEventListener('mouseenter', stopAutoplay);
-    sliderContainer.addEventListener('mouseleave', startAutoplay);
+    sliderContainer.addEventListener('mouseleave', () => {
+      if (shouldAutoplay && slides.length > 1) {
+        startAutoplay();
+      }
+    });
   });
 </script>
 
