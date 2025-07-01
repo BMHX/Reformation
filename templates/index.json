@@ -489,13 +489,71 @@
         "disable_bottom_spacing": false
       }
     },
+    "image_with_text_overlay_Q6twAT": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_EWeMkE": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "heading_YbB9Pw": {
+          "type": "heading",
+          "settings": {
+            "text": "Manifest Your Wealth, Health & Love",
+            "heading_size": "h1"
+          }
+        },
+        "text_r3gR3B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tibetan Buddhist Jewelry for Energy Activation</p>",
+            "description_size": "medium"
+          }
+        },
+        "button_VNWAqM": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg_color": "#ffffff",
+            "button_hover_text_color": "#000000",
+            "button_hover_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EWeMkE",
+        "heading_YbB9Pw",
+        "text_r3gR3B",
+        "button_VNWAqM"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "scrolling_testimonials_wbYixk": {
       "type": "scrolling-testimonials",
       "blocks": {
         "slide_knD8BT": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_3592bd4c-498d-445c-8296-5e3e8c42bc24.png",
             "title": "Workplaceemotional manipulation",
             "text": ""
           }
@@ -503,7 +561,6 @@
         "slide_P9fCdw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_60cf4ff8-8879-42a1-a651-7fb04b802e28.png",
             "title": "Toxic attachments from past relationships",
             "text": ""
           }
@@ -511,7 +568,6 @@
         "slide_tNwf7y": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_8d2d9afc-5115-4c8b-85f4-e6f02fcd04dd.png",
             "title": "Social exhaustion and burnout",
             "text": ""
           }
@@ -540,28 +596,93 @@
       ],
       "name": "滚动展示",
       "settings": {
-        "title": "Which Negative Energy is Draining You?",
-        "subtitle": "",
+        "title": "",
+        "subtitle": "<h3><strong>Which Negative Energy is Draining You?</strong></h3>",
         "content_bg_color": "#ffffffe6",
         "content_title_color": "#000000",
         "content_text_color": "#333333",
         "autoplay": true,
         "autoplay_speed": 5000,
-        "button_text": "查看更多",
+        "button_text": "",
         "button_link": ""
       }
     },
-    "rich_text_nDJV67": {
+    "multicolumn_Epa33H": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_iyk3dE": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "shopify://products/freedom-patch",
+            "retina": true,
+            "title": "",
+            "text": "<p><br/>To build shields between you and negative energies — negative energy protection<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PRJqQa": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "shopify://products/liberty-patch",
+            "retina": true,
+            "title": "",
+            "text": "<p><br/>To bridge connections with higher consciousness</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Vdm3ef": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "image_link": "shopify://products/rem-patch",
+            "retina": true,
+            "title": "",
+            "text": "<p><br/>Stop financial loss, remove career blocks, attract true love…</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iyk3dE",
+        "column_PRJqQa",
+        "column_Vdm3ef"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 800px) {multicolumn__column img {-webkit-filter: grayscale(1); transition: -webkit-filter 0.25s ease-in-out; } .multicolumn__column:hover img {-webkit-filter: grayscale(0); }}",
+        "h2.h3 {font-weight: 900; margin-bottom: 16px;}"
+      ],
+      "settings": {
+        "heading": "Our Mission",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_FEHbAY": {
       "type": "rich-text",
       "blocks": {
-        "heading_YUixTz": {
+        "heading_zFNeAh": {
           "type": "heading",
           "settings": {
             "text": "The Perfect Partner for Chiropractic Care",
             "size": "h3"
           }
         },
-        "text_gmnPBL": {
+        "text_AfcQzP": {
           "type": "text",
           "settings": {
             "text": "<p>Chiropractic care is built on the idea that the body has the innate intelligence to heal itself when given the proper support. At The Super Patch Company, we share this philosophy. Our patches, when combined with chiropractic adjustments, enhance the body’s ability to recover naturally by further supporting the nervous system. The combination of VTT and chiropractic care can provide your patients with Enhanced Mobility and Balance, Pain Management Without Medication, Better Sleep and Stress Relief, Improved Focus and Energy, Weight Loss and Immunity Support.</p>",
@@ -571,12 +692,8 @@
         }
       },
       "block_order": [
-        "heading_YUixTz",
-        "text_gmnPBL"
-      ],
-      "custom_css": [
-        ".row {margin: 35px 0 50px;}",
-        "p:last-of-type {margin: 0;}"
+        "heading_zFNeAh",
+        "text_AfcQzP"
       ],
       "settings": {
         "section_width": "full-width-row",
@@ -744,202 +861,6 @@
         "color_tabs": "#151515",
         "color_text": "#151515",
         "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "multicolumn_Epa33H": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_iyk3dE": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/freedom-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Workplace emotional manipulation</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_PRJqQa": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/liberty-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Toxic attachments from past relationships</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Vdm3ef": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/rem-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Toxic attachments from past relationships</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tpnU8g": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/victory-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Toxic attachments from past relationships</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NLFjUL": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/focus-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Musculoskeletal issues can impede cognitive function. This patch can help trigger the brain’s ability to heighten concentration and attentiveness. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_hgDaah": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/ignite-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Assist your clients with weight management. Ignite can help support the body’s own neural response networks for more effective calorie-burning.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pM9Prw": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/kick-it-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Assist your clients with weight management through impulse control. This patch can help support the body’s own neural response networks for positive thinking and behavior.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_WMGUAr": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/defend-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>When you’re actively treating a  client’s condition, nothing slows down progress like sickness. This patch may help support their immune system for more effective treatment.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_ehctJU": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/joy-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>A client’s emotional state also requires support. This patch can help bolster a more positive outlook in the mind to assist the healing of the body. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_m3Chgn": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/peace-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Stress is a negative force in everyone’s life. It can also be a contributor to  musculoskeletal issues. This patch can help support a patient’s ability to positively deal with stress. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TrQRzK": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/rocket-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Dealing with musculoskeletal disorders can affect every aspect of a patient’s daily life. This patch is designed to help provide hormonal support for anyone who needs to enhance their performance and overall well-being.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_Y7jG6w": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "",
-            "text": "<p>Energy often lags when a patient is suffering. This all-new patch offers the advantages of energy-boosting without drugs or chemicals, caffeine or sugar. Best of all, there are no side-effects like jitteriness or crashing.  </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_rNUzFz": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "shopify://products/lumi-patch",
-            "retina": true,
-            "title": "",
-            "text": "<p>Musculoskeletal disorders may contribute to stress-related skin issues . This patch can help support a healthy complexion in combination with a good diet, regular activity and proper sleep.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_iyk3dE",
-        "column_PRJqQa",
-        "column_Vdm3ef",
-        "column_tpnU8g",
-        "column_NLFjUL",
-        "column_hgDaah",
-        "column_pM9Prw",
-        "column_WMGUAr",
-        "column_ehctJU",
-        "column_m3Chgn",
-        "column_TrQRzK",
-        "column_Y7jG6w",
-        "column_rNUzFz"
-      ],
-      "custom_css": [
-        "@media screen and (min-width: 800px) {multicolumn__column img {-webkit-filter: grayscale(1); transition: -webkit-filter 0.25s ease-in-out; } .multicolumn__column:hover img {-webkit-filter: grayscale(0); }}",
-        "h2.h3 {font-weight: 900; margin-bottom: 16px;}"
-      ],
-      "settings": {
-        "heading": "Which Negative Energy is Draining You?",
-        "heading_left": false,
-        "description": "<p>Workplace emotional manipulation<br/>Toxic attachments from past relationships<br/>Social exhaustion and burnout<br/>Financial instability or loss<br/>Homelessness (physical or spiritual)</p>",
-        "full_width": false,
-        "display_type": "carousel",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "text_alignment": "center",
-        "heading_size": "h5",
-        "mobile_swipe": true,
-        "show_progress_bar": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -1291,10 +1212,11 @@
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_hiqQkg",
+    "image_with_text_overlay_Q6twAT",
     "scrolling_testimonials_wbYixk",
-    "rich_text_nDJV67",
-    "tabbed_content_k9UT3r",
     "multicolumn_Epa33H",
+    "rich_text_FEHbAY",
+    "tabbed_content_k9UT3r",
     "1662459178b0886a69",
     "multicolumn_NePdjt",
     "16615358507b6ff1a8",
