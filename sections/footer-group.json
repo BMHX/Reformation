@@ -37,7 +37,7 @@
           "type": "menu",
           "settings": {
             "column_size": "small",
-            "title": "",
+            "title": "HELP",
             "menu": "help"
           }
         },
