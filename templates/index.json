@@ -496,7 +496,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/1_3592bd4c-498d-445c-8296-5e3e8c42bc24.png",
-            "title": "Which Negative Energy is Draining You?",
+            "title": "Workplaceemotional manipulation",
             "text": ""
           }
         },
@@ -504,23 +504,39 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/1_60cf4ff8-8879-42a1-a651-7fb04b802e28.png",
-            "title": "幻灯片标题",
-            "text": "<p>分享您的产品或客户评价</p>"
+            "title": "Toxic attachments from past relationships",
+            "text": ""
           }
         },
         "slide_tNwf7y": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/1_8d2d9afc-5115-4c8b-85f4-e6f02fcd04dd.png",
-            "title": "幻灯片标题",
-            "text": "<p>分享您的产品或客户评价</p>"
+            "title": "Social exhaustion and burnout",
+            "text": ""
+          }
+        },
+        "slide_BBMHcV": {
+          "type": "slide",
+          "settings": {
+            "title": "Financial instability or loss",
+            "text": ""
+          }
+        },
+        "slide_Wa69tV": {
+          "type": "slide",
+          "settings": {
+            "title": "Homelessness (physical or spiritual)",
+            "text": ""
           }
         }
       },
       "block_order": [
         "slide_knD8BT",
         "slide_P9fCdw",
-        "slide_tNwf7y"
+        "slide_tNwf7y",
+        "slide_BBMHcV",
+        "slide_Wa69tV"
       ],
       "name": "滚动展示",
       "settings": {
