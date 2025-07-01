@@ -11,10 +11,145 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "rich_text_Lw9Eha": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pMDUzn": {
+          "type": "heading",
+          "settings": {
+            "text": "Return Policy",
+            "size": "h2"
+          }
+        },
+        "text_EfAiMd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our goal is your complete satisfaction. Please give us an opportunity to serve you better by providing us with your valuable feedback. </p><p>Returns will only be accepted and credit given or money refunded if all of the following conditions are met:</p><ol><li>Items must be in original condition as shipped.</li><li>Notification of your intention to make a return must be received by us within 48 hours of delivery of the item(s). </li><li>Returned item(s) must be received by us within 12 days of the date the item was delivered. </li><li>Customer is financially responsible for all shipping and handling charges connected with the item, and assumes full responsibility for its safe return. We suggest careful packing and insurance as the minimum precautions. </li></ol><p>If the item returned does not meet our Returns and Exchange Policy above your order will be sent back to you.</p>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "heading_nHx7bC": {
+          "type": "heading",
+          "settings": {
+            "text": "Refund Method",
+            "size": "h3"
+          }
+        },
+        "text_HKHChC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please send us an email at service@tibetanmantravibes.com prior to returning the goods.</p><p>Once a return has been approved, we will organize the return of the goods (in the case of faulty goods,Pure-tibetan will not be responsible for return postage costs). Once we receive the goods, you will receive your refund via your original payment method within 14 working days.<br/></p>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "heading_A4gtim": {
+          "type": "heading",
+          "settings": {
+            "text": "Warranty Policy",
+            "size": "h3"
+          }
+        },
+        "text_gXJdDy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At tibetanmantravibes Energy, we are committed to providing high-quality jewelry and ensuring customer satisfaction. To offer you peace of mind with your purchase, we provide a 30-day warranty for our products under normal wear conditions.</p>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "heading_UCz7Ng": {
+          "type": "heading",
+          "settings": {
+            "text": "Warranty Coverage",
+            "size": "h3"
+          }
+        },
+        "text_RjkdBx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our 30-day warranty covers quality-related issues under normal use, including but not limited to:</p><ul><li>Chain breakage</li><li>Clasp damage</li><li>Stone detachment</li></ul><p>If you encounter any of these issues within 30 days of receiving your package, please contact our customer service team. We will assess the issue and provide a reasonable solution, such as repair, replacement, or other forms of assistance.Exclusions from WarrantyThis warranty does not cover:</p><ul><li>Damage due to improper use, accidents, or external force</li><li>Wear and tear from prolonged usage</li><li>Exposure to chemicals, water, or extreme conditions</li><li>Unauthorized repairs or modifications</li></ul>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "heading_b8Bx4N": {
+          "type": "heading",
+          "settings": {
+            "text": "How to Claim Your Warranty",
+            "size": "h3"
+          }
+        },
+        "text_fmFWR9": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Contact our customer service team within 30 days of receiving your package.</li><li>Provide your order details and photos/videos of the issue.</li><li>Our team will assess your case and guide you through the next steps.</li></ul>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "heading_z9LAT4": {
+          "type": "heading",
+          "settings": {
+            "text": "Customer Support Contact Information",
+            "size": "h3"
+          }
+        },
+        "text_DfWFpy": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Email:</strong> service@tibetanmantravibes.com</li><li><strong>Customer Service Hours:</strong> Monday – Friday, <strong>10:00 – 19:00 (Beijing Time, GMT+8)</strong></li></ul>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        },
+        "text_hq7VdK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For any questions regarding our warranty policy, please feel free to reach out to our customer support. We appreciate your trust in Kailash Energy and strive to provide the best service possible!</p>",
+            "custom_liquid": "",
+            "size": "text-size-small"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pMDUzn",
+        "text_EfAiMd",
+        "heading_nHx7bC",
+        "text_HKHChC",
+        "heading_A4gtim",
+        "text_gXJdDy",
+        "heading_UCz7Ng",
+        "text_RjkdBx",
+        "heading_b8Bx4N",
+        "text_fmFWR9",
+        "heading_z9LAT4",
+        "text_DfWFpy",
+        "text_hq7VdK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "left",
+        "color_bg": "transparent",
+        "color_text": "#ffffff",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_Lw9Eha"
   ]
 }
