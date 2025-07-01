@@ -536,6 +536,7 @@
       "name": "Image with text overlay",
       "settings": {
         "section_width": "full-width-row",
+        "image": "shopify://shop_images/1_7865a444-4c4f-43f8-852f-29f0ce77c6de.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
@@ -554,6 +555,7 @@
         "slide_knD8BT": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/2_1201f3f4-0781-4293-900f-70f063877b55.webp",
             "title": "Workplaceemotional manipulation",
             "text": ""
           }
