@@ -1,0 +1,114 @@
+.mission-statement {
+  background: var(--color-bg, var(--bg-body, #000));
+  color: var(--color-text, var(--color-body));
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mission-statement-with-bg-image {
+  position: relative;
+}
+
+.mission-statement-with-bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+  z-index: 1;
+}
+
+.mission-statement__inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-statement__inner img,
+.mission-statement__inner .thb-placeholder {
+  margin-bottom: 30px;
+}
+
+.mission-statement__inner .thb-placeholder {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.mission-statement .rte {
+  margin-bottom: 35px;
+}
+
+.mission-statement .rte p:last-child {
+  margin-bottom: 0;
+}
+
+/* 文本位置样式 */
+.mission-statement.text-position-left .mission-statement__inner {
+  margin-left: 0;
+}
+
+.mission-statement.text-position-right .mission-statement__inner {
+  margin-right: 0;
+}
+
+/* 文本宽度样式 */
+.mission-statement.text-width-small .mission-statement__inner {
+  max-width: 400px;
+}
+
+.mission-statement.text-width-large .mission-statement__inner {
+  max-width: 800px;
+}
+
+.mission-statement.text-width-xlarge .mission-statement__inner {
+  max-width: 1000px;
+}
+
+.mission-statement.text-width-grid .mission-statement__inner {
+  max-width: 1380px;
+}
+
+/* 黑金字体效果 */
+.mission-statement .gold-text {
+  color: var(--color-text, #D4AF37); /* 金色文字 */
+  -webkit-text-stroke: var(--text-stroke-width, 1px) var(--text-stroke-color, #000); /* 黑色描边 */
+  text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.mission-statement h1.gold-text,
+.mission-statement h2.gold-text,
+.mission-statement h3.gold-text,
+.mission-statement h4.gold-text {
+  margin-bottom: 25px;
+  letter-spacing: 0.02em;
+}
+
+.mission-statement .subheading.gold-text {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 767px) {
+  .mission-statement__inner {
+    padding: 30px 15px;
+  }
+  
+  .mission-statement h1.gold-text {
+    font-size: 2em;
+  }
+  
+  .mission-statement h2.gold-text {
+    font-size: 1.8em;
+  }
+} 
