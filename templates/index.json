@@ -703,6 +703,45 @@
         "disable_bottom_spacing": true
       }
     },
+    "mission_statement_bDKFee": {
+      "type": "mission-statement",
+      "blocks": {
+        "heading_kB9mBR": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Mission",
+            "size": "h1"
+          }
+        },
+        "text_HYbRwb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As faith-driven Gen-Z creators,<br/>we've established this brand with the conch shell as our emblem — symbolizing<br/>the spread of Buddhist wisdom in the digital age.</p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kB9mBR",
+        "text_HYbRwb"
+      ],
+      "name": "Mission Statement",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background_image": "shopify://shop_images/6_500b67e6-c34f-479e-b5f1-ce751ca97916.webp",
+        "color_bg": "#000000",
+        "color_text": "#D4AF37",
+        "text_stroke_color": "#000000",
+        "text_stroke_width": 1,
+        "color_links": "#D4AF37",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "tabbed_content_k9UT3r": {
       "type": "tabbed-content",
       "blocks": {
@@ -1212,6 +1251,7 @@
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
+    "mission_statement_bDKFee",
     "tabbed_content_k9UT3r",
     "1662459178b0886a69",
     "multicolumn_NePdjt",
