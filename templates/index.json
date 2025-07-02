@@ -602,6 +602,7 @@
       "settings": {
         "title": "",
         "subtitle": "<h3><strong>Which Negative Energy is Draining You?</strong></h3>",
+        "full_width": false,
         "content_bg_color": "#ffffffe6",
         "content_title_color": "#000000",
         "content_text_color": "#333333",
