@@ -76,6 +76,27 @@
   display: block;
 }
 
+/* 底部文本区域样式 */
+.mission-statement-footer {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3); /* 半透明金色分隔线 */
+  text-align: center;
+}
+
+.mission-statement-footer-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-statement-footer-text h3 {
+  margin-bottom: 20px;
+}
+
+.mission-statement-footer-text .button {
+  margin-top: 20px;
+}
+
 .mission-statement__inner img,
 .mission-statement__inner .thb-placeholder {
   margin-bottom: 30px;
@@ -166,5 +187,10 @@
   .mission-statement-columns.columns-3 .mission-statement-column {
     flex-basis: 100%;
     max-width: 100%;
+  }
+  
+  .mission-statement-footer {
+    margin-top: 30px;
+    padding-top: 20px;
   }
 } 
