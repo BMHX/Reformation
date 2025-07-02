@@ -2,7 +2,7 @@
 
 {% assign section_id = 'scrolling-testimonials-' | append: section.id %}
 
-<div class="scrolling-testimonials" id="{{ section_id }}">
+<div class="scrolling-testimonials {% if section.settings.full_width == false %}container{% endif %}" id="{{ section_id }}">
   {% if section.settings.title != blank or section.settings.subtitle != blank %}
     <div class="scrolling-testimonials__header">
       {% if section.settings.title != blank %}
@@ -193,13 +193,24 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       "type": "header",
+      "content": "布局设置"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "全宽显示",
+      "default": true,
+      "info": "取消勾选将使用容器宽度"
+    },
+    {
+      "type": "header",
       "content": "颜色设置"
     },
     {
       "type": "color",
       "id": "content_bg_color",
       "label": "内容背景颜色",
-      "default": "rgba(255, 255, 255, 0.9)"
+      "default": "rgba(230, 230, 230, 0.7)"
     },
     {
       "type": "color",
