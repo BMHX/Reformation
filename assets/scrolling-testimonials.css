@@ -12,13 +12,13 @@
 .scrolling-testimonials__title {
   margin-bottom: 10px;
   font-style: italic;
-  padding: 0 100px;
+  padding: 0 20px;
 }
 
 .scrolling-testimonials__subtitle {
   max-width: 800px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 100px 200px;
 }
 
 .scrolling-testimonials__slider-container {
