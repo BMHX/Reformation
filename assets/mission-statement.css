@@ -30,6 +30,52 @@
   z-index: 2;
 }
 
+.mission-statement-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* 列布局样式 */
+.mission-statement-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.mission-statement-column {
+  flex: 1;
+  min-width: 250px;
+  padding: 15px;
+}
+
+/* 根据列数调整宽度 */
+.mission-statement-columns.columns-1 .mission-statement-column {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.mission-statement-columns.columns-2 .mission-statement-column {
+  flex-basis: calc(50% - 15px);
+  max-width: calc(50% - 15px);
+}
+
+.mission-statement-columns.columns-3 .mission-statement-column {
+  flex-basis: calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.mission-statement-column__image {
+  margin-bottom: 20px;
+}
+
+.mission-statement-column__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .mission-statement__inner img,
 .mission-statement__inner .thb-placeholder {
   margin-bottom: 30px;
@@ -110,5 +156,15 @@
   
   .mission-statement h2.gold-text {
     font-size: 1.8em;
+  }
+  
+  .mission-statement-columns {
+    flex-direction: column;
+  }
+  
+  .mission-statement-columns.columns-2 .mission-statement-column,
+  .mission-statement-columns.columns-3 .mission-statement-column {
+    flex-basis: 100%;
+    max-width: 100%;
   }
 } 
