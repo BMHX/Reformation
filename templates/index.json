@@ -179,7 +179,11 @@
         "guidance_item_7XtF3c",
         "guidance_item_cG4p7y"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".energy-guidance__icon-wrapper {border: none;}",
+        ".energy-guidance__icon {width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;}",
+        ".energy-guidance__icon-wrapper {padding: 0; overflow: visible;}"
+      ],
       "name": "能量指引",
       "settings": {
         "title": "Energy Guidance",
@@ -190,7 +194,7 @@
         "border_color": "rgba(0,0,0,0)",
         "button_bg_color": "#ffffff",
         "button_text_color": "#282828",
-        "full_width": false
+        "full_width": true
       }
     },
     "featured_collection_jg6MAR": {
