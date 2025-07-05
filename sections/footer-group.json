@@ -73,18 +73,12 @@
           "settings": {
             "column_size": "small",
             "title": "",
-            "text": "<p>350 Britannia Rd E, Mississauga ON L4Z 1X9</p><p>Contact: <a href=\"mailto:channel-support@superpatch.com\" target=\"_blank\" title=\"mailto:channel-support@superpatch.com\">channel-support@superpatch.com</a></p>",
+            "image": "shopify://shop_images/9.png",
+            "text": "",
             "text_size": "small",
             "button_text": "",
             "button_link": "",
-            "show_social_links": false
-          }
-        },
-        "social_e6GW7d": {
-          "type": "social",
-          "settings": {
-            "column_size": "medium",
-            "title": "Find Us"
+            "show_social_links": true
           }
         },
         "menu_KWwa3F": {
@@ -118,7 +112,6 @@
       },
       "block_order": [
         "919dfa59-648f-4330-afcc-8bb0c24dab8f",
-        "social_e6GW7d",
         "menu_KWwa3F",
         "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2",
         "text_cVVzWi"
