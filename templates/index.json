@@ -541,7 +541,7 @@
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
-        "content_position": "bottom-center",
+        "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
@@ -706,164 +706,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "tabbed_content_k9UT3r": {
-      "type": "tabbed-content",
-      "blocks": {
-        "tab_Xt9iDq": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Back",
-            "icon": "none",
-            "text": "<p><strong>Back Pain</strong><br/>Relief & Ongoing Prevention</p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to : all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n</div>"
-          }
-        },
-        "tab_8R4bak": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Neck",
-            "icon": "none",
-            "text": "<p><strong>Neck Pain</strong><br/>Relief & Ongoing Prevention</p>",
-            "text_columns": "2",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to : all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n</div>"
-          }
-        },
-        "tab_hitrFm": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Headaches",
-            "icon": "none",
-            "text": "<p><strong>Headaches and Migraines</strong><br/>Relief & Ongoing Prevention</p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['rem-patch'].url }}\n{{ all_products['peace-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['peace-patch'].url }}\n</div>"
-          }
-        },
-        "tab_YT8Qjm": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Numbness",
-            "icon": "none",
-            "text": "<p><strong>Pain, Tingling, or Numbness</strong><br/>In One or More Extremities</p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_yo: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_yo: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_yo: all_products['rem-patch'].url }}\n{{ all_products['defend-patch'].featured_image | image_url: width: 175 | image_tag | link_yo: all_products['defend-patch'].url }}\n</div>"
-          }
-        },
-        "tab_6zqXEG": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Athletic",
-            "icon": "none",
-            "text": "<p><strong>Athletic Performance Improvement</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['rem-patch'].url }}\n{{ all_products['victory-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['victory-patch'].url }}\n{{ all_products['focus-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['focus-patch'].url }}\n</div>"
-          }
-        },
-        "tab_4bre4y": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Posture",
-            "icon": "none",
-            "text": "<p><strong>Posture Improvement</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n</div>"
-          }
-        },
-        "tab_gbkxpf": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Pregnancy",
-            "icon": "none",
-            "text": "<p><strong>Relief from Pregnancy Discomfort</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['freedom-patch'].url}}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['liberty-patch'].url}}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['rem-patch'].url}}\n{{ all_products['defend-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['defend-patch'].url}}\n</div>"
-          }
-        },
-        "tab_rytjn7": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Sleep",
-            "icon": "none",
-            "text": "<p><strong>Sleep Quality Improvement</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['rem-patch'].url }}\n{{ all_products['peace-patch'].featured_image | image_url: width: 175 | image_tag |link_to: all_products['peace-patch'].url }}\n</div>"
-          }
-        },
-        "tab_U6LqN4": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Post-Collision",
-            "icon": "none",
-            "text": "<p><strong>Post-Collision Evaluations</strong><br/>Work-Related Injury Recovery</p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n{{ all_products['rem-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['rem-patch'].url }}\n{{ all_products['joy-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['joy-patch'].url }}\n{{ all_products['peace-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['peace-patch'].url }}\n</div>"
-          }
-        },
-        "tab_iFQXhk": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Neuropathy",
-            "icon": "none",
-            "text": "<p><strong>Neuropathy</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n</div>"
-          }
-        },
-        "tab_f96pnD": {
-          "type": "tab",
-          "settings": {
-            "tab_label": "Stability",
-            "icon": "none",
-            "text": "<p><strong>Stability</strong></p>",
-            "text_columns": "1",
-            "page": "",
-            "custom_liquid": "<div class=\"tab-products\">\n{{ all_products['freedom-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['freedom-patch'].url }}\n{{ all_products['liberty-patch'].featured_image | image_url: width: 175 | image_tag | link_to: all_products['liberty-patch'].url }}\n</div>"
-          }
-        }
-      },
-      "block_order": [
-        "tab_Xt9iDq",
-        "tab_8R4bak",
-        "tab_hitrFm",
-        "tab_YT8Qjm",
-        "tab_6zqXEG",
-        "tab_4bre4y",
-        "tab_gbkxpf",
-        "tab_rytjn7",
-        "tab_U6LqN4",
-        "tab_iFQXhk",
-        "tab_f96pnD"
-      ],
-      "custom_css": [
-        ".tabbed-content--content.active {display: flex; align-items: center; justify-content: center; gap: 1rem;}",
-        "h2.h3 {font-weight: 900; margin-bottom: 16px; text-transform: capitalize;}",
-        "@media all and (max-width: 799px) {.tabbed-content--content.active {flex-flow: column; text-align: center; } .tab-products {display: grid; grid-template-columns: 1fr 1fr; }}",
-        "@media all and (min-width: 800px) {.tab-products {text-align: right; padding-right: 3rem; }}"
-      ],
-      "settings": {
-        "heading": "Reasons to visit chiropractor & Super Patch",
-        "description": "<p>Research indicates that when patients visit your practice, they usually are there for one or more of the disorders listed below.  Conveniently, the Super Patch lineup has supporting solutions for each disorder.</p>",
-        "text_width": "grid",
-        "tab_alignment": "center",
-        "text_alignment": "right",
-        "color_bg": "#ffffff",
-        "color_tabs": "#151515",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "1662459178b0886a69": {
       "type": "rich-text",
       "blocks": {
@@ -956,90 +798,6 @@
         "show_progress_bar": false,
         "disable_top_spacing": false,
         "disable_bottom_spacing": true
-      }
-    },
-    "16615358507b6ff1a8": {
-      "type": "testimonials",
-      "blocks": {
-        "60961cb1-416e-4c98-a9ec-2a41dfae8911": {
-          "type": "quote",
-          "settings": {
-            "stars": "",
-            "text": "Since using the Liberty Patch, my balance and stability have noticeably improved, allowing me to move through my daily activities with greater ease.",
-            "author": "Chiropractic Patient"
-          }
-        },
-        "2bf39bcc-dfc9-43ae-b6a4-9cecdb3197c9": {
-          "type": "quote",
-          "settings": {
-            "stars": "",
-            "text": "I no longer rely on pain medications. The combination of my chiropractor’s care and the Freedom Patch has been a game-changer.",
-            "author": "Chiropractic Patient"
-          }
-        }
-      },
-      "block_order": [
-        "60961cb1-416e-4c98-a9ec-2a41dfae8911",
-        "2bf39bcc-dfc9-43ae-b6a4-9cecdb3197c9"
-      ],
-      "custom_css": [
-        "p:before {background: url(https://cdn.shopify.com/s/files/1/0642/5588/5510/files/quote.png?height=48&v=1734450560&width=48) no-repeat 50% 0%; min-width: 48px; min-height: 48px; display: flex; justify-self: center;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "text_size": "medium",
-        "pagination": "dots",
-        "autoplay": true,
-        "autoplay_length": 5,
-        "color_bg": "#f7f7f7",
-        "color_text": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "rich_text_cJqTaY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_pY3C4Y": {
-          "type": "heading",
-          "settings": {
-            "text": "Get Started with<br>The Super Patch Company Today",
-            "size": "h2"
-          }
-        },
-        "text_YCbUTi": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Integrating Super Patch technology into your chiropractic practice is seamless. These simple, effective patches can be offered as complementary support to the chiropractic adjustments your patients are already receiving.</p><p>The combination of non-invasive chiropractic adjustments with drug-free Super Patch products provides a holistic solution that aligns with the wellness goals of your practice and your patients.</p><p>Help your patients achieve optimal wellness with the power of chiropractic care and Super Patch technology. Together, we can provide a drug-free, non-invasive path to recovery and well-being that truly aligns with your practice’s mission to support natural healing.</p><p>At Super Patch, we take the worry out of this process with our scientifically based and researched line-up of all-natural, press-on patches. We’ve done the testing, both laboratory and real-world, to affirm the efficacy of Vibrotactile Technology (VTT). Each of our products is based on VTT and it is supported by peer-reviewed studies, clinical trials, and evidence-based, Nobel Prize-winning science.</p>",
-            "custom_liquid": "",
-            "size": "text-size-regular"
-          }
-        },
-        "button_eJK9Xw": {
-          "type": "button",
-          "settings": {
-            "link_label": "Get Started",
-            "link": "#shopify-section-template--17345908670662__1734368449c16b1f2d",
-            "button_outline": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_pY3C4Y",
-        "text_YCbUTi",
-        "button_eJK9Xw"
-      ],
-      "custom_css": [],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
       }
     },
     "multicolumn_RzjLCH": {
@@ -1215,11 +973,8 @@
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
-    "tabbed_content_k9UT3r",
     "1662459178b0886a69",
     "multicolumn_NePdjt",
-    "16615358507b6ff1a8",
-    "rich_text_cJqTaY",
     "multicolumn_RzjLCH",
     "multicolumn_bYDpTj",
     "1734368449c16b1f2d"
