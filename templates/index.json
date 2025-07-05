@@ -129,12 +129,14 @@
         "logo_KhxAD6": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/7_df617f81-0b21-48dc-b910-6c1eb96c6b98.svg",
             "link": ""
           }
         },
         "logo_xfkTWD": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/5_f45c5c6d-3baa-4804-91f1-3744be3d5d2c.svg",
             "link": ""
           }
         },
