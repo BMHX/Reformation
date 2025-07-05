@@ -706,36 +706,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "1662459178b0886a69": {
-      "type": "rich-text",
-      "blocks": {
-        "button_NY3743": {
-          "type": "button",
-          "settings": {
-            "link_label": "Get Started",
-            "link": "#shopify-section-template--17345908670662__1734368449c16b1f2d",
-            "button_outline": false
-          }
-        }
-      },
-      "block_order": [
-        "button_NY3743"
-      ],
-      "custom_css": [
-        ".row {margin-bottom: 24px;}"
-      ],
-      "settings": {
-        "section_width": "full-width-row-full",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "multicolumn_NePdjt": {
       "type": "multicolumn",
       "blocks": {
@@ -973,7 +943,6 @@
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
-    "1662459178b0886a69",
     "multicolumn_NePdjt",
     "multicolumn_RzjLCH",
     "multicolumn_bYDpTj",
