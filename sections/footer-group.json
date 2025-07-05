@@ -11,6 +11,60 @@
   "type": "header",
   "name": "Footer group",
   "sections": {
+    "color_stripes_rwJEwV": {
+      "type": "color-stripes",
+      "blocks": {
+        "stripe_98C9dB": {
+          "type": "stripe",
+          "settings": {
+            "color": "#24305c",
+            "width": 25
+          }
+        },
+        "stripe_zUERx4": {
+          "type": "stripe",
+          "settings": {
+            "color": "#efefef",
+            "width": 25
+          }
+        },
+        "stripe_niNb9p": {
+          "type": "stripe",
+          "settings": {
+            "color": "#7f2625",
+            "width": 25
+          }
+        },
+        "stripe_y6zVaB": {
+          "type": "stripe",
+          "settings": {
+            "color": "#638351",
+            "width": 25
+          }
+        },
+        "stripe_NbPx6c": {
+          "type": "stripe",
+          "settings": {
+            "color": "#cb9737",
+            "width": 25
+          }
+        }
+      },
+      "block_order": [
+        "stripe_98C9dB",
+        "stripe_zUERx4",
+        "stripe_niNb9p",
+        "stripe_y6zVaB",
+        "stripe_NbPx6c"
+      ],
+      "name": "彩色条纹",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "stripe_height": 6,
+        "full_width": true
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -83,6 +137,7 @@
     }
   },
   "order": [
+    "color_stripes_rwJEwV",
     "footer"
   ]
 }
