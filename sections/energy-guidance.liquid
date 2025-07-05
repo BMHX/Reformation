@@ -38,6 +38,17 @@
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 749) {
+    var container = document.querySelector('.energy-guidance__container');
+    if (container) {
+      container.scrollLeft = 0;
+    }
+  }
+});
+</script>
+
 <style>
 .energy-guidance {
   padding: 3rem 0;
