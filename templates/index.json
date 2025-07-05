@@ -579,6 +579,7 @@
         "slide_BBMHcV": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/7.webp",
             "title": "Financial instability or loss",
             "text": ""
           }
@@ -586,6 +587,7 @@
         "slide_Wa69tV": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/8.webp",
             "title": "Homelessness (physical or spiritual)",
             "text": ""
           }
@@ -702,85 +704,6 @@
         "color_links": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "mission_statement_bDKFee": {
-      "type": "mission-statement",
-      "blocks": {
-        "column_EX4cPm": {
-          "type": "column",
-          "settings": {
-            "retina": true,
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p><br/>To build shields between you and negative energies — negative energy protection<br/></p>",
-            "text_size": "text-size-regular",
-            "button_label": "",
-            "button_link": "",
-            "button_outline": false
-          }
-        },
-        "column_8xmqfr": {
-          "type": "column",
-          "settings": {
-            "retina": true,
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p><br/>To bridge connections with higher consciousness</p>",
-            "text_size": "text-size-regular",
-            "button_label": "",
-            "button_link": "",
-            "button_outline": false
-          }
-        },
-        "column_iDDhn6": {
-          "type": "column",
-          "settings": {
-            "retina": true,
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p><br/>Stop financial loss, remove career blocks, attract true love…</p>",
-            "text_size": "text-size-regular",
-            "button_label": "",
-            "button_link": "",
-            "button_outline": false
-          }
-        },
-        "footer_text_4VNNpV": {
-          "type": "footer_text",
-          "settings": {
-            "heading": "",
-            "heading_size": "h3",
-            "text": "<p>As faith-driven Gen-Z creators,<br/>we’ve established this brand with the conch shell as our emblem — symbolizing<br/>the spread of Buddhist wisdom in the digital age.</p>",
-            "text_size": "text-size-regular",
-            "button_label": "",
-            "button_link": "",
-            "button_outline": false
-          }
-        }
-      },
-      "block_order": [
-        "column_EX4cPm",
-        "column_8xmqfr",
-        "column_iDDhn6",
-        "footer_text_4VNNpV"
-      ],
-      "name": "Mission Statement",
-      "settings": {
-        "heading": "Our Mission",
-        "columns_desktop": "3",
-        "section_width": "full-width-row-full",
-        "text_width": "grid",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background_image": "shopify://shop_images/6_500b67e6-c34f-479e-b5f1-ce751ca97916.webp",
-        "color_bg": "#000000",
-        "color_text": "#d4af37",
-        "text_stroke_color": "#000000",
-        "text_stroke_width": 1,
-        "color_links": "#d4af37",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
       }
     },
     "tabbed_content_k9UT3r": {
@@ -1292,7 +1215,6 @@
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
-    "mission_statement_bDKFee",
     "tabbed_content_k9UT3r",
     "1662459178b0886a69",
     "multicolumn_NePdjt",
