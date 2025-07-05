@@ -130,32 +130,27 @@
   }
 
   .energy-guidance__container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
     padding: 0;
     display: block;
     margin: 0;
     max-width: 100vw;
-    scroll-behavior: auto;
   }
 
   .energy-guidance__container::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
   }
 
   .energy-guidance__grid {
-    display: flex;
-    grid-template-columns: none;
+    /* display: flex; */
+    /* grid-template-columns: none; */
     gap: 1.5rem;
     padding: 0.5rem 0;
-    width: max-content;
-    justify-content: flex-start;
+    /* width: max-content; */
+    /* justify-content: flex-start; */
   }
   
   .energy-guidance__item {
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     width: 100px;
   }
   
