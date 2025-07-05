@@ -194,7 +194,7 @@
         "border_color": "rgba(0,0,0,0)",
         "button_bg_color": "#ffffff",
         "button_text_color": "#282828",
-        "full_width": true
+        "full_width": false
       }
     },
     "featured_collection_jg6MAR": {
