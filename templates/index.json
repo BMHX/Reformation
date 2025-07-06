@@ -492,12 +492,6 @@
     "image_with_text_overlay_Q6twAT": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_EWeMkE": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
         "heading_YbB9Pw": {
           "type": "heading",
           "settings": {
@@ -528,7 +522,6 @@
         }
       },
       "block_order": [
-        "subheading_EWeMkE",
         "heading_YbB9Pw",
         "text_r3gR3B",
         "button_VNWAqM"
