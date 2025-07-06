@@ -19,7 +19,7 @@
             {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
               <div class="energy-guidance__icon-wrapper">
                 {%- if block.settings.image != blank -%}
-                  {{ block.settings.image | image_url: width: 10 | image_tag:
+                  {{ block.settings.image | image_url: width: 120 | image_tag:
                     loading: 'lazy',
                     width: 120,
                     height: 120,
