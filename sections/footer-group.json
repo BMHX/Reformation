@@ -73,7 +73,7 @@
           "settings": {
             "column_size": "small",
             "logo": "shopify://shop_images/9_a9dffa5a-965d-4bc4-86e4-b7146328d0b7.png",
-            "logo_width": 140,
+            "logo_width": 70,
             "logo_width_mobile": 110,
             "show_social_links": true
           }
@@ -135,4 +135,4 @@
     "color_stripes_rwJEwV",
     "footer"
   ]
-} 
+}
