@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "header",
   "name": "Footer group",
@@ -65,22 +56,17 @@
         "full_width": true
       }
     },
+    "logo_social_links": {
+      "type": "logo-social-links",
+      "settings": {
+        "full_width": true,
+        "logo": "shopify://shop_images/9_a9dffa5a-965d-4bc4-86e4-b7146328d0b7.png",
+        "show_social_links": true
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
-        "919dfa59-648f-4330-afcc-8bb0c24dab8f": {
-          "type": "text",
-          "settings": {
-            "column_size": "small",
-            "title": "",
-            "image": "shopify://shop_images/9_a9dffa5a-965d-4bc4-86e4-b7146328d0b7.png",
-            "text": "",
-            "text_size": "small",
-            "button_text": "",
-            "button_link": "",
-            "show_social_links": true
-          }
-        },
         "menu_KWwa3F": {
           "type": "menu",
           "settings": {
@@ -115,7 +101,6 @@
         }
       },
       "block_order": [
-        "919dfa59-648f-4330-afcc-8bb0c24dab8f",
         "menu_KWwa3F",
         "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2",
         "menu_BWhdUb",
@@ -136,6 +121,7 @@
   },
   "order": [
     "color_stripes_rwJEwV",
+    "logo_social_links",
     "footer"
   ]
-}
+} 
