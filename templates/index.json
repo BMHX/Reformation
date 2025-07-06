@@ -123,60 +123,6 @@
         "full_width": true
       }
     },
-    "logo_list_zgQ6hc": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_KhxAD6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/7_df617f81-0b21-48dc-b910-6c1eb96c6b98.svg",
-            "link": ""
-          }
-        },
-        "logo_xfkTWD": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/5_f45c5c6d-3baa-4804-91f1-3744be3d5d2c.svg",
-            "link": ""
-          }
-        },
-        "logo_zTqPNB": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_R4c98K": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_hccKUt": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_KhxAD6",
-        "logo_xfkTWD",
-        "logo_zTqPNB",
-        "logo_R4c98K",
-        "logo_hccKUt"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "heading": "Clients",
-        "description": "<p>Add a short description for this section</p>",
-        "columns": 5,
-        "mobile_swipe": true,
-        "center_align": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "energy_guidance_dpjDJa": {
       "type": "energy-guidance",
       "blocks": {
@@ -591,6 +537,7 @@
       "settings": {
         "section_width": "full-width-row",
         "image": "shopify://shop_images/1_7865a444-4c4f-43f8-852f-29f0ce77c6de.webp",
+        "mobile_image": "shopify://shop_images/1_7865a444-4c4f-43f8-852f-29f0ce77c6de.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
@@ -774,7 +721,6 @@
   "order": [
     "16479477632637c9a7",
     "color_stripes_fxjCEW",
-    "logo_list_zgQ6hc",
     "energy_guidance_dpjDJa",
     "featured_collection_jg6MAR",
     "image_with_text_overlay_YhY9f3",
