@@ -7,6 +7,36 @@
   --energy-button-bg: {{ section.settings.button_bg_color }};
   --energy-button-text: {{ section.settings.button_text_color }};
 ">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <h2 class="energy-guidance__title h1 font-weight-bold" style="text-align: {{ section.settings.title_alignment_desktop }};">{{ section.settings.title }}</h2>
+    {% endif %}
+    
+    <div class="energy-guidance__container">
+      <div class="energy-guidance__grid" style="--item-count: {{ section.blocks.size }};">
+        {%- for block in section.blocks -%}
+          <div class="energy-guidance__item{% if block.settings.highlight %} energy-guidance__item--highlighted{% endif %}" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}<a href="{{ block.settings.link }}" class="energy-guidance__link">{% endif %}
+              <div class="energy-guidance__icon-wrapper">
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 10 | image_tag:
+                    loading: 'lazy',
+                    width: 120,
+                    height: 120,
+                    class: 'energy-guidance__icon'
+                  }}
+                {%- endif -%}
+              </div>
+              {%- if block.settings.title != blank -%}
+                <div class="energy-guidance__text">{{ block.settings.title }}</div>
+              {%- endif -%}
+            {% if block.settings.link != blank %}</a>{% endif %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
 .energy-guidance {
