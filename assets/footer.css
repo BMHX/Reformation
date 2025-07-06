@@ -257,47 +257,74 @@
 /* Logo Social Links */
 .widget--logo-social .logo-social-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .widget--logo-social .logo-social-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .widget--logo-social .logo-social-logo {
-  max-width: 240px;
+  max-width: var(--logo-width-mobile, 110px);
+  flex: 0 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget--logo-social .logo-social-logo {
+    max-width: var(--logo-width-desktop, 140px);
+  }
 }
 
 .widget--logo-social .logo-social-logo img {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.widget--logo-social .logo-social-links {
+  flex: 1 1 auto;
+  text-align: right;
 }
 
 .widget--logo-social .logo-social-links .social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .widget--logo-social .logo-social-links .social-links {
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .widget--logo-social .logo-social-links .social-links li {
-  margin: 0 10px 10px 0;
+  margin: 0 6px 6px 0;
+  display: inline-flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget--logo-social .logo-social-links .social-links li {
+    margin: 0 8px 8px 0;
+  }
 }
 
 .widget--logo-social .logo-social-links .social-links li:last-child {
   margin-right: 0;
+}
+
+.widget--logo-social .logo-social-links .social-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget--logo-social .logo-social-links .social-links svg {
+  width: 14px;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget--logo-social .logo-social-links .social-links svg {
+    width: 16px;
+  }
 }
 
 .widget--logo-social .logo-social-links .social-links span {

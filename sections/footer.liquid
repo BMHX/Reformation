@@ -60,10 +60,14 @@
 						when 'full'
 							assign column_class = 'small-12 full'
 					endcase
+					
+					assign logo_width = block.settings.logo_width | default: 140
+					assign logo_width_mobile = block.settings.logo_width_mobile | default: 110
+					assign logo_style = '--logo-width-desktop: ' | append: logo_width | append: 'px; --logo-width-mobile: ' | append: logo_width_mobile | append: 'px;'
 				-%}
 			<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
 				<div class="widget widget--logo-social">
-					<div class="logo-social-container">
+					<div class="logo-social-container" style="{{ logo_style }}">
 						<div class="logo-social-logo">
 							{%- if block.settings.logo != blank -%}
 								{% assign image = block.settings.logo %}
@@ -377,6 +381,26 @@
             "label": "Logo",
 						"info": "240 x 100 px .png recommended."
           },
+					{
+						"type": "range",
+						"id": "logo_width",
+						"min": 60,
+						"max": 200,
+						"step": 10,
+						"unit": "px",
+						"label": "Logo宽度 (桌面端)",
+						"default": 140
+					},
+					{
+						"type": "range",
+						"id": "logo_width_mobile",
+						"min": 60,
+						"max": 140,
+						"step": 10,
+						"unit": "px",
+						"label": "Logo宽度 (移动端)",
+						"default": 110
+					},
 					{
 		        "type": "checkbox",
 		        "id": "show_social_links",
