@@ -155,7 +155,7 @@
   }
 
   .scrolling-testimonials__header {
-    padding: 20px 0;
+    padding: 20px 0 10px 0; 
   }
 
   .scrolling-testimonials__image-container {
