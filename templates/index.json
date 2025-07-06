@@ -222,14 +222,22 @@
         "subheading_HmGHyG": {
           "type": "subheading",
           "settings": {
-            "text": ""
+            "text": "",
+            "font_family": "sans-serif",
+            "font_weight": "normal",
+            "font_size": 14,
+            "text_color": "#ffffff"
           }
         },
         "heading_8wyynL": {
           "type": "heading",
           "settings": {
             "text": "NEW YEAR BLESSINGS",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "font_family": "sans-serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
           }
         },
         "text_b9GFm8": {
@@ -496,7 +504,11 @@
           "type": "heading",
           "settings": {
             "text": "Manifest Your Wealth, Health & Love",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font_family": "sans-serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
           }
         },
         "text_r3gR3B": {
