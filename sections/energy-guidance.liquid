@@ -65,7 +65,15 @@
   justify-content: center;
 }
 
-
+.energy-guidance__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--item-count, 8), 120px);
+  gap: 10rem;
+  justify-content: center;
+  padding: 0 3rem;
+  width: auto;
+  max-width: 100%;
+}
 
 .energy-guidance__item {
   text-align: center;
