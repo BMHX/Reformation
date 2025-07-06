@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 767px) {
   .scrolling-testimonials.container {
-    padding: 0 1000px;
+    padding: 0 100px;
   }
 
   .scrolling-testimonials__header {
