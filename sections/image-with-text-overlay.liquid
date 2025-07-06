@@ -79,9 +79,55 @@
 					{% for block in section.blocks %}
 						{%- case block.type -%}
 							{%- when 'subheading' -%}
-								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+								{%- liquid
+									assign font_family = block.settings.font_family | default: 'sans-serif'
+									assign font_weight = block.settings.font_weight | default: 'normal'
+									assign font_size = block.settings.font_size | default: 14
+									assign text_color = block.settings.text_color | default: '#ffffff'
+									assign subheading_style = ''
+									
+									if font_family != blank
+										assign subheading_style = subheading_style | append: 'font-family: ' | append: font_family | append: ';'
+									endif
+									
+									if font_weight != blank
+										assign subheading_style = subheading_style | append: 'font-weight: ' | append: font_weight | append: ';'
+									endif
+									
+									if font_size > 0
+										assign subheading_style = subheading_style | append: 'font-size: ' | append: font_size | append: 'px;'
+									endif
+									
+									if text_color != blank
+										assign subheading_style = subheading_style | append: 'color: ' | append: text_color | append: ';'
+									endif
+								-%}
+								<p class="subheading" style="{{ subheading_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<{{ heading_tag }} class="{{ block.settings.heading_size }} image-with-text-overlay--heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</{{ heading_tag }}>
+								{%- liquid
+									assign font_family = block.settings.font_family | default: 'sans-serif'
+									assign font_weight = block.settings.font_weight | default: 'bold'
+									assign custom_font_size = block.settings.custom_font_size | default: 36
+									assign heading_color = block.settings.heading_color | default: '#ffffff'
+									assign heading_style = ''
+									
+									if font_family != blank
+										assign heading_style = heading_style | append: 'font-family: ' | append: font_family | append: ';'
+									endif
+									
+									if font_weight != blank
+										assign heading_style = heading_style | append: 'font-weight: ' | append: font_weight | append: ';'
+									endif
+									
+									if custom_font_size > 0
+										assign heading_style = heading_style | append: 'font-size: ' | append: custom_font_size | append: 'px;'
+									endif
+									
+									if heading_color != blank
+										assign heading_style = heading_style | append: 'color: ' | append: heading_color | append: ';'
+									endif
+								-%}
+								<{{ heading_tag }} class="{{ block.settings.heading_size }} image-with-text-overlay--heading" style="{{ heading_style }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</{{ heading_tag }}>
 							{%- when 'text' -%}
 								<div class="rte description-size--{{ block.settings.description_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
@@ -316,6 +362,86 @@
 						"id": "text",
 						"label": "Text",
 						"default": "Add a tagline"
+					},
+					{
+						"type": "header",
+						"content": "字体设置"
+					},
+					{
+						"type": "select",
+						"id": "font_family",
+						"label": "字体",
+						"options": [
+							{
+								"value": "system",
+								"label": "系统默认字体"
+							},
+							{
+								"value": "serif",
+								"label": "衬线字体 (Serif)"
+							},
+							{
+								"value": "sans-serif",
+								"label": "无衬线字体 (Sans-serif)"
+							},
+							{
+								"value": "monospace",
+								"label": "等宽字体 (Monospace)"
+							},
+							{
+								"value": "cursive",
+								"label": "手写体 (Cursive)"
+							}
+						],
+						"default": "sans-serif"
+					},
+					{
+						"type": "select",
+						"id": "font_weight",
+						"label": "字体粗细",
+						"options": [
+							{
+								"value": "normal",
+								"label": "正常"
+							},
+							{
+								"value": "bold",
+								"label": "粗体"
+							},
+							{
+								"value": "bolder",
+								"label": "特粗"
+							},
+							{
+								"value": "lighter",
+								"label": "细体"
+							},
+							{
+								"value": "400",
+								"label": "400 (正常)"
+							},
+							{
+								"value": "700",
+								"label": "700 (粗体)"
+							}
+						],
+						"default": "normal"
+					},
+					{
+						"type": "range",
+						"id": "font_size",
+						"min": 12,
+						"max": 24,
+						"step": 1,
+						"unit": "px",
+						"label": "字体大小",
+						"default": 14
+					},
+					{
+						"type": "color",
+						"id": "text_color",
+						"label": "文字颜色",
+						"default": "#ffffff"
 					}
 				]
 			},
@@ -353,6 +479,115 @@
 							}
 						],
 						"default": "h1-xlarge"
+					},
+					{
+						"type": "header",
+						"content": "字体设置"
+					},
+					{
+						"type": "select",
+						"id": "font_family",
+						"label": "字体",
+						"options": [
+							{
+								"value": "system",
+								"label": "系统默认字体"
+							},
+							{
+								"value": "serif",
+								"label": "衬线字体 (Serif)"
+							},
+							{
+								"value": "sans-serif",
+								"label": "无衬线字体 (Sans-serif)"
+							},
+							{
+								"value": "monospace",
+								"label": "等宽字体 (Monospace)"
+							},
+							{
+								"value": "cursive",
+								"label": "手写体 (Cursive)"
+							}
+						],
+						"default": "sans-serif"
+					},
+					{
+						"type": "select",
+						"id": "font_weight",
+						"label": "字体粗细",
+						"options": [
+							{
+								"value": "normal",
+								"label": "正常"
+							},
+							{
+								"value": "bold",
+								"label": "粗体"
+							},
+							{
+								"value": "bolder",
+								"label": "特粗"
+							},
+							{
+								"value": "lighter",
+								"label": "细体"
+							},
+							{
+								"value": "100",
+								"label": "100"
+							},
+							{
+								"value": "200",
+								"label": "200"
+							},
+							{
+								"value": "300",
+								"label": "300"
+							},
+							{
+								"value": "400",
+								"label": "400 (正常)"
+							},
+							{
+								"value": "500",
+								"label": "500"
+							},
+							{
+								"value": "600",
+								"label": "600"
+							},
+							{
+								"value": "700",
+								"label": "700 (粗体)"
+							},
+							{
+								"value": "800",
+								"label": "800"
+							},
+							{
+								"value": "900",
+								"label": "900"
+							}
+						],
+						"default": "bold"
+					},
+					{
+						"type": "range",
+						"id": "custom_font_size",
+						"min": 16,
+						"max": 72,
+						"step": 1,
+						"unit": "px",
+						"label": "自定义字体大小",
+						"default": 36,
+						"info": "如果设置为0，将使用默认字体大小"
+					},
+					{
+						"type": "color",
+						"id": "heading_color",
+						"label": "文字颜色",
+						"default": "#ffffff"
 					}
 				]
 			},
