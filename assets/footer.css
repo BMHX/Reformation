@@ -1,8 +1,5 @@
-
-
 .footer .thb-widget-title span:before, .footer .thb-widget-menu .sub-menu {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
-
 
 .footer {
   background: var(--color-footer-bg, var(--color-accent));
@@ -256,3 +253,61 @@
     height: auto; }
   .social-links span {
     margin-left: 15px; }
+
+/* Logo Social Links */
+.widget--logo-social .logo-social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget--logo-social .logo-social-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.widget--logo-social .logo-social-logo {
+  max-width: 240px;
+}
+
+.widget--logo-social .logo-social-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.widget--logo-social .logo-social-links .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .widget--logo-social .logo-social-links .social-links {
+    justify-content: flex-end;
+  }
+}
+
+.widget--logo-social .logo-social-links .social-links li {
+  margin: 0 10px 10px 0;
+}
+
+.widget--logo-social .logo-social-links .social-links li:last-child {
+  margin-right: 0;
+}
+
+.widget--logo-social .logo-social-links .social-links span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
