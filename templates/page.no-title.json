@@ -16,9 +16,20 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "spacer_fUw433": {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "spacer_fUw433"
   ]
 }
