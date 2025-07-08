@@ -102,12 +102,16 @@
             "menu": "information"
           }
         },
-        "menu_Jbfxrh": {
-          "type": "menu",
+        "text_wJjRKQ": {
+          "type": "text",
           "settings": {
             "column_size": "small",
-            "title": "",
-            "menu": "footer"
+            "title": "CONTACT US",
+            "text": "<p>service@tibetanmantravibes.com</p><p>Mon - Fri 10:00 AM – 19:00 PM</p><p>We aim to reply within 24–48 hours on business days</p>",
+            "text_size": "small",
+            "button_text": "Explore",
+            "button_link": "",
+            "show_social_links": false
           }
         }
       },
@@ -116,7 +120,7 @@
         "menu_KWwa3F",
         "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2",
         "menu_BWhdUb",
-        "menu_Jbfxrh"
+        "text_wJjRKQ"
       ],
       "custom_css": [
         "img {-webkit-filter: invert(1);}"
