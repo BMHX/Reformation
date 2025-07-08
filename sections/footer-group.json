@@ -98,8 +98,8 @@
           "type": "menu",
           "settings": {
             "column_size": "small",
-            "title": "",
-            "menu": "footer"
+            "title": "INFORMATION",
+            "menu": "information"
           }
         },
         "menu_Jbfxrh": {
