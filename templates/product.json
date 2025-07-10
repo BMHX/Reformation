@@ -63,6 +63,11 @@
             "show_gift_card_recipient": false
           }
         },
+        "payment_icons_fjikjN": {
+          "type": "payment_icons",
+          "disabled": true,
+          "settings": {}
+        },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
           "settings": {
@@ -91,6 +96,7 @@
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "variant_picker",
         "buy_buttons",
+        "payment_icons_fjikjN",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
@@ -326,7 +332,6 @@
         "68288bd2-3db2-455d-a841-5aa19d752abb",
         "de9966d6-0cd0-4b0f-9810-aa062aff88ce"
       ],
-      "disabled": true,
       "settings": {
         "heading": "F.A.Q.",
         "description": "<p>They appreciate cut and details, things that aren't so obvious. </p>",
@@ -392,14 +397,22 @@
         "b9349bb5-2620-4155-ac69-dea56c8ebbe1": {
           "type": "subheading",
           "settings": {
-            "text": "SUBHEADING"
+            "text": "SUBHEADING",
+            "font_family": "sans-serif",
+            "font_weight": "normal",
+            "font_size": 14,
+            "text_color": "#ffffff"
           }
         },
         "16636686835e8f94d4-1": {
           "type": "heading",
           "settings": {
             "text": "IMAGE WITH TEXT OVERLAY",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font_family": "sans-serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
           }
         },
         "83c3ef40-7ca5-4f79-8e21-16fcbebbc991": {
@@ -420,7 +433,13 @@
           "settings": {
             "button_text": "Shop Now",
             "button_link": "",
-            "button_outline": false
+            "button_outline": false,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg_color": "#ffffff",
+            "button_hover_text_color": "#000000",
+            "button_hover_border_color": "#000000"
           }
         }
       },
@@ -448,7 +467,6 @@
     },
     "1662552569cce2536d": {
       "type": "spacer",
-      "disabled": true,
       "settings": {
         "spacer_mobile": 0,
         "spacer_desktop": 5,
@@ -458,7 +476,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
         "heading_left": true,
@@ -468,11 +485,6 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
-    },
-    "custom_product_onepager_fMb6DF": {
-      "type": "custom-product-onepager",
-      "name": "Custom Product Onepager",
-      "settings": {}
     },
     "custom_liquid_rFRLYi": {
       "type": "custom-liquid",
@@ -494,7 +506,6 @@
     "166366868377cd57e4",
     "1662552569cce2536d",
     "product-recommendations",
-    "custom_product_onepager_fMb6DF",
     "custom_liquid_rFRLYi"
   ]
 }
