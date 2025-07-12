@@ -67,6 +67,9 @@
       margin: 0 auto; }
     .image-with-text__content__image {
       margin-bottom: 30px; }
+    .image-with-text__content h3 {
+      font-weight: 900;
+    }
     .image-with-text__content p,
     .image-with-text__content h3 {
       color: var(--color-text, --color-body); }
