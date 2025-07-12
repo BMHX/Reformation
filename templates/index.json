@@ -284,6 +284,16 @@
         "disable_bottom_spacing": true
       }
     },
+    "spacer_Ag6cy3": {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "featured_collection_46J8kx": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -729,6 +739,7 @@
     "energy_guidance_dpjDJa",
     "featured_collection_jg6MAR",
     "image_with_text_overlay_YhY9f3",
+    "spacer_Ag6cy3",
     "featured_collection_46J8kx",
     "rich_text_eFr83i",
     "media_grid_hiqQkg",
