@@ -46,7 +46,7 @@
         "logo": "shopify://shop_images/9.png",
         "logo_height_range": 56,
         "logo_height_range_mobile": 50,
-        "style": "style3",
+        "style": "style1",
         "header_shadow": "header--shadow-none",
         "menu": "customer-account-main-menu",
         "cart_icon": "bag",
