@@ -51,12 +51,12 @@
 			{% endif %}
 			{%- if block.type == 'logo_social_links' -%}
 				{%- liquid
-					assign column_class = 'small-12 medium-4 large-2'
+					assign column_class = 'small-12 medium-4 large-3'
 					case block.settings.column_size
 						when 'medium'
-							assign column_class = 'small-12 medium-6'
+							assign column_class = 'small-12 medium-5 large-4'
 						when 'large'
-							assign column_class = 'small-12 medium-6'
+							assign column_class = 'small-12 medium-6 large-5'
 						when 'full'
 							assign column_class = 'small-12 full'
 					endcase
@@ -295,10 +295,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" },
-							 { "value": "full", "label": "Full" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "small"
 					},
@@ -368,10 +368,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" },
-							 { "value": "full", "label": "Full" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "medium"
 					},
@@ -418,9 +418,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "small"
 					},
@@ -447,9 +448,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "small"
 					},
@@ -470,9 +472,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "small"
 					},
@@ -498,9 +501,10 @@
 						 "id": "column_size",
 						 "label": "Column size",
 						 "options": [
-							 { "value": "small", "label": "Small" },
-							 { "value": "medium", "label": "Medium" },
-							 { "value": "large", "label": "Large" }
+							 { "value": "small", "label": "Small (25%)" },
+							 { "value": "medium", "label": "Medium (33%)" },
+							 { "value": "large", "label": "Large (42%)" },
+							 { "value": "full", "label": "Full width" }
 						 ],
 						 "default": "small"
 					},

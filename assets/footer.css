@@ -261,6 +261,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+  width: 100%;
 }
 
 .widget--logo-social .logo-social-logo {
@@ -272,18 +273,22 @@
   .widget--logo-social .logo-social-logo {
     max-width: var(--logo-width-desktop, 140px);
   }
+  
+  .widget--logo-social {
+    padding-right: 10px;
+  }
 }
 
 .widget--logo-social .logo-social-logo img {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 80px;
+  max-height: 70px;
   object-fit: contain;
 }
 
 .widget--logo-social .logo-social-links {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   text-align: right;
 }
 

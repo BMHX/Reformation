@@ -190,16 +190,25 @@
       margin-left: -1px;
       margin-top: -1px;
       cursor: pointer;
-      box-shadow: 0 0 0 1px var(--color-border) inset; }
-      @media only screen and (min-width: 768px) {
-        .variations .product-form__input--block input[type="radio"] + label {
-          margin-right: 0; } }
+      box-shadow: 0 0 0 1px var(--color-border) inset;
+      transition: all 0.25s ease; /* 添加过渡效果 */
+    }
+    @media only screen and (min-width: 768px) {
+      .variations .product-form__input--block input[type="radio"] + label {
+        margin-right: 0;
+      }
+    }
     .variations .product-form__input--block input[type="radio"]:checked + label {
       z-index: 5;
-      box-shadow: 0 0 0 1px var(--color-body) inset; }
+      box-shadow: 0 0 0 2px var(--color-body) inset; /* 增加边框宽度 */
+      background-color: rgba(var(--color-body-rgb), 0.08); /* 添加背景色 */
+      transform: scale(1.05); /* 添加缩放效果 */
+      font-weight: var(--font-body-bold-weight, 600); /* 添加粗体效果 */
+    }
     .variations .product-form__input--block input[type="radio"]:focus-visible + label {
       transform: scale(0.9);
-      box-shadow: 0 0 0 2px #015ecc; }
+      box-shadow: 0 0 0 2px #015ecc;
+    }
   .variations .product-form__input--color {
     display: flex;
     flex-wrap: wrap;
@@ -214,25 +223,35 @@
       color: transparent;
       cursor: pointer;
       z-index: 4;
-      box-shadow: 0 0 0 1px var(--color-border) inset; }
-      .variations .product-form__input--color input[type="radio"] + label:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 14px;
-        left: 14px;
-        right: 14px;
-        bottom: 14px;
-        border-radius: 50%;
-        background-position: center;
-        background-size: cover;
-        background-color: var(--option-color);
-        background-image: var(--option-color-image); }
+      box-shadow: 0 0 0 1px var(--color-border) inset;
+      transition: all 0.25s ease; /* 添加过渡效果 */
+    }
+    .variations .product-form__input--color input[type="radio"] + label:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      background-color: var(--option-color);
+      background-image: var(--option-color-image);
+      transition: all 0.25s ease; /* 添加过渡效果 */
+    }
     .variations .product-form__input--color input[type="radio"]:checked + label {
       z-index: 5;
-      box-shadow: 0 0 0 1px var(--color-body) inset; }
+      box-shadow: 0 0 0 2px var(--color-body) inset; /* 增加边框宽度 */
+      transform: scale(1.1); /* 添加缩放效果 */
+    }
+    .variations .product-form__input--color input[type="radio"]:checked + label:after {
+      transform: scale(0.85); /* 添加内部颜色缩放效果 */
+    }
     .variations .product-form__input--color input[type="radio"]:hover:after {
-      transform: scale(0.9); }
+      transform: scale(0.9);
+    }
     .variations .product-form__input--color input[type="radio"]:focus-visible + label {
       transform: scale(0.9);
       box-shadow: 0 0 0 2px #015ecc inset; }
@@ -257,7 +276,9 @@
       color: transparent;
       cursor: pointer;
       z-index: 4;
-      box-shadow: 0 0 0 1px var(--color-border) inset; }
+      box-shadow: 0 0 0 1px var(--color-border) inset;
+      transition: all 0.25s ease; /* 添加过渡效果 */
+    }
       .variations .product-form__input--siblings label:after {
         content: "";
         display: block;
@@ -283,7 +304,9 @@
         opacity: 0.4; }
     .variations .product-form__input--siblings input[type="radio"]:checked + label {
       z-index: 5;
-      box-shadow: 0 0 0 1px var(--color-body) inset; }
+      box-shadow: 0 0 0 2px var(--color-body) inset; /* 增加边框宽度 */
+      transform: scale(1.1); /* 添加缩放效果 */
+    }
     .variations .product-form__input--siblings input[type="radio"]:hover:after {
       transform: scale(0.9); }
     .variations .product-form__input--siblings input[type="radio"]:focus-visible + label {
