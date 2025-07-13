@@ -226,46 +226,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "bcb48e2d-c55f-4787-abf4-17b850e5bb8a": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Inspire your style",
-            "heading_size": "h1",
-            "font_family": "sans-serif",
-            "font_weight": "bold",
-            "custom_font_size": 36,
-            "heading_color": "#ffffff"
-          }
-        },
-        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "description_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-1",
-        "template--18432547127579__bcb48e2d-c55f-4787-abf4-17b850e5bb8a-16813710817e2ce3bd-2"
-      ],
-      "settings": {
-        "section_width": "full-width-row",
-        "image_parallax": true,
-        "desktop_height": "desktop-height-550",
-        "mobile_height": "mobile-height-450",
-        "content_width": "small",
-        "content_position": "middle-center",
-        "text_alignment": "center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 4,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c": {
       "type": "spacer",
       "settings": {
@@ -275,48 +235,6 @@
         "border_separator_full": false
       }
     },
-    "5c7cec52-f78f-4e08-8c51-0ff3f0135e45": {
-      "type": "rich-text",
-      "blocks": {
-        "9aee3b19-b258-4ad3-aea6-151a5da4971b": {
-          "type": "heading",
-          "settings": {
-            "text": "✾ ✾ ✾",
-            "size": "h4"
-          }
-        },
-        "template--18432547127579__5c7cec52-f78f-4e08-8c51-0ff3f0135e45-1681377090c56acdec-1": {
-          "type": "heading",
-          "settings": {
-            "text": "For women, jewelry is often seen as a way to express their personal style and add a touch of glamour to their outfit. Popular jewelry styles for women include delicate necklaces, statement earrings. 😍😍",
-            "size": "h3"
-          }
-        },
-        "32e10985-5358-4031-8606-f99271cd4f8d": {
-          "type": "text-button",
-          "settings": {
-            "link_label": "LEARN MORE",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "9aee3b19-b258-4ad3-aea6-151a5da4971b",
-        "template--18432547127579__5c7cec52-f78f-4e08-8c51-0ff3f0135e45-1681377090c56acdec-1",
-        "32e10985-5358-4031-8606-f99271cd4f8d"
-      ],
-      "settings": {
-        "section_width": "full-width-row",
-        "text_width": "xlarge",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "#fff5f2",
-        "color_text": "#c95137",
-        "color_links": "#c95137",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "8831dd81-b06c-44dc-aa95-9c370558f6ff": {
       "type": "spacer",
       "settings": {
@@ -324,55 +242,6 @@
         "spacer_desktop": 0,
         "border_separator": false,
         "border_separator_full": false
-      }
-    },
-    "b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5": {
-      "type": "gallery",
-      "blocks": {
-        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-0": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "title": "Feel The Glamour",
-            "text": "Dipped in 14K gold and featuring three star-studded, this bracelet is an everyday piece that still stands out.",
-            "link_label": "LEARN MORE",
-            "link": "",
-            "use_text_button": true,
-            "block_link": "",
-            "product_list": []
-          }
-        },
-        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-1": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "title": "Unmatched Selection",
-            "text": "They can be simple studs or elaborate chandelier earrings, and can be made from a range of materials.",
-            "link_label": "LEARN MORE",
-            "link": "",
-            "use_text_button": true,
-            "block_link": "",
-            "product_list": []
-          }
-        }
-      },
-      "block_order": [
-        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-0",
-        "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-1"
-      ],
-      "settings": {
-        "columns_desktop": 2,
-        "section_width": "full-width-row",
-        "mobile_swipe": true,
-        "image_ratio": "adapt",
-        "content_position": "middle-center",
-        "text_alignment": "center",
-        "column_spacing": "large",
-        "heading_size": "h2",
-        "overlay_color": "#4b4b4b",
-        "overlay_opacity": 10,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": false
       }
     },
     "16625458859c68803a": {
@@ -403,6 +272,19 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "recently_viewed_products_dMFiha": {
+      "type": "recently-viewed-products",
+      "name": "Recently viewed products",
+      "settings": {
+        "heading": "Recently Viewed",
+        "heading_left": true,
+        "description": "",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -411,13 +293,11 @@
     "16623877721f33fb14",
     "logo_list_g9aNp6",
     "collapsible_content_CyW9d6",
-    "bcb48e2d-c55f-4787-abf4-17b850e5bb8a",
     "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c",
-    "5c7cec52-f78f-4e08-8c51-0ff3f0135e45",
     "8831dd81-b06c-44dc-aa95-9c370558f6ff",
-    "b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5",
     "16625458859c68803a",
     "1662552569cce2536d",
-    "product-recommendations"
+    "product-recommendations",
+    "recently_viewed_products_dMFiha"
   ]
 }
