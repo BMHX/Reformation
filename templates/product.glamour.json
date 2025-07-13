@@ -189,131 +189,39 @@
         "disable_bottom_spacing": false
       }
     },
-    "fe7eee22-4bc9-4bc0-8b4b-205df1a993f5": {
-      "type": "rich-text",
+    "collapsible_content_CyW9d6": {
+      "type": "collapsible-content",
       "blocks": {
-        "heading_W4VaiQ": {
-          "type": "heading",
+        "collapsible_tab_qygWQw": {
+          "type": "collapsible_tab",
           "settings": {
-            "text": "Talk about your brand",
-            "size": "h3"
+            "heading": "Are your gems from Mount Kailash?",
+            "open": false,
+            "content": "<p>Yes, all our gems are ethically sourced from the sacred Mount Kailash region. Unlike mass-produced stones, each gem is carefully handpicked to ensure it carries the unique spiritual energy and purity associated with this holy mountain.</p>",
+            "page": "",
+            "custom_liquid": ""
           }
         },
-        "076a1b72-2e63-4936-8d6e-ebf8ae6397bb": {
-          "type": "image",
+        "collapsible_tab_b6abY4": {
+          "type": "collapsible_tab",
           "settings": {
-            "image": "shopify://shop_images/Kailash_Energy_ICON-20.svg",
-            "retina": true
-          }
-        },
-        "image_LiTeGG": {
-          "type": "image",
-          "settings": {
-            "retina": true
-          }
-        },
-        "image_JNQaWq": {
-          "type": "image",
-          "settings": {
-            "retina": true
-          }
-        },
-        "image_CURjUF": {
-          "type": "image",
-          "settings": {
-            "retina": true
+            "heading": "Can I customize my Mount Kailash energy stone jewelry?",
+            "open": false,
+            "content": "<p>Yes, we offer customizations to create jewelry that resonates with your personal energy and intentions. Since we are a small artisan team focused on quality and spiritual authenticity rather than mass production, custom orders may require a longer processing time. We appreciate your patience as we carefully craft each unique piece.</p>",
+            "page": "",
+            "custom_liquid": ""
           }
         }
       },
       "block_order": [
-        "heading_W4VaiQ",
-        "076a1b72-2e63-4936-8d6e-ebf8ae6397bb",
-        "image_LiTeGG",
-        "image_JNQaWq",
-        "image_CURjUF"
+        "collapsible_tab_qygWQw",
+        "collapsible_tab_b6abY4"
       ],
+      "name": "Collapsible content",
       "settings": {
-        "section_width": "full-width-row",
-        "text_width": "grid",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "5927d23d-da00-4a9a-93f8-5644e7d23230": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-0": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Recycled Gold",
-            "text": "<p>Recycled gold refers to gold that has been previously used and is now being reclaimed and reused in various industries. This process of recycling gold has become increasingly popular in recent years due to the rising demand for ethical products.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-1": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Handmade In NYC",
-            "text": "<p>These techniques can include hand engraving, hand forging, and hand casting, among others. By using these traditional techniques, artisans are able to create pieces that have a unique and authentic look and feel.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-2": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "18K Solid Gold",
-            "text": "<p>18k gold is also a popular choice for jewelry making because of its color. Yellow gold is the most traditional and classic choice, but white and rose gold have become increasingly popular in recent years.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-3": {
-          "type": "column",
-          "settings": {
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Certifed Carbon Free",
-            "text": "<p>Certified carbon-free products and companies offer several benefits. For one, they help to reduce the overall carbon footprint of society, which is crucial for mitigating the impacts of climate change.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-0",
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-1",
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-2",
-        "template--18432547127579__5927d23d-da00-4a9a-93f8-5644e7d23230-1681380108b151c721-3"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_left": false,
+        "heading": "FREQUENTLY ASKED QUESTIONS",
         "description": "",
-        "full_width": true,
-        "display_type": "grid",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "text_alignment": "left",
-        "heading_size": "h5",
-        "mobile_swipe": true,
-        "show_progress_bar": true,
+        "uppercase_heading": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -502,8 +410,7 @@
     "main-product",
     "16623877721f33fb14",
     "logo_list_g9aNp6",
-    "fe7eee22-4bc9-4bc0-8b4b-205df1a993f5",
-    "5927d23d-da00-4a9a-93f8-5644e7d23230",
+    "collapsible_content_CyW9d6",
     "bcb48e2d-c55f-4787-abf4-17b850e5bb8a",
     "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c",
     "5c7cec52-f78f-4e08-8c51-0ff3f0135e45",
