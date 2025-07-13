@@ -1,10 +1,17 @@
 
 
-
 .contact-form .section-header {
   padding: 0;
   margin-left: 0;
-  text-align: left; }
+  text-align: center; }
+  
+.contact-form .section-header .section-header--content {
+  margin: 0 auto;
+  text-align: center; }
+
+.contact-form .section-header .rte {
+  margin: 0 auto;
+  text-align: center; }
 
 .contact-form .contact-form {
   max-width: 800px; }
