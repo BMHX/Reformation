@@ -12,11 +12,10 @@
   align-items: center;
   font-weight: var(--font-body-bold-weight, 600);
   margin: 0 5px;
-  border: 1px solid var(--color-border);
-  background: transparent; }
+  border: 1px solid var(--color-border); }
   .blog-header__tags a:hover, .blog-header__tags a.active {
-    color: #fff;
-    background: var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
     border-color: var(--color-accent); }
 
 .blog-header {
