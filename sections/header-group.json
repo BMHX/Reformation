@@ -48,7 +48,7 @@
             "position": "2",
             "promo_1_image": "shopify://shop_images/3_44232c01-326f-4be5-921c-4763d4720f88.webp",
             "promo_1_link_label": "Shop",
-            "promo_1_link": "",
+            "promo_1_link": "shopify://collections",
             "promo_2_link_label": "Shop",
             "promo_2_link": "",
             "promo_3_link_label": "Shop",
