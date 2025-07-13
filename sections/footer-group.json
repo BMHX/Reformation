@@ -62,7 +62,7 @@
         "title": "",
         "subtitle": "",
         "stripe_height": 6,
-        "full_width": true
+        "full_width": false
       }
     },
     "footer": {
