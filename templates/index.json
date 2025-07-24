@@ -185,6 +185,7 @@
         "guidance_item_7XtF3c",
         "guidance_item_cG4p7y"
       ],
+      "disabled": true,
       "custom_css": [
         ".energy-guidance__icon-wrapper {border: none;}",
         ".energy-guidance__icon {width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;}",
