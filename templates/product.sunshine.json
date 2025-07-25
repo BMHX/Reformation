@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
@@ -18,18 +27,27 @@
           "type": "title",
           "settings": {
             "uppercase": false,
-            "show_products_rating": true
+            "show_products_rating": true,
+            "show_custom_badges": true
           }
         },
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
           "type": "description",
-          "settings": {}
+          "settings": {
+            "seo_text_max_height": 1000,
+            "seo_text_read_more": "Read more",
+            "seo_text_read_less": "Read less"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "color_picker": true,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
+            "variant_is_disabled": true,
+            "sizing_guide_variant": "Size",
             "sizing_guide_text": "Sizing guide",
             "sizing_guide_icon": "ruler",
             "sizing_guide_page": ""
@@ -39,7 +57,9 @@
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "outline_button": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
           }
         },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
@@ -47,10 +67,16 @@
           "settings": {
             "side_panel_1_label": "Materials",
             "side_panel_1_icon": "leather",
+            "side_panel_1_content": "",
+            "side_panel_1_page": "",
             "side_panel_2_label": "Shipping & Returns",
             "side_panel_2_icon": "box",
+            "side_panel_2_content": "",
+            "side_panel_2_page": "",
             "side_panel_3_label": "Care Guide",
-            "side_panel_3_icon": "washing"
+            "side_panel_3_icon": "washing",
+            "side_panel_3_content": "",
+            "side_panel_3_page": ""
           }
         },
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
@@ -73,7 +99,9 @@
         "enable_sticky_add_to_cart": true,
         "show_taxes_included": true,
         "media_layout": "grid",
+        "display_slider_pagination": true,
         "media_aspect_ratio": "adapt",
+        "display_captions": true,
         "hide_variants": false,
         "lightbox": true,
         "enable_video_looping": false
@@ -101,7 +129,8 @@
         "f3a800b2-f98e-464c-af94-0b4dcded80ca": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "description_size": "medium"
           }
         }
       },
@@ -110,6 +139,10 @@
         "f3a800b2-f98e-464c-af94-0b4dcded80ca"
       ],
       "settings": {
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
         "height": "adapt",
         "desktop_image_width": "large",
         "section_width": "full-width-row",
@@ -117,6 +150,7 @@
         "content_position": "text-left",
         "color_bg": "#fcf6d1",
         "color_text": "#157642",
+        "color_border": "#e2e2e2",
         "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
@@ -174,9 +208,12 @@
       ],
       "settings": {
         "height": "height-auto",
+        "full_width": true,
         "direction": "left",
         "speed": "20s",
+        "font_family": "body",
         "text_size": 24,
+        "text_uppercase": false,
         "image_size": "small",
         "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ff565e",
@@ -199,7 +236,8 @@
         "6abf090a-baed-4bcc-bc49-e60bab4f3e47": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "description_size": "medium"
           }
         }
       },
@@ -208,6 +246,10 @@
         "6abf090a-baed-4bcc-bc49-e60bab4f3e47"
       ],
       "settings": {
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
         "height": "adapt",
         "desktop_image_width": "large",
         "section_width": "full-width-row",
@@ -215,6 +257,7 @@
         "content_position": "text-left",
         "color_bg": "#ffeaeb",
         "color_text": "#e8232c",
+        "color_border": "#e2e2e2",
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
@@ -226,6 +269,7 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "Column",
             "text": "",
@@ -237,9 +281,10 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -248,9 +293,10 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -259,6 +305,7 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "",
             "text": "",
@@ -270,9 +317,10 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -281,9 +329,10 @@
           "type": "column",
           "settings": {
             "image_full_width": false,
+            "image_link": "",
             "retina": true,
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -329,7 +378,11 @@
           "type": "heading",
           "settings": {
             "text": "Image with text overlay",
-            "heading_size": "h1-xlarge"
+            "heading_size": "h1-xlarge",
+            "font_family": "sans-serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
           }
         },
         "72d734bb-8c38-42f5-a4fc-824cd4f56f29": {
@@ -343,7 +396,13 @@
           "settings": {
             "button_text": "Shop Now",
             "button_link": "",
-            "button_outline": false
+            "button_outline": false,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg_color": "#ffffff",
+            "button_hover_text_color": "#000000",
+            "button_hover_border_color": "#000000"
           }
         }
       },
@@ -354,11 +413,13 @@
       ],
       "settings": {
         "section_width": "full-width-row",
+        "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
         "content_width": "small",
         "content_position": "middle-left",
         "text_alignment": "left",
+        "overlay_color": "#000000",
         "overlay_opacity": 16,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -369,7 +430,7 @@
       "settings": {
         "heading": "Product recommendations",
         "heading_left": false,
-        "description": "<p>Product recommendations description<\/p>",
+        "description": "<p>Product recommendations description</p>",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": false,
