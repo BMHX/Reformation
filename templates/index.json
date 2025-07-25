@@ -204,6 +204,16 @@
         "full_width": false
       }
     },
+    "spacer_mKK8iw": {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "featured_collection_jg6MAR": {
       "type": "featured-collection",
       "name": "Featured collection",
@@ -744,6 +754,7 @@
     "16479477632637c9a7",
     "color_stripes_fxjCEW",
     "energy_guidance_dpjDJa",
+    "spacer_mKK8iw",
     "featured_collection_jg6MAR",
     "image_with_text_overlay_YhY9f3",
     "spacer_Ag6cy3",
