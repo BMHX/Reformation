@@ -90,15 +90,15 @@
             "side_panel_1_label": "SIZE GUIDE",
             "side_panel_1_icon": "ruler",
             "side_panel_1_content": "",
-            "side_panel_1_page": "",
+            "side_panel_1_page": "size-guide",
             "side_panel_2_label": "Guarantee",
             "side_panel_2_icon": "clipboard",
             "side_panel_2_content": "",
-            "side_panel_2_page": "",
+            "side_panel_2_page": "guarantee",
             "side_panel_3_label": "Shipping & Return",
             "side_panel_3_icon": "box",
             "side_panel_3_content": "",
-            "side_panel_3_page": ""
+            "side_panel_3_page": "shipping-return"
           }
         },
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
