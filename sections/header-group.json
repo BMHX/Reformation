@@ -44,6 +44,7 @@
       "blocks": {
         "megamenu_promotions_iNyEW9": {
           "type": "megamenu_promotions",
+          "disabled": true,
           "settings": {
             "position": "2",
             "promo_1_image": "shopify://shop_images/3_44232c01-326f-4be5-921c-4763d4720f88.webp",
