@@ -449,5 +449,26 @@
     "discount_code_error": "优惠码无法应用于您的购物车",
     "discounts": "优惠",
     "apply": "应用"
+  },
+  "shopify": {
+    "checkout": {
+      "order_review_requirement": {
+        "checkout_to_draft": "公司位置设置为将所有订单作为草稿提交以供审核。",
+        "missing_address": "没有可用的送货地址：缺少公司所在地地址，并且一次性地址使用被禁用。"
+      },
+      "local_pickup": {
+        "location_information_next": {
+          "one": "您附近有 %{count} 个地点有库存",
+          "other": "您附近有 %{count} 个地点有库存"
+        }
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "signature_mismatch": "{{stable_id}}行的商品签名不匹配。"
+          }
+        }
+      }
+    }
   }
 }
