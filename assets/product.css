@@ -335,7 +335,7 @@
   .product-grid-container {
     display: grid;
     grid-gap: clamp(30px, 5%, 60px);
-    grid-template-columns: 1fr clamp(360px, 45%, 1200px); }}
+    grid-template-columns: 1fr clamp(360px, 40%, 1200px); }}
 
 .product-image-container {
   margin: 0 -15px 25px;
