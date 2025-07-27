@@ -68,8 +68,8 @@
       z-index: 1;
       transition: transform 0.3s ease; /* 添加过渡效果 */ }
     .shopify-payment-button__button:not(.shopify-payment-button__button--branded):not([disabled]):hover, .shopify-payment-button__button:not(.shopify-payment-button__button--branded):not([disabled]):focus {
-      background: var(--color-accent);
-      color: #fff; }
+      background: var(--solid-button-background, var(--color-accent));
+      color: var(--solid-button-label, #fff); }
       .shopify-payment-button__button:not(.shopify-payment-button__button--branded):not([disabled]):hover:before, .shopify-payment-button__button:not(.shopify-payment-button__button--branded):not([disabled]):focus:before {
         transform: translateY(0%); }
   .shopify-payment-button__button.shopify-payment-button__button--branded .shopify-cleanslate div[role="button"] {
@@ -1564,6 +1564,11 @@
   transform: translateY(100%);
   z-index: 1;
   transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.single-add-to-cart-button:not([disabled]):hover, 
+.single-add-to-cart-button:not([disabled]):focus {
+  color: var(--solid-button-label, #fff); /* 保持文字颜色不变 */
 }
 
 .single-add-to-cart-button:not([disabled]):hover:before, 
