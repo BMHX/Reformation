@@ -748,6 +748,153 @@
         "border_separator": false,
         "border_separator_full": false
       }
+    },
+    "brand_story_VhUeaB": {
+      "type": "brand-story",
+      "blocks": {
+        "core_value_ychr8P": {
+          "type": "core_value",
+          "settings": {
+            "icon": "🧵",
+            "heading": "Supporting Village Life",
+            "heading_size": "h3",
+            "text": "<p>In remote mountain regions, in high-altitude villages, there are artisans who live with their hands and their faith. We want to offer them real, lasting opportunities — not one-time aid, but a dignified, sustainable source of income. So they can preserve their culture, support their families, and continue living on the land they love.</p>",
+            "text_size": "text-size-regular"
+          }
+        },
+        "core_value_zGHPbi": {
+          "type": "core_value",
+          "settings": {
+            "icon": "📿",
+            "heading": "Giving Expression to the Dharma",
+            "heading_size": "h3",
+            "text": "<p>The Dharma isn't just found in temple bells or sacred texts. It can also appear as a string of prayer beads, a small amulet, or a bracelet woven with intention. Quietly, gently, these items can integrate into daily life — allowing faith to truly live in the heart, rather than remaining distant or abstract.</p>",
+            "text_size": "text-size-regular"
+          }
+        },
+        "core_value_gjHC3H": {
+          "type": "core_value",
+          "settings": {
+            "icon": "💛",
+            "heading": "Spreading Kindness, Connecting Through Faith",
+            "heading_size": "h3",
+            "text": "<p>The value of these items doesn't lie in how luxurious they are — but in how they gently remind us to stay compassionate, to keep making vows in the midst of life's noise. They are quiet signals — gentle reminders — that on this human journey, we can recognize one another: You, too, came with kindness in your heart.</p>",
+            "text_size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "core_value_ychr8P",
+        "core_value_zGHPbi",
+        "core_value_gjHC3H"
+      ],
+      "name": "品牌故事",
+      "settings": {
+        "heading": "我们的品牌故事",
+        "subheading": "了解我们的使命与价值观",
+        "layout_style": "zen",
+        "vision_icon": "🌿",
+        "vision_title": "Our Vision",
+        "vision_text": "<p>We started Mintravibes with a simple yet heartfelt intention: To spread kindness in a world that's growing increasingly restless — gently, patiently, and with compassion. Through this project, we hope to slowly fulfill three core aspirations:</p>",
+        "tone_icon": "🌱",
+        "tone_title": "Tone of Voice",
+        "tone_text": "<p>We're not in a hurry to \"sell you something.\" We simply place these pieces of faith and blessing in front of you — softly. Our tone is calm and natural — like someone brewing tea in the mountains. No pushing, no exaggeration.</p><p>Because: This feels more like a form of service than a business. It's an extension of faith — not just a product in wrapping paper. It's a gentle reminder — not a material showpiece.</p><p>We believe that those who truly understand the meaning of these creations will naturally be drawn to them. And we hope that the moment you see them might be the moment you feel ready to turn inward and make a new vow.</p>",
+        "message_icon": "✨",
+        "message_title": "Core Message",
+        "message_text": "<p>Faith isn't about status or luxury. It's about choosing kindness and holding your intention — every single day. These creations — perhaps just a bracelet or a small pendant — may become your anchor of belief, a small signal to guide you back to your heart of compassion.</p><p>We believe: Everyone comes into this world with a wish. And if your wish is rooted in kindness, the Buddhas will respond to it. You are the Buddha in this world. When you're willing to complete yourself, you might just bring a little more light into someone else's life.</p><p>That is why we continue to do what we do.</p>",
+        "button_label": "了解更多",
+        "button_link": "",
+        "button_outline": false,
+        "section_width": "full-width-row-full",
+        "color_bg": "#ffffff",
+        "color_text": "#333333",
+        "accent_color": "#D4AF37",
+        "secondary_color": "#8B4513",
+        "color_links": "#D4AF37",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "tabbed_content_jW7U7Y": {
+      "type": "tabbed-content",
+      "blocks": {
+        "tab_zgiRFk": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Supporting Village Life",
+            "icon": "silhouette",
+            "text": "<p>In remote mountain regions, in high-altitude villages, there are artisans who live with their hands and their faith. We want to offer them real, lasting opportunities — not one-time aid, but a dignified, sustainable source of income. So they can preserve their culture, support their families, and continue living on the land they love.</p>",
+            "text_columns": "1",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "tab_xfj9HK": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Giving Expression to the Dharma",
+            "icon": "heart",
+            "text": "<p>The Dharma isn't just found in temple bells or sacred texts. It can also appear as a string of prayer beads, a small amulet, or a bracelet woven with intention. Quietly, gently, these items can integrate into daily life — allowing faith to truly live in the heart, rather than remaining distant or abstract.<br/><br/></p>",
+            "text_columns": "1",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "tab_ybfnTn": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Spreading Kindness, Connecting Through Faith",
+            "icon": "chat_bubble",
+            "text": "<p>The value of these items doesn't lie in how luxurious they are — but in how they gently remind us to stay compassionate, to keep making vows in the midst of life's noise. They are quiet signals — gentle reminders — that on this human journey, we can recognize one another: You, too, came with kindness in your heart.<br/><br/></p>",
+            "text_columns": "1",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "tab_A4acpy": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Tone of Voice",
+            "icon": "question_mark",
+            "text": "<p>We're not in a hurry to \"sell you something.\" We simply place these pieces of faith and blessing in front of you — softly. Our tone is calm and natural — like someone brewing tea in the mountains. No pushing, no exaggeration.</p><p>Because: This feels more like a form of service than a business. It's an extension of faith — not just a product in wrapping paper. It's a gentle reminder — not a material showpiece.</p><p>We believe that those who truly understand the meaning of these creations will naturally be drawn to them. And we hope that the moment you see them might be the moment you feel ready to turn inward and make a new vow.</p>",
+            "text_columns": "1",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "tab_NfmjbR": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Core Message",
+            "icon": "star",
+            "text": "<p>Faith isn't about status or luxury. It's about choosing kindness and holding your intention — every single day. These creations — perhaps just a bracelet or a small pendant — may become your anchor of belief, a small signal to guide you back to your heart of compassion.</p><p>We believe: Everyone comes into this world with a wish. And if your wish is rooted in kindness, the Buddhas will respond to it. You are the Buddha in this world. When you're willing to complete yourself, you might just bring a little more light into someone else's life.</p>",
+            "text_columns": "1",
+            "page": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_zgiRFk",
+        "tab_xfj9HK",
+        "tab_ybfnTn",
+        "tab_A4acpy",
+        "tab_NfmjbR"
+      ],
+      "name": "Tabbed content",
+      "settings": {
+        "heading": "Our Vision",
+        "description": "<p>We started Mintravibes with a simple yet heartfelt intention: To spread kindness in a world that's growing increasingly restless — gently, patiently, and with compassion. Through this project, we hope to slowly fulfill three core aspirations:</p>",
+        "text_width": "grid",
+        "tab_alignment": "left",
+        "text_alignment": "left",
+        "color_bg": "#ffffff",
+        "color_tabs": "#151515",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -765,6 +912,8 @@
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
-    "spacer_XCeAP6"
+    "spacer_XCeAP6",
+    "brand_story_VhUeaB",
+    "tabbed_content_jW7U7Y"
   ]
 }
