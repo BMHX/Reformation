@@ -2,46 +2,31 @@
   background: var(--color-bg, var(--bg-body, #fff));
   color: var(--color-text, var(--color-body));
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
 }
 
-.brand-story-with-bg-image {
+/* 通用标题样式 */
+.brand-story-header {
   position: relative;
-}
-
-.brand-story-with-bg-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.85); /* 半透明白色遮罩 */
-  z-index: 1;
-}
-
-.brand-story__inner {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  position: relative;
-  z-index: 2;
+  padding: 80px 0 40px;
+  text-align: center;
+  background: linear-gradient(to right, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
 }
 
 .brand-story-heading {
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 2.5em;
+  margin: 0 0 15px;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: var(--accent-color, #D4AF37);
   position: relative;
-  padding-bottom: 15px;
+  display: inline-block;
 }
 
-.brand-story-heading:after {
+.brand-story-heading::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
@@ -49,141 +34,497 @@
   background-color: var(--accent-color, #D4AF37);
 }
 
-/* 部分样式 */
-.brand-story-section {
-  margin-bottom: 50px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.brand-story-subheading {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
 }
 
-.section-icon {
+/* 内容容器 */
+.brand-story__inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 愿景部分 */
+.brand-story-vision {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  position: relative;
+  min-height: 500px;
+}
+
+.vision-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.vision-image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vision-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.vision-title {
   font-size: 2.5em;
-  margin-bottom: 15px;
-  text-align: center;
+  margin-bottom: 25px;
+  color: var(--accent-color, #D4AF37);
+  position: relative;
 }
 
-.section-title {
+.vision-text {
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* 核心价值部分 */
+.brand-story-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0;
+  width: 100%;
+}
+
+.brand-story-value {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+.value-inner {
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.brand-story-value:hover .value-inner {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.value-title {
   font-size: 1.8em;
   margin-bottom: 20px;
   color: var(--accent-color, #D4AF37);
 }
 
-.section-content {
-  line-height: 1.8;
-  font-size: 1.1em;
+.value-content {
+  font-size: 1em;
+  line-height: 1.7;
+  max-width: 500px;
 }
 
-/* 核心价值样式 */
-.brand-story-core-values {
+.value-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.15;
+  transition: opacity 0.5s ease;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-story-value:hover .value-image {
+  opacity: 0.25;
+}
+
+/* 语调和核心信息部分 */
+.brand-story-sections {
+  width: 100%;
+}
+
+.brand-story-tone,
+.brand-story-message {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  margin: 50px 0;
+  width: 100%;
+  min-height: 500px;
 }
 
-.brand-story-value {
+.tone-content,
+.message-content {
   flex: 1;
-  min-width: 250px;
-  padding: 25px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 300px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
-.brand-story-value:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.tone-image,
+.message-image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
-.value-icon {
-  font-size: 2em;
-  margin-bottom: 15px;
-  text-align: center;
+.tone-image img,
+.message-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.value-title {
-  font-size: 1.4em;
-  margin-bottom: 15px;
+.tone-icon,
+.message-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.tone-title,
+.message-title {
+  font-size: 2.5em;
+  margin-bottom: 25px;
   color: var(--accent-color, #D4AF37);
-  text-align: center;
 }
 
-.value-content {
-  line-height: 1.7;
+.tone-text,
+.message-text {
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 600px;
 }
 
 /* 按钮样式 */
 .brand-story-button {
   text-align: center;
-  margin-top: 40px;
+  padding: 60px 20px;
+  position: relative;
 }
 
 .brand-story-button .button {
-  padding: 12px 30px;
-  font-size: 1.1em;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.brand-story-button .button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transform: translateY(100%);
   transition: transform 0.3s ease;
 }
 
 .brand-story-button .button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* 文本位置样式 */
-.brand-story.text-position-left .brand-story__inner {
-  margin-left: 0;
+.brand-story-button .button:hover:before {
+  transform: translateY(0);
 }
 
-.brand-story.text-position-right .brand-story__inner {
-  margin-right: 0;
+/* 布局风格 */
+/* 1. 现代风格 */
+.brand-story.layout-modern .brand-story-values {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-/* 文本宽度样式 */
-.brand-story.text-width-small .brand-story__inner {
-  max-width: 500px;
+.brand-story.layout-modern .brand-story-value:nth-child(odd) {
+  background-color: rgba(var(--color-accent-rgb), 0.05);
 }
 
-.brand-story.text-width-medium .brand-story__inner {
-  max-width: 700px;
+.brand-story.layout-modern .brand-story-value:nth-child(even) {
+  background-color: rgba(var(--color-accent-rgb), 0.02);
 }
 
-.brand-story.text-width-large .brand-story__inner {
-  max-width: 900px;
+.brand-story.layout-modern .brand-story-tone {
+  background-color: rgba(var(--color-accent-rgb), 0.05);
 }
 
-.brand-story.text-width-xlarge .brand-story__inner {
-  max-width: 1100px;
+.brand-story.layout-modern .brand-story-message {
+  background-color: rgba(var(--color-accent-rgb), 0.02);
 }
 
-.brand-story.text-width-grid .brand-story__inner {
-  max-width: 1380px;
+.brand-story.layout-modern .tone-content {
+  order: 2;
+}
+
+.brand-story.layout-modern .tone-image {
+  order: 1;
+}
+
+/* 2. 交错风格 */
+.brand-story.layout-staggered .brand-story-vision {
+  position: relative;
+}
+
+.brand-story.layout-staggered .vision-content {
+  width: 50%;
+  background-color: var(--color-bg);
+  position: relative;
+  z-index: 2;
+  padding: 80px 40px;
+  margin-left: 50%;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-story.layout-staggered .vision-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.brand-story.layout-staggered .brand-story-values {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 40px 0;
+}
+
+.brand-story.layout-staggered .brand-story-value {
+  padding: 20px;
+}
+
+.brand-story.layout-staggered .value-inner {
+  background-color: var(--color-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.brand-story.layout-staggered .brand-story-tone {
+  position: relative;
+}
+
+.brand-story.layout-staggered .tone-content {
+  width: 50%;
+  background-color: var(--color-bg);
+  position: relative;
+  z-index: 2;
+  padding: 80px 40px;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-story.layout-staggered .tone-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.brand-story.layout-staggered .brand-story-message {
+  position: relative;
+}
+
+.brand-story.layout-staggered .message-content {
+  width: 50%;
+  background-color: var(--color-bg);
+  position: relative;
+  z-index: 2;
+  padding: 80px 40px;
+  margin-left: 50%;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-story.layout-staggered .message-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+}
+
+/* 3. 禅意风格 */
+.brand-story.layout-zen {
+  background-color: #f8f8f8;
+}
+
+.brand-story.layout-zen .brand-story-header {
+  background: transparent;
+  padding: 100px 0 60px;
+}
+
+.brand-story.layout-zen .brand-story-heading {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.brand-story.layout-zen .brand-story-heading::after {
+  height: 1px;
+  width: 100px;
+}
+
+.brand-story.layout-zen .brand-story-vision {
+  background-color: #fff;
+}
+
+.brand-story.layout-zen .vision-content {
+  padding: 80px 60px;
+}
+
+.brand-story.layout-zen .vision-title {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.brand-story.layout-zen .brand-story-values {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 1px 0;
+}
+
+.brand-story.layout-zen .brand-story-value {
+  background-color: #fff;
+}
+
+.brand-story.layout-zen .value-inner {
+  padding: 60px 40px;
+}
+
+.brand-story.layout-zen .value-title {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.brand-story.layout-zen .brand-story-tone,
+.brand-story.layout-zen .brand-story-message {
+  background-color: #fff;
+  margin: 1px 0;
+}
+
+.brand-story.layout-zen .tone-content,
+.brand-story.layout-zen .message-content {
+  padding: 80px 60px;
+}
+
+.brand-story.layout-zen .tone-title,
+.brand-story.layout-zen .message-title {
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.brand-story.layout-zen .brand-story-button {
+  background-color: #fff;
+  padding: 80px 20px;
+}
+
+.brand-story.layout-zen .button {
+  border-radius: 0;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 /* 响应式调整 */
+@media screen and (max-width: 1024px) {
+  .brand-story.layout-modern .brand-story-values {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .brand-story.layout-staggered .vision-content,
+  .brand-story.layout-staggered .tone-content,
+  .brand-story.layout-staggered .message-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 60px 30px;
+  }
+  
+  .brand-story.layout-staggered .vision-image,
+  .brand-story.layout-staggered .tone-image,
+  .brand-story.layout-staggered .message-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .brand-story.layout-zen .brand-story-values {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 @media screen and (max-width: 767px) {
-  .brand-story__inner {
-    padding: 40px 15px;
+  .brand-story-header {
+    padding: 60px 20px 30px;
   }
   
   .brand-story-heading {
+    font-size: 2.5em;
+  }
+  
+  .vision-content,
+  .tone-content,
+  .message-content {
+    padding: 40px 20px;
+  }
+  
+  .vision-title,
+  .tone-title,
+  .message-title {
     font-size: 2em;
   }
   
-  .section-title {
-    font-size: 1.5em;
+  .vision-icon,
+  .tone-icon,
+  .message-icon {
+    font-size: 2.5em;
   }
   
-  .brand-story-core-values {
-    flex-direction: column;
+  .value-inner {
+    padding: 30px 20px;
   }
   
-  .brand-story-value {
-    margin-bottom: 20px;
-  }
-  
-  .section-icon,
-  .value-icon {
-    font-size: 1.8em;
+  .brand-story-button {
+    padding: 40px 20px;
   }
 }

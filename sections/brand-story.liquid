@@ -1,19 +1,14 @@
 {{- 'brand-story.css' | asset_url | stylesheet_tag -}}
 {%- liquid
 	assign section_width = section.settings.section_width
-	assign text_width = section.settings.text_width
-	assign text_position = section.settings.text_position
-	assign text_alignment = section.settings.text_alignment
-
 	assign color_bg = section.settings.color_bg | downcase
 	assign color_text = section.settings.color_text
 	assign color_links = section.settings.color_links
-	assign text_stroke_color = section.settings.text_stroke_color
-	assign text_stroke_width = section.settings.text_stroke_width
 	assign accent_color = section.settings.accent_color
-
+	assign secondary_color = section.settings.secondary_color
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign layout_style = section.settings.layout_style
 
 	assign solid_button_label = color_bg
 	if color_bg == 'transparent' or color_bg == 'rgba(0,0,0,0)'
@@ -22,81 +17,132 @@
 -%}
 <div class="row {{ section_width }}">
 	<div class="small-12 columns">
-		<div class="brand-story text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.background_image != blank %} brand-story-with-bg-image{% endif %}"
+		<div class="brand-story layout-{{ layout_style }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"
 		style="--color-bg: {{ color_bg }}; 
-		       --color-text: {{ color_text }}; 
-		       --text-stroke-color: {{ text_stroke_color }};
-		       --text-stroke-width: {{ text_stroke_width }}px;
+		       --color-text: {{ color_text }};
 		       --accent-color: {{ accent_color }};
+		       --secondary-color: {{ secondary_color }};
 		       --solid-button-background: {{ color_text }}; 
 		       --outline-button-label: {{ color_text }}; 
 		       --solid-button-label: {{ solid_button_label }}; 
 		       --bg-body: {{ color_bg }}; 
 		       --color-accent: {{ color_links }}; 
-		       --color-accent-rgb: {{ color_links.rgb | replace: ' ' , ',' }};
-		       {% if section.settings.background_image != blank %}background-image: url('{{ section.settings.background_image | img_url: 'master' }}');{% endif %}">
-			<div class="brand-story__inner">
-				{% if section.settings.heading != blank %}
+		       --color-accent-rgb: {{ color_links.rgb | replace: ' ' , ',' }};">
+			
+			{% if section.settings.heading != blank %}
+				<div class="brand-story-header">
 					<h2 class="brand-story-heading">{{ section.settings.heading }}</h2>
-				{% endif %}
-				
+					{% if section.settings.subheading != blank %}
+						<p class="brand-story-subheading">{{ section.settings.subheading }}</p>
+					{% endif %}
+				</div>
+			{% endif %}
+
+			<div class="brand-story__inner">
 				{% if section.settings.vision_title != blank %}
-					<div class="brand-story-section vision-section">
-						<div class="section-icon">🌿</div>
-						<h3 class="section-title">{{ section.settings.vision_title }}</h3>
-						{% if section.settings.vision_text != blank %}
-							<div class="section-content rte">
-								{{ section.settings.vision_text }}
+					<div class="brand-story-vision">
+						<div class="vision-content">
+							<div class="vision-icon">{{ section.settings.vision_icon }}</div>
+							<h3 class="vision-title">{{ section.settings.vision_title }}</h3>
+							{% if section.settings.vision_text != blank %}
+								<div class="vision-text rte">
+									{{ section.settings.vision_text }}
+								</div>
+							{% endif %}
+						</div>
+						{% if section.settings.vision_image != blank %}
+							<div class="vision-image">
+								{%- liquid
+									assign image = section.settings.vision_image
+									assign master_width = image.src.width | append: 'x' | append: image.src.height
+									render 'responsive-image', image: image, sizes: master_width, retina: true
+								-%}
 							</div>
 						{% endif %}
 					</div>
 				{% endif %}
 				
-				<div class="brand-story-core-values">
+				<div class="brand-story-values">
 					{% for block in section.blocks %}
 						{% if block.type == 'core_value' %}
 							<div class="brand-story-value" {{ block.shopify_attributes }}>
-								{% if block.settings.icon != blank %}
-									<div class="value-icon">{{ block.settings.icon }}</div>
-								{% endif %}
-								
-								{% if block.settings.heading != blank %}
-									<h3 class="value-title {{ block.settings.heading_size }}">{{ block.settings.heading }}</h3>
-								{% endif %}
-								
-								{% if block.settings.text != blank %}
-									<div class="value-content rte {{ block.settings.text_size }}">
-										{{ block.settings.text }}
-									</div>
-								{% endif %}
+								<div class="value-inner">
+									{% if block.settings.icon != blank %}
+										<div class="value-icon">{{ block.settings.icon }}</div>
+									{% endif %}
+									
+									{% if block.settings.heading != blank %}
+										<h3 class="value-title {{ block.settings.heading_size }}">{{ block.settings.heading }}</h3>
+									{% endif %}
+									
+									{% if block.settings.text != blank %}
+										<div class="value-content rte {{ block.settings.text_size }}">
+											{{ block.settings.text }}
+										</div>
+									{% endif %}
+									
+									{% if block.settings.image != blank %}
+										<div class="value-image">
+											{%- liquid
+												assign image = block.settings.image
+												assign master_width = image.src.width | append: 'x' | append: image.src.height
+												render 'responsive-image', image: image, sizes: master_width, retina: true
+											-%}
+										</div>
+									{% endif %}
+								</div>
 							</div>
 						{% endif %}
 					{% endfor %}
 				</div>
 				
-				{% if section.settings.tone_title != blank %}
-					<div class="brand-story-section tone-section">
-						<div class="section-icon">🌱</div>
-						<h3 class="section-title">{{ section.settings.tone_title }}</h3>
-						{% if section.settings.tone_text != blank %}
-							<div class="section-content rte">
-								{{ section.settings.tone_text }}
+				<div class="brand-story-sections">
+					{% if section.settings.tone_title != blank %}
+						<div class="brand-story-tone">
+							<div class="tone-content">
+								<div class="tone-icon">{{ section.settings.tone_icon }}</div>
+								<h3 class="tone-title">{{ section.settings.tone_title }}</h3>
+								{% if section.settings.tone_text != blank %}
+									<div class="tone-text rte">
+										{{ section.settings.tone_text }}
+									</div>
+								{% endif %}
 							</div>
-						{% endif %}
-					</div>
-				{% endif %}
-				
-				{% if section.settings.message_title != blank %}
-					<div class="brand-story-section message-section">
-						<div class="section-icon">✨</div>
-						<h3 class="section-title">{{ section.settings.message_title }}</h3>
-						{% if section.settings.message_text != blank %}
-							<div class="section-content rte">
-								{{ section.settings.message_text }}
+							{% if section.settings.tone_image != blank %}
+								<div class="tone-image">
+									{%- liquid
+										assign image = section.settings.tone_image
+										assign master_width = image.src.width | append: 'x' | append: image.src.height
+										render 'responsive-image', image: image, sizes: master_width, retina: true
+									-%}
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+					
+					{% if section.settings.message_title != blank %}
+						<div class="brand-story-message">
+							<div class="message-content">
+								<div class="message-icon">{{ section.settings.message_icon }}</div>
+								<h3 class="message-title">{{ section.settings.message_title }}</h3>
+								{% if section.settings.message_text != blank %}
+									<div class="message-text rte">
+										{{ section.settings.message_text }}
+									</div>
+								{% endif %}
 							</div>
-						{% endif %}
-					</div>
-				{% endif %}
+							{% if section.settings.message_image != blank %}
+								<div class="message-image">
+									{%- liquid
+										assign image = section.settings.message_image
+										assign master_width = image.src.width | append: 'x' | append: image.src.height
+										render 'responsive-image', image: image, sizes: master_width, retina: true
+									-%}
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
 				
 				{% if section.settings.button_label != blank %}
 					<div class="brand-story-button">
@@ -122,8 +168,41 @@
 				"default": "我们的品牌故事"
 			},
 			{
+				"type": "text",
+				"id": "subheading",
+				"label": "副标题",
+				"default": "了解我们的使命与价值观"
+			},
+			{
+				"type": "select",
+				"id": "layout_style",
+				"label": "布局风格",
+				"options": [
+					{
+						"value": "modern",
+						"label": "现代风格"
+					},
+					{
+						"value": "staggered",
+						"label": "交错风格"
+					},
+					{
+						"value": "zen",
+						"label": "禅意风格"
+					}
+				],
+				"default": "zen",
+				"info": "选择不同的布局风格来展示您的品牌故事"
+			},
+			{
 				"type": "header",
 				"content": "愿景部分"
+			},
+			{
+				"type": "text",
+				"id": "vision_icon",
+				"label": "愿景图标",
+				"default": "🌿"
 			},
 			{
 				"type": "text",
@@ -138,8 +217,19 @@
 				"default": "<p>We started Mintravibes with a simple yet heartfelt intention: To spread kindness in a world that's growing increasingly restless — gently, patiently, and with compassion. Through this project, we hope to slowly fulfill three core aspirations:</p>"
 			},
 			{
+				"type": "image_picker",
+				"id": "vision_image",
+				"label": "愿景图片"
+			},
+			{
 				"type": "header",
 				"content": "语调部分"
+			},
+			{
+				"type": "text",
+				"id": "tone_icon",
+				"label": "语调图标",
+				"default": "🌱"
 			},
 			{
 				"type": "text",
@@ -154,8 +244,19 @@
 				"default": "<p>We're not in a hurry to \"sell you something.\" We simply place these pieces of faith and blessing in front of you — softly. Our tone is calm and natural — like someone brewing tea in the mountains. No pushing, no exaggeration.</p><p>Because: This feels more like a form of service than a business. It's an extension of faith — not just a product in wrapping paper. It's a gentle reminder — not a material showpiece.</p><p>We believe that those who truly understand the meaning of these creations will naturally be drawn to them. And we hope that the moment you see them might be the moment you feel ready to turn inward and make a new vow.</p>"
 			},
 			{
+				"type": "image_picker",
+				"id": "tone_image",
+				"label": "语调图片"
+			},
+			{
 				"type": "header",
 				"content": "核心信息部分"
+			},
+			{
+				"type": "text",
+				"id": "message_icon",
+				"label": "核心信息图标",
+				"default": "✨"
 			},
 			{
 				"type": "text",
@@ -168,6 +269,11 @@
 				"id": "message_text",
 				"label": "核心信息内容",
 				"default": "<p>Faith isn't about status or luxury. It's about choosing kindness and holding your intention — every single day. These creations — perhaps just a bracelet or a small pendant — may become your anchor of belief, a small signal to guide you back to your heart of compassion.</p><p>We believe: Everyone comes into this world with a wish. And if your wish is rooted in kindness, the Buddhas will respond to it. You are the Buddha in this world. When you're willing to complete yourself, you might just bring a little more light into someone else's life.</p><p>That is why we continue to do what we do.</p>"
+			},
+			{
+				"type": "image_picker",
+				"id": "message_image",
+				"label": "核心信息图片"
 			},
 			{
 				"type": "header",
@@ -211,96 +317,19 @@
 						"label": "全宽无间距"
 					}
 				],
-				"default": "grid",
+				"default": "full-width-row-full",
 				"label": "部分宽度"
 			},
 			{
-				"type": "select",
-				"id": "text_width",
-				"label": "内容宽度",
-				"options": [
-					{
-						"value": "small",
-						"label": "小"
-					},
-					{
-						"value": "medium",
-						"label": "中"
-					},
-					{
-						"value": "large",
-						"label": "大"
-					},
-					{
-						"value": "xlarge",
-						"label": "特大"
-					},
-					{
-						"value": "grid",
-						"label": "网格"
-					}
-				],
-				"default": "large"
-			},
-			{
-				"type": "select",
-				"id": "text_position",
-				"label": "内容位置",
-				"options": [
-					{
-						"value": "left",
-						"label": "左"
-					},
-					{
-						"value": "center",
-						"label": "中"
-					},
-					{
-						"value": "right",
-						"label": "右"
-					}
-				],
-				"default": "center"
-			},
-			{
-				"type": "select",
-				"id": "text_alignment",
-				"label": "内容对齐",
-				"options": [
-					{
-						"value": "left",
-						"label": "左"
-					},
-					{
-						"value": "center",
-						"label": "中"
-					},
-					{
-						"value": "right",
-						"label": "右"
-					}
-				],
-				"default": "left"
-			},
-			{
 	      "type": "header",
-	      "content": "背景"
+	      "content": "颜色"
 	    },
-			{
-				"type": "image_picker",
-				"id": "background_image",
-				"label": "背景图片"
-			},
 			{
         "type": "color",
         "id": "color_bg",
         "label": "背景颜色",
         "default": "#ffffff"
       },
-			{
-	      "type": "header",
-	      "content": "文字样式"
-	    },
 			{
         "type": "color",
         "id": "color_text",
@@ -309,25 +338,15 @@
       },
 			{
         "type": "color",
-        "id": "text_stroke_color",
-        "label": "文字轮廓颜色",
-        "default": "transparent"
-      },
-			{
-        "type": "range",
-        "id": "text_stroke_width",
-        "min": 0,
-        "max": 5,
-        "step": 0.5,
-        "unit": "px",
-        "label": "文字轮廓宽度",
-        "default": 0
+        "id": "accent_color",
+        "label": "主要强调颜色",
+        "default": "#D4AF37"
       },
 			{
         "type": "color",
-        "id": "accent_color",
-        "label": "强调颜色",
-        "default": "#D4AF37"
+        "id": "secondary_color",
+        "label": "次要强调颜色",
+        "default": "#8B4513"
       },
 			{
         "type": "color",
@@ -415,6 +434,11 @@
 							}
 						],
 						"default": "text-size-regular"
+					},
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "图片"
 					}
 				]
 			}
