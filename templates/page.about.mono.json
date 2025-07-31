@@ -9,19 +9,44 @@
  */
 {
   "sections": {
-    "16636821084e52389f": {
-      "type": "background-video",
+    "image_with_text_overlay_wekBdT": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_hrAMEx": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Vision",
+            "heading_size": "h1-xlarge",
+            "font_family": "sans-serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
+          }
+        },
+        "text_9pHPpR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We created Mintravibes out of a simple yet firm intention:<br/>To gently spread kindness in a world that’s becoming increasingly restless.</p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hrAMEx",
+        "text_9pHPpR"
+      ],
+      "name": "Image with text overlay",
       "settings": {
-        "desktop_height": "desktop-height-550",
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/3_eefd854b-0c26-477f-abed-065c611823e8.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
-        "full_width": true,
-        "subheading": "",
-        "heading": "Our Vision",
-        "text": "We created Mintravibes out of a simple yet firm intention:\nTo gently spread kindness in a world that’s becoming increasingly restless.",
-        "lightbox_button": false,
-        "video": "",
-        "fallback_image": "shopify://shop_images/3_eefd854b-0c26-477f-abed-065c611823e8.jpg",
-        "overlay_opacity": 35,
+        "content_width": "large",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -447,7 +472,7 @@
     }
   },
   "order": [
-    "16636821084e52389f",
+    "image_with_text_overlay_wekBdT",
     "color_stripes_GiyVpE",
     "1663684153cdd2cafb",
     "1663683917817df5f1",
