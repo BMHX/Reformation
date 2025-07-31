@@ -339,7 +339,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/all",
             "button_outline": false,
             "button_bg_color": "#000000",
             "button_text_color": "#ffffff",
@@ -428,6 +428,7 @@
         "93b51905-9649-4a88-a1ca-8e67ce2b2b04",
         "61e586ef-f243-4e81-81d8-e974cb97a25d"
       ],
+      "disabled": true,
       "settings": {
         "columns_desktop": 3,
         "section_width": "full-width-row-full",
