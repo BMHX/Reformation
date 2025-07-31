@@ -317,7 +317,7 @@
       "settings": {
         "heading": "NEW ARRIVALS",
         "heading_left": false,
-        "description": "<p>View ALL</p>",
+        "description": "",
         "full_width": true,
         "collection": "new-arrivals",
         "display_type": "grid",
@@ -829,6 +829,22 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "featured_blog_post_4UM3Af": {
+      "type": "featured-blog-post",
+      "name": "Featured blog post",
+      "settings": {
+        "heading": "Featured post",
+        "heading_left": false,
+        "description": "<p>Add a short description for your brand news</p>",
+        "full_width": false,
+        "article": "",
+        "image_ratio": "landscape",
+        "show_date": true,
+        "show_excerpt": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -847,6 +863,7 @@
     "multicolumn_Epa33H",
     "rich_text_FEHbAY",
     "spacer_XCeAP6",
-    "tabbed_content_jW7U7Y"
+    "tabbed_content_jW7U7Y",
+    "featured_blog_post_4UM3Af"
   ]
 }
