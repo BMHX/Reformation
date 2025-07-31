@@ -1,0 +1,437 @@
+{{- 'brand-story.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_width = section.settings.section_width
+	assign text_width = section.settings.text_width
+	assign text_position = section.settings.text_position
+	assign text_alignment = section.settings.text_alignment
+	
+	assign background_image = section.settings.background_image
+	assign color_bg = section.settings.color_bg | downcase
+	assign color_text = section.settings.color_text
+	assign color_accent = section.settings.color_accent
+	assign text_stroke_width = section.settings.text_stroke_width
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign solid_button_label = color_bg
+	if color_bg == 'transparent' or color_bg == 'rgba(0,0,0,0)'
+		assign solid_button_label = '#ffffff'
+	endif
+-%}
+<div class="row {{ section_width }}">
+	<div class="small-12 columns">
+		<div class="brand-story text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if background_image != blank %} brand-story-with-bg-image{% endif %}"
+		style="--color-bg: {{ color_bg }}; 
+		       --color-text: {{ color_text }}; 
+		       --color-accent: {{ color_accent }};
+		       --text-stroke-width: {{ text_stroke_width }}px;
+		       --solid-button-background: {{ color_text }}; 
+		       --outline-button-label: {{ color_text }}; 
+		       --solid-button-label: {{ solid_button_label }}; 
+		       --bg-body: {{ color_bg }}; 
+		       --color-accent-rgb: {{ color_accent.rgb | replace: ' ' , ',' }};
+		       {% if background_image != blank %}background-image: url('{{ background_image | img_url: 'master' }}');{% endif %}">
+			<div class="brand-story__inner">
+				{% if section.settings.heading != blank %}
+					<h2 class="brand-story-heading">{{ section.settings.heading }}</h2>
+				{% endif %}
+				
+				{% if section.settings.subheading != blank %}
+					<div class="brand-story-subheading">{{ section.settings.subheading }}</div>
+				{% endif %}
+				
+				<div class="brand-story-content">
+					{% for block in section.blocks %}
+						{% case block.type %}
+							{% when 'vision' %}
+								<div class="brand-story-section vision-section" {{ block.shopify_attributes }}>
+									{% if block.settings.heading != blank %}
+										<h3 class="section-heading">{{ block.settings.heading }}</h3>
+									{% endif %}
+									
+									{% if block.settings.text != blank %}
+										<div class="rte">
+											{{ block.settings.text }}
+										</div>
+									{% endif %}
+								</div>
+							
+							{% when 'core_value' %}
+								<div class="brand-story-section core-value-section" {{ block.shopify_attributes }}>
+									{% if block.settings.icon != blank %}
+										<div class="value-icon">{{ block.settings.icon }}</div>
+									{% endif %}
+									
+									{% if block.settings.heading != blank %}
+										<h3 class="value-heading">{{ block.settings.heading }}</h3>
+									{% endif %}
+									
+									{% if block.settings.text != blank %}
+										<div class="rte value-text">
+											{{ block.settings.text }}
+										</div>
+									{% endif %}
+								</div>
+							
+							{% when 'tone_of_voice' %}
+								<div class="brand-story-section tone-section" {{ block.shopify_attributes }}>
+									{% if block.settings.heading != blank %}
+										<h3 class="section-heading">{{ block.settings.heading }}</h3>
+									{% endif %}
+									
+									{% if block.settings.text != blank %}
+										<div class="rte">
+											{{ block.settings.text }}
+										</div>
+									{% endif %}
+								</div>
+							
+							{% when 'core_message' %}
+								<div class="brand-story-section message-section" {{ block.shopify_attributes }}>
+									{% if block.settings.heading != blank %}
+										<h3 class="section-heading">{{ block.settings.heading }}</h3>
+									{% endif %}
+									
+									{% if block.settings.text != blank %}
+										<div class="rte">
+											{{ block.settings.text }}
+										</div>
+									{% endif %}
+								</div>
+						{% endcase %}
+					{% endfor %}
+				</div>
+				
+				{% if section.settings.button_label != blank %}
+					<div class="brand-story-cta">
+						<a href="{{ section.settings.button_link }}" class="button{% if section.settings.button_outline %} outline{% endif %}">
+							<span>{{ section.settings.button_label }}</span>
+						</a>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "品牌故事",
+  "class": "section-brand-story",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "标题",
+      "default": "我们的品牌故事"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "副标题",
+      "default": "了解我们的理念与使命"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "grid",
+          "label": "网格宽度"
+        },
+        {
+          "value": "full-width-row",
+          "label": "全宽"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "全宽无间距"
+        }
+      ],
+      "default": "grid",
+      "label": "区块宽度"
+    },
+    {
+      "type": "select",
+      "id": "text_width",
+      "label": "内容宽度",
+      "options": [
+        {
+          "value": "small",
+          "label": "小"
+        },
+        {
+          "value": "medium",
+          "label": "中"
+        },
+        {
+          "value": "large",
+          "label": "大"
+        },
+        {
+          "value": "xlarge",
+          "label": "特大"
+        },
+        {
+          "value": "grid",
+          "label": "网格"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "内容位置",
+      "options": [
+        {
+          "value": "left",
+          "label": "左"
+        },
+        {
+          "value": "center",
+          "label": "中"
+        },
+        {
+          "value": "right",
+          "label": "右"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "内容对齐",
+      "options": [
+        {
+          "value": "left",
+          "label": "左对齐"
+        },
+        {
+          "value": "center",
+          "label": "居中"
+        },
+        {
+          "value": "right",
+          "label": "右对齐"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "背景设置"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "背景图片"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "背景颜色",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "header",
+      "content": "文字样式"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "文字颜色",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "color_accent",
+      "label": "强调色",
+      "default": "#8b5a2b"
+    },
+    {
+      "type": "range",
+      "id": "text_stroke_width",
+      "min": 0,
+      "max": 2,
+      "step": 0.1,
+      "unit": "px",
+      "label": "文字描边宽度",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "按钮文字",
+      "default": "了解更多"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按钮链接"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_outline",
+      "label": "使用轮廓按钮样式",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "间距"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "移除顶部间距"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "移除底部间距"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "vision",
+      "name": "愿景",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题",
+          "default": "我们的愿景"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "内容",
+          "default": "<p>我们创立Mintravibes的初衷很简单：在这个日益浮躁的世界中，以温和、耐心和慈悲之心传播善意。</p>"
+        }
+      ]
+    },
+    {
+      "type": "core_value",
+      "name": "核心价值",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "图标",
+          "default": "🧵"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题",
+          "default": "支持村落生活"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "内容",
+          "default": "<p>在偏远山区，在高海拔村庄，有工匠们用双手和信仰生活。我们希望为他们提供真实、持久的机会——不是一次性援助，而是有尊严、可持续的收入来源。这样他们才能保存自己的文化，养家糊口，继续生活在他们热爱的土地上。</p>"
+        }
+      ]
+    },
+    {
+      "type": "tone_of_voice",
+      "name": "品牌语调",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题",
+          "default": "品牌语调"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "内容",
+          "default": "<p>我们不急于"卖给你什么"。我们只是轻轻地将这些信仰和祝福的物件放在你面前。我们的语调平静自然——就像山中煮茶的人。不推销，不夸张。因为：这更像是一种服务而非生意。这是信仰的延伸——而非包装纸中的产品。这是温柔的提醒——而非物质的展示品。</p>"
+        }
+      ]
+    },
+    {
+      "type": "core_message",
+      "name": "核心信息",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "标题",
+          "default": "核心信息"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "内容",
+          "default": "<p>信仰不关乎地位或奢华。它是关于选择善良并坚持你的意图——每一天。这些创作——也许只是一个手链或小吊坠——可能成为你信仰的锚点，一个引导你回到慈悲之心的小信号。</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "品牌故事",
+      "blocks": [
+        {
+          "type": "vision",
+          "settings": {
+            "heading": "我们的愿景",
+            "text": "<p>我们创立Mintravibes的初衷很简单：在这个日益浮躁的世界中，以温和、耐心和慈悲之心传播善意。通过这个项目，我们希望慢慢实现三个核心愿望：</p>"
+          }
+        },
+        {
+          "type": "core_value",
+          "settings": {
+            "icon": "🧵",
+            "heading": "支持村落生活",
+            "text": "<p>在偏远山区，在高海拔村庄，有工匠们用双手和信仰生活。我们希望为他们提供真实、持久的机会——不是一次性援助，而是有尊严、可持续的收入来源。这样他们才能保存自己的文化，养家糊口，继续生活在他们热爱的土地上。</p>"
+          }
+        },
+        {
+          "type": "core_value",
+          "settings": {
+            "icon": "📿",
+            "heading": "表达佛法",
+            "text": "<p>佛法不仅存在于寺庙钟声或神圣经文中。它也可以表现为一串念珠、一个小护身符或一个带着意图编织的手链。这些物品可以安静、温和地融入日常生活——让信仰真正活在心中，而不是遥远或抽象。</p>"
+          }
+        },
+        {
+          "type": "core_value",
+          "settings": {
+            "icon": "💛",
+            "heading": "传播善意，通过信仰连接",
+            "text": "<p>这些物品的价值不在于它们有多奢华——而在于它们如何温柔地提醒我们保持慈悲，在生活的喧嚣中继续许愿。它们是安静的信号——温和的提醒——在这人生旅途中，我们可以相互认出：你，也是带着善意而来。</p>"
+          }
+        },
+        {
+          "type": "tone_of_voice",
+          "settings": {
+            "heading": "品牌语调",
+            "text": "<p>我们不急于"卖给你什么"。我们只是轻轻地将这些信仰和祝福的物件放在你面前。我们的语调平静自然——就像山中煮茶的人。不推销，不夸张。因为：这更像是一种服务而非生意。这是信仰的延伸——而非包装纸中的产品。这是温柔的提醒——而非物质的展示品。</p><p>我们相信，真正理解这些创作意义的人自然会被它们吸引。我们希望，当你看到它们的那一刻，可能正是你准备好向内转并许下新愿望的时刻。</p>"
+          }
+        },
+        {
+          "type": "core_message",
+          "settings": {
+            "heading": "核心信息",
+            "text": "<p>信仰不关乎地位或奢华。它是关于选择善良并坚持你的意图——每一天。这些创作——也许只是一个手链或小吊坠——可能成为你信仰的锚点，一个引导你回到慈悲之心的小信号。</p><p>我们相信：每个人来到这个世界都带着一个愿望。如果你的愿望植根于善良，诸佛会回应它。你是这个世界的佛。当你愿意完善自己，你可能会为他人的生活带来一点光明。这就是我们继续做我们所做的原因。</p>"
+          }
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}
