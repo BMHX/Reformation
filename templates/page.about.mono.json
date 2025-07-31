@@ -16,56 +16,14 @@
         "mobile_height": "mobile-height-500",
         "full_width": true,
         "subheading": "",
-        "heading": "Background video",
-        "text": "Add a description for background video section",
+        "heading": "Our Vision",
+        "text": "We created Mintravibes out of a simple yet firm intention:\nTo gently spread kindness in a world that’s becoming increasingly restless.",
         "lightbox_button": false,
         "video": "",
         "fallback_image": "shopify://shop_images/3_eefd854b-0c26-477f-abed-065c611823e8.jpg",
         "overlay_opacity": 35,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
-      }
-    },
-    "166368378540d4b928": {
-      "type": "rich-text",
-      "blocks": {
-        "a48ca430-0d46-4124-930a-adad8468f982": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading for this section"
-          }
-        },
-        "8e48052a-fc5a-4cb2-9094-d8ad4f90e198": {
-          "type": "heading",
-          "settings": {
-            "text": "Talk about your brand",
-            "size": "h2"
-          }
-        },
-        "e57b6958-2915-404e-aad5-5b0df81f9aba": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "custom_liquid": "",
-            "size": "text-size-regular"
-          }
-        }
-      },
-      "block_order": [
-        "a48ca430-0d46-4124-930a-adad8468f982",
-        "8e48052a-fc5a-4cb2-9094-d8ad4f90e198",
-        "e57b6958-2915-404e-aad5-5b0df81f9aba"
-      ],
-      "settings": {
-        "section_width": "grid",
-        "text_width": "large",
-        "text_position": "center",
-        "text_alignment": "center",
-        "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
-        "color_links": "#151515",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "1663684153cdd2cafb": {
@@ -128,7 +86,7 @@
       "settings": {
         "heading": "",
         "heading_left": false,
-        "description": "",
+        "description": "<h5><strong>Through this project, we hope to slowly realize three core goals:</strong></h5>",
         "full_width": false,
         "display_type": "grid",
         "image_ratio": "adapt",
@@ -505,7 +463,6 @@
   },
   "order": [
     "16636821084e52389f",
-    "166368378540d4b928",
     "1663684153cdd2cafb",
     "1663683917817df5f1",
     "1663684561633233ec",
