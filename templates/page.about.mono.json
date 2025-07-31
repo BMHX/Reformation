@@ -277,46 +277,23 @@
     "16636880099f7e267a": {
       "type": "rich-text",
       "blocks": {
-        "b65ca7c1-27a0-42e3-94d8-3190b4bcfb05": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading for this section"
-          }
-        },
-        "093dfad7-9b1d-4a2d-8afe-fc37bbefc464": {
-          "type": "heading",
-          "settings": {
-            "text": "Our Tone",
-            "size": "h3"
-          }
-        },
         "6b136328-bc89-4078-99a9-e698b8379789": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re not in a rush to “sell you something.”We simply place these creations—carrying faith and blessings—<strong>gently before you</strong>.</p><p>Our tone is calm and natural—<br/><br/>like someone brewing tea in the mountains.<br/><br/>No pushing. No exaggeration. Because:</p><ul><li><br/><br/></li><li><br/><br/></li><li><br/><br/></li></ul><p>We believe:<br/><br/><strong>Those who truly understand the meaning behind these pieces will come closer naturally.</strong><br/><br/>And perhaps, when you see them, it will be just the right moment—<br/><br/>a moment when you’re ready to make a quiet vow, once again, from within.</p>",
+            "text": "<p><br/>These items—perhaps just a bracelet or a small pendant—might become:<br/>might become:</p><ul><li>anchor for your belief</li><li><strong>signal</strong> that guides you back to your Bodhicitta (awakened heart)</li></ul>",
             "custom_liquid": "",
             "size": "text-size-regular"
-          }
-        },
-        "fb29b52a-51a8-4424-b701-e3b9fe0d2674": {
-          "type": "text-button",
-          "settings": {
-            "link_label": "Learn More",
-            "link": ""
           }
         }
       },
       "block_order": [
-        "b65ca7c1-27a0-42e3-94d8-3190b4bcfb05",
-        "093dfad7-9b1d-4a2d-8afe-fc37bbefc464",
-        "6b136328-bc89-4078-99a9-e698b8379789",
-        "fb29b52a-51a8-4424-b701-e3b9fe0d2674"
+        "6b136328-bc89-4078-99a9-e698b8379789"
       ],
       "settings": {
         "section_width": "grid",
         "text_width": "grid",
         "text_position": "center",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ffffff",
         "color_links": "#151515",
