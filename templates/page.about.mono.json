@@ -274,31 +274,89 @@
         "disable_bottom_spacing": true
       }
     },
-    "16636880099f7e267a": {
-      "type": "rich-text",
+    "testimonials_dnwPAU": {
+      "type": "testimonials",
       "blocks": {
-        "6b136328-bc89-4078-99a9-e698b8379789": {
-          "type": "text",
+        "quote_QUqjcy": {
+          "type": "quote",
           "settings": {
-            "text": "<p><br/>These items—perhaps just a bracelet or a small pendant—might become:<br/>might become:</p><ul><li>anchor for your belief</li><li><strong>signal</strong> that guides you back to your Bodhicitta (awakened heart)</li></ul>",
-            "custom_liquid": "",
-            "size": "text-size-regular"
+            "stars": "",
+            "text": "These creations—maybe just a bracelet or a small pendant—Might become an “anchor” for your inner beliefs,A signal guiding you back to your awakened heart.",
+            "author": "tibetanmantravibes"
           }
         }
       },
       "block_order": [
-        "6b136328-bc89-4078-99a9-e698b8379789"
+        "quote_QUqjcy"
       ],
+      "name": "Testimonials",
       "settings": {
-        "section_width": "grid",
-        "text_width": "grid",
-        "text_position": "center",
-        "text_alignment": "left",
-        "color_bg": "rgba(0,0,0,0)",
+        "full_width": true,
+        "text_size": "small",
+        "pagination": "dots",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "transparent",
         "color_text": "#ffffff",
-        "color_links": "#151515",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_ynKTmn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_HVtXLE": {
+          "type": "heading",
+          "settings": {
+            "text": "We believe",
+            "heading_size": "h1-xlarge",
+            "font_family": "serif",
+            "font_weight": "bold",
+            "custom_font_size": 36,
+            "heading_color": "#ffffff"
+          }
+        },
+        "text_hG9Ldx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everyone comes into this world with a wish.<br/>As long as your intention is kind, the Buddhas will respond to it.<strong>You are the Buddha in this human world.</strong><br/>When you choose to complete your own path,<br/>You may bring a little more peace to the lives of others.</p><p>This is why we continue to do what we do.</p>",
+            "description_size": "medium"
+          }
+        },
+        "button_THCErn": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_bg_color": "#ffffff",
+            "button_hover_text_color": "#000000",
+            "button_hover_border_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HVtXLE",
+        "text_hG9Ldx",
+        "button_THCErn"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify://shop_images/8.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "large",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     },
     "16636881209ac2cf51": {
@@ -454,7 +512,8 @@
     "1663684458b387eaf8",
     "16636844509cfe7010",
     "image_with_text_overlay_c97QmF",
-    "16636880099f7e267a",
+    "testimonials_dnwPAU",
+    "image_with_text_overlay_ynKTmn",
     "16636881209ac2cf51",
     "16636865189382655c",
     "1663688682338f4297",
