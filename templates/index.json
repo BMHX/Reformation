@@ -833,12 +833,6 @@
     "promotional_banner_PP86KN": {
       "type": "promotional-banner",
       "blocks": {
-        "subheading_YfjwDb": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
         "heading_g4dxDK": {
           "type": "heading",
           "settings": {
@@ -849,20 +843,19 @@
         "text_Nk7YMG": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+            "text": "<p>We created Mintravibes out of a simple yet firm intention:<br/>To gently spread kindness in a world that’s becoming increasingly restless.</p>"
           }
         },
         "button_rcQkPf": {
           "type": "button",
           "settings": {
             "button_text": "Read Now",
-            "button_link": "",
+            "button_link": "shopify://pages/brand-story",
             "button_outline": true
           }
         }
       },
       "block_order": [
-        "subheading_YfjwDb",
         "heading_g4dxDK",
         "text_Nk7YMG",
         "button_rcQkPf"
