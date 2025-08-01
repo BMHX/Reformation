@@ -90,6 +90,15 @@
         "border_separator_full": false
       }
     },
+    "spacer_QHBwcX": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
     "testimonials_dnwPAU": {
       "type": "testimonials",
       "blocks": {
@@ -462,6 +471,7 @@
     "video_XrYDMd",
     "16636881209ac2cf51",
     "testimonials_YQRkrf",
+    "spacer_QHBwcX",
     "16636865189382655c"
   ]
 }
