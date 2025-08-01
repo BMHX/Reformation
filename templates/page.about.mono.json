@@ -254,7 +254,7 @@
         "text_fdgRkk": {
           "type": "text",
           "settings": {
-            "text": "<p>Not for show, but for the soul<br/>to remind us to stay kind,<br/>and keep moving with meaning.<br/><br/></p>",
+            "text": "<p>Not for show, but for the soul<br/>to remind us to stay kind,<br/>and keep moving with meaning.<br/></p>",
             "description_size": "medium"
           }
         }
