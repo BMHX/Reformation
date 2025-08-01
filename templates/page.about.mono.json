@@ -11,34 +11,10 @@
   "sections": {
     "image_with_text_overlay_wekBdT": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_hrAMEx": {
-          "type": "heading",
-          "settings": {
-            "text": "Our Vision",
-            "heading_size": "h1-xlarge",
-            "font_family": "sans-serif",
-            "font_weight": "bold",
-            "custom_font_size": 36,
-            "heading_color": "#ffffff"
-          }
-        },
-        "text_9pHPpR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We created Mintravibes out of a simple yet firm intention:<br/>To gently spread kindness in a world that’s becoming increasingly restless.</p>",
-            "description_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading_hrAMEx",
-        "text_9pHPpR"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/3_eefd854b-0c26-477f-abed-065c611823e8.jpg",
+        "image": "shopify://shop_images/1_9984f458-e1e0-4d81-b65d-8f6730fd7f38.webp",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
@@ -105,6 +81,50 @@
         "full_width": false
       }
     },
+    "layered_images_with_text_CkeAkg": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "subheading_xYc6CJ": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "heading_337arp": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "h3"
+          }
+        },
+        "text_hLgRAj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xYc6CJ",
+        "heading_337arp",
+        "text_hLgRAj"
+      ],
+      "name": "Layered images with text",
+      "settings": {
+        "image": "shopify://shop_images/1_dcf167f8-8842-4f47-9a61-46abfd7794f4.png",
+        "image_ratio": "adapt",
+        "image_2": "shopify://shop_images/4_7f0206eb-389e-4f0a-8175-03d6e96a0fd5.png",
+        "image_ratio_2": "portrait",
+        "image_3": "shopify://shop_images/3_3e7a24c2-45e6-42ed-a195-a53062af0bff.png",
+        "image_ratio_3": "adapt",
+        "full_width": false,
+        "layout": "image_first",
+        "content_alignment": "text-left",
+        "content_position": "middle",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "1663684153cdd2cafb": {
       "type": "spacer",
       "settings": {
@@ -112,70 +132,6 @@
         "spacer_desktop": 30,
         "border_separator": false,
         "border_separator_full": false
-      }
-    },
-    "1663683917817df5f1": {
-      "type": "multicolumn",
-      "blocks": {
-        "7d8d8660-b40b-472d-bb30-76c8c00985dc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/4_3e5562bd-cbc8-4c5c-a64a-57eb15d0ed10.jpg",
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Supporting Village Life",
-            "text": "<p>In remote mountain villages and high-altitude regions,there are people who live with their hands and their faith.We want to provide them with <strong>real and ongoing opportunities</strong>—<br/><br/>not one-time aid, but <strong>dignified, sustainable income</strong>,<br/>so they can:</p><ul><li>Preserve their culture,</li><li>Raise their families,</li><li>And continue living on the land they love.<br/></li></ul>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "157633c4-d14e-4a3d-b730-68d4cf98ccd5": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/5_5a4188cc-0ed3-4f5c-9def-9dc0d08b0d2a.jpg",
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Offering a Path for the Dharma",
-            "text": "<p>The Dharma is not just the sound of temple bellsor the wisdom written in scriptures.It can also take form as:</p><ul><li>A string of prayer beads,</li><li>A protective amulet,</li><li>Or a bracelet woven with intention.</li></ul><p>These objects quietly blend into daily life,allowing faith to truly dwell in the heart—not just stay distant on a high altar.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "60bdc4fd-7c09-49d5-85f2-ce67069c6b25": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/6.jpg",
-            "image_full_width": false,
-            "image_link": "",
-            "retina": true,
-            "title": "Spreading Kindness, Connecting Faith",
-            "text": "<p>The meaning behind these items isn’t in how luxurious they look,but in how they remind us to:</p><ul><li>Stay compassionate,</li><li>Keep making vows,</li><li>And hold kindness in the midst of complexity.</li></ul><p>They are soft “signals,” gentle reminders.On this human journey, they help us recognize each other:“You, too, came with kindness in your heart.”</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "7d8d8660-b40b-472d-bb30-76c8c00985dc",
-        "157633c4-d14e-4a3d-b730-68d4cf98ccd5",
-        "60bdc4fd-7c09-49d5-85f2-ce67069c6b25"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_left": false,
-        "description": "<h5><strong>Through this project, we hope to slowly realize three core goals:</strong></h5>",
-        "full_width": false,
-        "display_type": "grid",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "text_alignment": "left",
-        "heading_size": "h5",
-        "mobile_swipe": true,
-        "show_progress_bar": false,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "1663684561633233ec": {
@@ -187,114 +143,8 @@
         "border_separator_full": false
       }
     },
-    "1663684458b387eaf8": {
-      "type": "scrolling-text",
-      "blocks": {
-        "72b61cd1-efaf-4962-9479-655398f8a640": {
-          "type": "text",
-          "settings": {
-            "text": "We’re not in a rush to “sell you something.”We simply place these creations—carrying faith and blessings—gently before you.",
-            "link": "",
-            "outline_text": true
-          }
-        }
-      },
-      "block_order": [
-        "72b61cd1-efaf-4962-9479-655398f8a640"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "30s",
-        "font_family": "body",
-        "text_size": 40,
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "#846144",
-        "color_text": "#ececec",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "16636844509cfe7010": {
-      "type": "scrolling-text",
-      "blocks": {
-        "1127da65-0942-4256-9fed-894c6da8b01f": {
-          "type": "text",
-          "settings": {
-            "text": "This feels more like a public offering than a business.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "48f58d2d-bc1a-4170-ac07-ab7742a1ac8e": {
-          "type": "text",
-          "settings": {
-            "text": "It’s an extension of belief, not a product of consumerism.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "4ac6a50f-a332-4349-b2d7-7ef30304d854": {
-          "type": "text",
-          "settings": {
-            "text": "It’s an extension of belief, not a product of consumerism.",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "1127da65-0942-4256-9fed-894c6da8b01f",
-        "48f58d2d-bc1a-4170-ac07-ab7742a1ac8e",
-        "4ac6a50f-a332-4349-b2d7-7ef30304d854"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "right",
-        "speed": "30s",
-        "font_family": "heading",
-        "text_size": 40,
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "#2b2825",
-        "color_text": "#a47d5c",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "image_with_text_overlay_c97QmF": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_XqkyYP": {
-          "type": "heading",
-          "settings": {
-            "text": "Faith is not a luxury symbol",
-            "heading_size": "h1-xlarge",
-            "font_family": "serif",
-            "font_weight": "bold",
-            "custom_font_size": 36,
-            "heading_color": "#ffffff"
-          }
-        },
-        "text_MFcgYH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>It’s the way you choose, each day,to act with kindness and keep your heart open.</p>",
-            "description_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XqkyYP",
-        "text_MFcgYH"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "section_width": "full-width-row-full",
@@ -333,7 +183,7 @@
         "pagination": "dots",
         "autoplay": true,
         "autoplay_length": 5,
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#ffffff",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
@@ -474,11 +324,9 @@
   "order": [
     "image_with_text_overlay_wekBdT",
     "color_stripes_GiyVpE",
+    "layered_images_with_text_CkeAkg",
     "1663684153cdd2cafb",
-    "1663683917817df5f1",
     "1663684561633233ec",
-    "1663684458b387eaf8",
-    "16636844509cfe7010",
     "image_with_text_overlay_c97QmF",
     "testimonials_dnwPAU",
     "image_with_text_overlay_ynKTmn",
