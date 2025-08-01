@@ -265,7 +265,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/8_97c96d01-d665-4f1c-ba02-75a11150116d.jpg",
+        "image": "shopify://shop_images/0_3.png",
         "use_video": false,
         "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -282,7 +282,7 @@
         "disable_bottom_spacing": false
       }
     },
-    "1663684561633233ec": {
+    "spacer_4cg8Ec": {
       "type": "spacer",
       "settings": {
         "spacer_mobile": 20,
@@ -291,61 +291,19 @@
         "border_separator_full": false
       }
     },
-    "image_with_text_overlay_ynKTmn": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_HVtXLE": {
-          "type": "heading",
-          "settings": {
-            "text": "We believe",
-            "heading_size": "h1-xlarge",
-            "font_family": "serif",
-            "font_weight": "bold",
-            "custom_font_size": 36,
-            "heading_color": "#ffffff"
-          }
-        },
-        "text_hG9Ldx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Everyone comes into this world with a wish.<br/>As long as your intention is kind, the Buddhas will respond to it.<strong>You are the Buddha in this human world.</strong><br/>When you choose to complete your own path,<br/>You may bring a little more peace to the lives of others.</p><p>This is why we continue to do what we do.</p>",
-            "description_size": "medium"
-          }
-        },
-        "button_THCErn": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "shopify://collections/all",
-            "button_outline": false,
-            "button_bg_color": "#000000",
-            "button_text_color": "#ffffff",
-            "button_border_color": "#000000",
-            "button_hover_bg_color": "#ffffff",
-            "button_hover_text_color": "#000000",
-            "button_hover_border_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "heading_HVtXLE",
-        "text_hG9Ldx",
-        "button_THCErn"
-      ],
-      "name": "Image with text overlay",
+    "video_XrYDMd": {
+      "type": "video",
+      "name": "Video",
       "settings": {
-        "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/8.jpg",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-500",
-        "content_width": "large",
-        "content_position": "middle-center",
-        "text_alignment": "center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
+        "heading": "✨Our Belief",
+        "heading_left": false,
+        "description": "<p>Let kindness become a habit, not a luxury.<br/><br/></p>",
+        "section_width": "grid",
+        "video": "",
+        "video_autoplay": true,
+        "aspect_ratio": "16-9",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": false
       }
     },
     "16636881209ac2cf51": {
@@ -356,6 +314,70 @@
         "spacer_desktop": 60,
         "border_separator": false,
         "border_separator_full": false
+      }
+    },
+    "testimonials_YQRkrf": {
+      "type": "testimonials",
+      "blocks": {
+        "quote_HPAfxT": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "These items may be small",
+            "author": "a bracelet, a pendant—but they can serve as quiet anchors of belief,gentle signals guiding you back to your bodhicitta."
+          }
+        },
+        "quote_jcUmt7": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "Faith is not a luxury or a status symbol.",
+            "author": "It’s your daily choice—to think kindly, to live with intention."
+          }
+        },
+        "quote_perXDG": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "We believe",
+            "author": "Everyone is born with a wish.And when that wish comes from a place of goodness,the Buddha will hear it."
+          }
+        },
+        "quote_TJbE8n": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "You are the Buddha in this world.",
+            "author": "When you choose to complete yourself with kindness,you may bring light to others too."
+          }
+        },
+        "quote_faQ3yQ": {
+          "type": "quote",
+          "settings": {
+            "stars": "",
+            "text": "That’s why we keep going.",
+            "author": "Not just to offer handmade pieces,but to share a way of remembering who we are—together."
+          }
+        }
+      },
+      "block_order": [
+        "quote_HPAfxT",
+        "quote_jcUmt7",
+        "quote_perXDG",
+        "quote_TJbE8n",
+        "quote_faQ3yQ"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "text_size": "small",
+        "pagination": "dots",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#ffffff",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
       }
     },
     "16636865189382655c": {
@@ -436,9 +458,10 @@
     "spacer_gw4zn8",
     "spacer_h9Dity",
     "image_with_text_WwtP6i",
-    "1663684561633233ec",
-    "image_with_text_overlay_ynKTmn",
+    "spacer_4cg8Ec",
+    "video_XrYDMd",
     "16636881209ac2cf51",
+    "testimonials_YQRkrf",
     "16636865189382655c"
   ]
 }
