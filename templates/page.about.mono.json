@@ -81,84 +81,13 @@
         "full_width": false
       }
     },
-    "layered_images_with_text_CkeAkg": {
-      "type": "layered-images-with-text",
-      "blocks": {
-        "subheading_xYc6CJ": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
-        "heading_337arp": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text",
-            "heading_size": "h3"
-          }
-        },
-        "text_hLgRAj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_xYc6CJ",
-        "heading_337arp",
-        "text_hLgRAj"
-      ],
-      "name": "Layered images with text",
-      "settings": {
-        "image": "shopify://shop_images/1_dcf167f8-8842-4f47-9a61-46abfd7794f4.png",
-        "image_ratio": "adapt",
-        "image_2": "shopify://shop_images/4_7f0206eb-389e-4f0a-8175-03d6e96a0fd5.png",
-        "image_ratio_2": "portrait",
-        "image_3": "shopify://shop_images/3_3e7a24c2-45e6-42ed-a195-a53062af0bff.png",
-        "image_ratio_3": "adapt",
-        "full_width": false,
-        "layout": "image_first",
-        "content_alignment": "text-left",
-        "content_position": "middle",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "1663684153cdd2cafb": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 20,
-        "spacer_desktop": 30,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
-    "1663684561633233ec": {
+    "spacer_EBnetA": {
       "type": "spacer",
       "settings": {
         "spacer_mobile": 20,
         "spacer_desktop": 65,
         "border_separator": false,
         "border_separator_full": false
-      }
-    },
-    "image_with_text_overlay_c97QmF": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/7.jpg",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-450",
-        "mobile_height": "mobile-height-auto",
-        "content_width": "large",
-        "content_position": "middle-center",
-        "text_alignment": "center",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "testimonials_dnwPAU": {
@@ -168,8 +97,8 @@
           "type": "quote",
           "settings": {
             "stars": "",
-            "text": "These creations—maybe just a bracelet or a small pendant—Might become an “anchor” for your inner beliefs,A signal guiding you back to your awakened heart.",
-            "author": "tibetanmantravibes"
+            "text": "Our Vision",
+            "author": "Mintravibes exists to bring calm and kindness to a noisy world."
           }
         }
       },
@@ -187,6 +116,179 @@
         "color_text": "#ffffff",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
+      }
+    },
+    "spacer_ifkkJg": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "layered_images_with_text_CkeAkg": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "heading_337arp": {
+          "type": "heading",
+          "settings": {
+            "text": "📿Bringing Dharma Into Daily Life",
+            "heading_size": "h4"
+          }
+        },
+        "text_hLgRAj": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dharma lives not only in temples,<br/>but also in quiet, everyday things—<br/>a bead, a bracelet, a whisper of faith.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_337arp",
+        "text_hLgRAj"
+      ],
+      "name": "Layered images with text",
+      "settings": {
+        "image": "shopify://shop_images/1_dcf167f8-8842-4f47-9a61-46abfd7794f4.png",
+        "image_ratio": "adapt",
+        "image_2": "shopify://shop_images/4_7f0206eb-389e-4f0a-8175-03d6e96a0fd5.png",
+        "image_ratio_2": "portrait",
+        "image_3": "shopify://shop_images/3_3e7a24c2-45e6-42ed-a195-a53062af0bff.png",
+        "image_ratio_3": "adapt",
+        "full_width": false,
+        "layout": "image_first",
+        "content_alignment": "text-right",
+        "content_position": "middle",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1663684153cdd2cafb": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "spacer_r6qCaF": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "image_with_text_B4JyQw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dBj3V4": {
+          "type": "heading",
+          "settings": {
+            "text": "🧵Supporting Village Life",
+            "heading_size": "h4"
+          }
+        },
+        "text_XkgaNK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>We support highland artisans not with aid,<br/>but with real, lasting income—<br/>so they can stay rooted and proud.<br/><br/></p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dBj3V4",
+        "text_XkgaNK"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/8_97c96d01-d665-4f1c-ba02-75a11150116d.jpg",
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#282828",
+        "color_text": "#ffffff",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "spacer_gw4zn8": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "spacer_h9Dity": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "image_with_text_WwtP6i": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6Nxqxg": {
+          "type": "heading",
+          "settings": {
+            "text": "💛Spreading Kindness, Connecting Believers",
+            "heading_size": "h4"
+          }
+        },
+        "text_fdgRkk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not for show, but for the soul<br/>to remind us to stay kind,<br/>and keep moving with meaning.<br/><br/></p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6Nxqxg",
+        "text_fdgRkk"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/8_97c96d01-d665-4f1c-ba02-75a11150116d.jpg",
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-right",
+        "color_bg": "#282828",
+        "color_text": "#ffffff",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1663684561633233ec": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
       }
     },
     "image_with_text_overlay_ynKTmn": {
@@ -324,11 +426,17 @@
   "order": [
     "image_with_text_overlay_wekBdT",
     "color_stripes_GiyVpE",
+    "spacer_EBnetA",
+    "testimonials_dnwPAU",
+    "spacer_ifkkJg",
     "layered_images_with_text_CkeAkg",
     "1663684153cdd2cafb",
+    "spacer_r6qCaF",
+    "image_with_text_B4JyQw",
+    "spacer_gw4zn8",
+    "spacer_h9Dity",
+    "image_with_text_WwtP6i",
     "1663684561633233ec",
-    "image_with_text_overlay_c97QmF",
-    "testimonials_dnwPAU",
     "image_with_text_overlay_ynKTmn",
     "16636881209ac2cf51",
     "16636865189382655c"
