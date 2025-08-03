@@ -90,22 +90,14 @@
         "border_separator_full": false
       }
     },
-    "spacer_QHBwcX": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 20,
-        "spacer_desktop": 65,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
     "testimonials_dnwPAU": {
       "type": "testimonials",
       "blocks": {
         "quote_QUqjcy": {
           "type": "quote",
           "settings": {
-            "stars": "",
+            "image": "shopify://shop_images/9_a9dffa5a-965d-4bc4-86e4-b7146328d0b7.png",
+            "stars": "4.5",
             "text": "Our Vision",
             "author": "Mintravibes exists to bring calm and kindness to a noisy world."
           }
@@ -387,6 +379,15 @@
         "color_text": "#ffffff",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
+      }
+    },
+    "spacer_QHBwcX": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 65,
+        "border_separator": false,
+        "border_separator_full": false
       }
     },
     "16636865189382655c": {
