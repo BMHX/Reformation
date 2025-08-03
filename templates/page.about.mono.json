@@ -96,7 +96,7 @@
         "quote_QUqjcy": {
           "type": "quote",
           "settings": {
-            "image": "shopify://shop_images/20250705173313.png",
+            "image": "shopify://shop_images/8_92b1535d-812e-430c-ac81-986e6ba3204c.png",
             "stars": "",
             "text": "Our Vision",
             "author": "Mintravibes exists to bring calm and kindness to a noisy world."
@@ -109,8 +109,8 @@
       "name": "Testimonials",
       "settings": {
         "full_width": true,
-        "text_size": "small",
-        "pagination": "dots",
+        "text_size": "medium",
+        "pagination": "logos",
         "autoplay": true,
         "autoplay_length": 5,
         "color_bg": "rgba(0,0,0,0)",
