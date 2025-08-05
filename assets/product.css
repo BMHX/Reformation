@@ -107,7 +107,10 @@
     margin: 1em auto 0;
     width: auto;
     display: none;
-    font-size: 0.9375rem; }
+    font-size: 0.875rem; }
+    @media only screen and (min-width: 768px) {
+      .shopify-payment-button .shopify-payment-button__more-options {
+        font-size: 0.9375rem; } }
     .shopify-payment-button .shopify-payment-button__more-options:hover:not([disabled]) {
       text-decoration: none; }
 
@@ -121,10 +124,13 @@
     width: 100%;
     align-items: center;
     font-weight: var(--font-body-bold-weight, 600);
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     letter-spacing: 0.02em;
     margin-bottom: 9px;
     text-transform: uppercase; }
+    @media only screen and (min-width: 768px) {
+      .product-form__input .form__label {
+        font-size: 0.8125rem; } }
     .product-form__input .form__label__value {
       font-weight: 400;
       text-transform: none;
@@ -191,13 +197,16 @@
       align-items: center;
       justify-content: center;
       padding: 5px 15px;
-      font-size: 0.8125rem;
+      font-size: 0.75rem;
       margin-left: -1px;
       margin-top: -1px;
       cursor: pointer;
       box-shadow: 0 0 0 1px var(--color-border) inset;
       transition: all 0.25s ease; /* 添加过渡效果 */
     }
+    @media only screen and (min-width: 768px) {
+      .variations .product-form__input--block input[type="radio"] + label {
+        font-size: 0.8125rem; } }
     @media only screen and (min-width: 768px) {
       .variations .product-form__input--block input[type="radio"] + label {
         margin-right: 0;
@@ -501,11 +510,15 @@
   margin-bottom: 20px; }
 
 .thb-product-detail .product-title {
-  font-size: calc(var(--font-heading-scale) * 1.75rem);
-  line-height: calc(var(--font-heading-line-height-scale) * 2.125rem);
+  font-size: calc(var(--font-heading-scale) * 1.25rem);
+  line-height: calc(var(--font-heading-line-height-scale) * 1.5rem);
   font-weight: var(--font-body-medium-weight, 500);
   margin-bottom: 3px;
   color: var(--color-body); }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .product-title {
+      font-size: calc(var(--font-heading-scale) * 1.5rem);
+      line-height: calc(var(--font-heading-line-height-scale) * 1.875rem); } }
   .thb-product-detail .product-title.uppercase--true {
     text-transform: uppercase; }
   .thb-product-detail .product-title a {
@@ -526,26 +539,35 @@
     height: 60px; }
 
 .thb-product-detail shopify-payment-terms {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   margin-top: 10px;
   display: block;
   text-align: center;
   padding-bottom: 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-border); }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail shopify-payment-terms {
+      font-size: 0.8125rem; } }
 
 .thb-product-detail .product-price-container .price {
-  font-size: 1.25rem;
+  font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-right: 11px; }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .product-price-container .price {
+      font-size: 1.125rem; } }
   .thb-product-detail .product-price-container .price .unit-price {
     margin-left: 5px; }
 
 .thb-product-detail .product-price-container .product__tax {
   opacity: 0.6;
-  font-size: 0.75rem; }
+  font-size: 0.6875rem; }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .product-price-container .product__tax {
+      font-size: 0.75rem; } }
   .thb-product-detail .product-price-container .product__tax a {
     text-decoration: underline;
     text-underline-offset: 2px; }
@@ -560,25 +582,34 @@
 
 .thb-product-detail .star-rating-container {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   margin-top: 0.3125rem;
   line-height: 0; }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .star-rating-container {
+      font-size: 0.8125rem; } }
   .thb-product-detail .star-rating-container .star-rating {
     margin-right: 12px; }
 
 .thb-product-detail .product--text.style_vendor {
   text-transform: uppercase;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   letter-spacing: 0.1em;
   opacity: 0.6;
   margin-bottom: 10px; }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .product--text.style_vendor {
+      font-size: 0.6875rem; } }
 
 .thb-product-detail .view-product-details {
   margin-top: 30px; }
 
 .thb-product-detail .product-short-description {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   margin-bottom: 25px; }
+  @media only screen and (min-width: 768px) {
+    .thb-product-detail .product-short-description {
+      font-size: 0.9375rem; } }
   .thb-product-detail .product-short-description p,
   .thb-product-detail .product-short-description ul {
     margin-bottom: 10px; }
