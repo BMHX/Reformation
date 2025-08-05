@@ -1593,17 +1593,23 @@ table {
     .side-panel-header h4 {
       margin: 0;
       line-height: 1;
-      font-size: 0.9375rem;
+      font-size: 0.875rem;
       letter-spacing: 0.1em;
       font-weight: var(--font-body-bold-weight, 600);
       color: var(--color-body);
       text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        .side-panel-header h4 {
+          font-size: 0.9375rem; } }
       .side-panel-header h4 > span {
         display: block; }
       .side-panel-header h4 .facets__label {
-        font-size: 0.75rem;
+        font-size: 0.6875rem;
         margin-top: 4px;
         display: block; }
+        @media only screen and (min-width: 768px) {
+          .side-panel-header h4 .facets__label {
+            font-size: 0.75rem; } }
     .side-panel-header div {
       line-height: 1;
       display: flex;
@@ -1628,7 +1634,7 @@ table {
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.75rem;
+        font-size: 0.6875rem;
         letter-spacing: 0.1em;
         font-weight: var(--font-body-bold-weight, 600);
         padding: 0 15px;
@@ -1638,6 +1644,9 @@ table {
         border-bottom: 1px solid var(--color-border);
         border-right: 1px solid var(--color-border);
         color: var(--color-body); }
+        @media only screen and (min-width: 768px) {
+          .side-panel-content--tabs button {
+            font-size: 0.75rem; } }
         .side-panel-content--tabs button.tab-active {
           background: var(--bg-body, #fff);
           border-bottom-color: transparent; }
@@ -2729,7 +2738,7 @@ more-payment-options-link {
 .shopify-payment-button__more-options,
 .text-button {
   display: inline-flex;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   height: 1.0625rem;
   line-height: 1.0625rem;
   margin-right: 15px;
@@ -2737,6 +2746,10 @@ more-payment-options-link {
   letter-spacing: var(--button-letter-spacing, 0.02em);
   cursor: pointer;
   position: relative; }
+  @media only screen and (min-width: 768px) {
+    .shopify-payment-button__more-options,
+    .text-button {
+      font-size: 0.9375rem; } }
   .shopify-payment-button__more-options:after, .shopify-payment-button__more-options:before,
   .text-button:after,
   .text-button:before {
