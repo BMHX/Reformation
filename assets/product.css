@@ -106,7 +106,7 @@
     text-decoration: none;
     margin: 1em auto 0;
     width: auto;
-    display: inline-block;
+    display: none;
     font-size: 0.9375rem; }
     .shopify-payment-button .shopify-payment-button__more-options:hover:not([disabled]) {
       text-decoration: none; }
