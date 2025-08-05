@@ -196,7 +196,7 @@
         "trustoo_io_reviews_review_widget_nNWtUH": {
           "type": "shopify://apps/trustoo-io-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
           "settings": {
-            "product": "文姝"
+            "product": "{{ product }}"
           }
         }
       },
