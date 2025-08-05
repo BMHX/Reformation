@@ -178,6 +178,7 @@
         "logo_pHnVFE",
         "logo_4dTTmC"
       ],
+      "disabled": true,
       "name": "Logo list",
       "settings": {
         "heading": "Why tibetanmantravibes?",
@@ -185,6 +186,25 @@
         "columns": 4,
         "mobile_swipe": true,
         "center_align": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1754408544cd445050": {
+      "type": "apps",
+      "blocks": {
+        "trustoo_io_reviews_review_widget_eA97wh": {
+          "type": "shopify://apps/trustoo-io-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "product": "{{ product }}"
+          }
+        }
+      },
+      "block_order": [
+        "trustoo_io_reviews_review_widget_eA97wh"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -292,6 +312,7 @@
     "main-product",
     "16623877721f33fb14",
     "logo_list_g9aNp6",
+    "1754408544cd445050",
     "collapsible_content_CyW9d6",
     "4f2b51bb-7fb5-4ae6-98cc-b313c81bf63c",
     "8831dd81-b06c-44dc-aa95-9c370558f6ff",
