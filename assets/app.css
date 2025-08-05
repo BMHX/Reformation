@@ -1628,7 +1628,7 @@ table {
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.625rem;
+        font-size: 0.75rem;
         letter-spacing: 0.1em;
         font-weight: var(--font-body-bold-weight, 600);
         padding: 0 15px;
@@ -1638,9 +1638,6 @@ table {
         border-bottom: 1px solid var(--color-border);
         border-right: 1px solid var(--color-border);
         color: var(--color-body); }
-        @media only screen and (min-width: 768px) {
-          .side-panel-content--tabs button {
-            font-size: 0.75rem; } }
         .side-panel-content--tabs button.tab-active {
           background: var(--bg-body, #fff);
           border-bottom-color: transparent; }

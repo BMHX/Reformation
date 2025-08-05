@@ -1330,25 +1330,31 @@
   .side-panel-links--link {
     display: inline-flex;
     align-items: center;
-    margin-right: 12px; }
+    margin-right: 8px;
+    font-size: 0.75rem; }
     @media only screen and (min-width: 768px) {
       .side-panel-links--link {
-        margin-right: 22px; } }
+        margin-right: 22px;
+        font-size: 0.875rem; } }
     .side-panel-links--link svg {
-      margin-right: 5px;
-      fill: var(--color-accent); }
+      margin-right: 3px;
+      fill: var(--color-accent);
+      width: 14px;
+      height: 14px; }
       @media only screen and (min-width: 768px) {
         .side-panel-links--link svg {
-          margin-right: 10px; } }
+          margin-right: 10px;
+          width: 18px;
+          height: 18px; } }
       [dir="rtl"] .side-panel-links--link svg {
         margin-right: 0px;
-        margin-left: 5px; }
+        margin-left: 3px; }
         @media only screen and (min-width: 768px) {
           [dir="rtl"] .side-panel-links--link svg {
             margin-left: 10px; } }
     [dir="rtl"] .side-panel-links--link {
       margin-right: 0px;
-      margin-left: 12px; }
+      margin-left: 8px; }
       @media only screen and (min-width: 768px) {
         [dir="rtl"] .side-panel-links--link {
           margin-left: 22px; } }
