@@ -1001,12 +1001,9 @@
 
 .share-article {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1;
   margin-bottom: 25px; }
-  @media only screen and (min-width: 768px) {
-    .share-article {
-      font-size: 0.8125rem; } }
   .share-article svg {
     height: 16px;
     width: auto; }
@@ -1014,14 +1011,11 @@
       fill: var(--color-body); }
   .share-article label {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     letter-spacing: 0.1em;
     font-weight: var(--font-body-bold-weight, 600);
     text-transform: uppercase;
     margin-bottom: 14px; }
-    @media only screen and (min-width: 768px) {
-      .share-article label {
-        font-size: 0.8125rem; } }
   .share-article .social {
     display: inline-flex;
     align-items: center;
@@ -1367,13 +1361,10 @@
 
 
 .product-inventory-notice {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1;
   margin-bottom: 20px;
   color: var(--color-inventory-instock, #279a4b); }
-  @media only screen and (min-width: 768px) {
-    .product-inventory-notice {
-      font-size: 0.8125rem; } }
   .product-inventory-notice--text {
     margin-bottom: 13px;
     display: flex;
@@ -1498,25 +1489,14 @@
   #shopify-product-reviews .spr-header-title {
     font-weight: var(--font-body-bold-weight, 600);
     letter-spacing: 0.02em;
-    font-size: 1.75rem;
-    line-height: 2.25rem; }
-    @media only screen and (min-width: 768px) {
-      #shopify-product-reviews .spr-header-title {
-        font-size: 2.125rem;
-        line-height: 2.625rem; } }
+    font-size: 2.125rem;
+    line-height: 2.625rem; }
   #shopify-product-reviews .spr-starrating,
   #shopify-product-reviews .spr-starratings {
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
     color: var(--color-star); }
-    @media only screen and (min-width: 768px) {
-      #shopify-product-reviews .spr-starrating,
-      #shopify-product-reviews .spr-starratings {
-        font-size: 0.625rem; } }
   #shopify-product-reviews .spr-summary {
-    font-size: 0.9375rem; }
-    @media only screen and (min-width: 768px) {
-      #shopify-product-reviews .spr-summary {
-        font-size: 1.0625rem; } }
+    font-size: 1.0625rem; }
     @media only screen and (min-width: 768px) {
       #shopify-product-reviews .spr-summary {
         display: flex;
@@ -1524,10 +1504,7 @@
         #shopify-product-reviews .spr-summary .spr-summary-actions {
           margin-left: auto; } }
     #shopify-product-reviews .spr-summary .spr-summary-caption {
-      font-size: 0.8125rem; }
-      @media only screen and (min-width: 768px) {
-        #shopify-product-reviews .spr-summary .spr-summary-caption {
-          font-size: 0.875rem; } }
+      font-size: 0.875rem; }
     #shopify-product-reviews .spr-summary .spr-starrating {
       margin-right: 20px; }
   #shopify-product-reviews .spr-summary-actions-newreview {
@@ -1550,27 +1527,16 @@
         #shopify-product-reviews .spr-review .spr-review-header-starratings {
           margin-bottom: 10px; }
         #shopify-product-reviews .spr-review .spr-review-header-title {
-          font-size: 1.25rem;
-          line-height: 1.75rem;
+          font-size: 1.5rem;
+          line-height: 2rem;
           font-weight: var(--font-body-bold-weight, 600); }
-          @media only screen and (min-width: 768px) {
-            #shopify-product-reviews .spr-review .spr-review-header-title {
-              font-size: 1.5rem;
-              line-height: 2rem; } }
         #shopify-product-reviews .spr-review .spr-review-header-byline {
           font-style: normal;
           opacity: 0.6;
-          font-size: 0.8125rem; }
-          @media only screen and (min-width: 768px) {
-            #shopify-product-reviews .spr-review .spr-review-header-byline {
-              font-size: 0.875rem; } } }
+          font-size: 0.875rem; } }
     #shopify-product-reviews .spr-review .spr-review-content-body {
-      font-size: 0.9375rem;
-      line-height: 1.25rem; }
-      @media only screen and (min-width: 768px) {
-        #shopify-product-reviews .spr-review .spr-review-content-body {
-          font-size: 1rem;
-          line-height: 1.375rem; } }
+      font-size: 1rem;
+      line-height: 1.375rem; }
     #shopify-product-reviews .spr-review .spr-review-footer {
       width: 100%; }
       #shopify-product-reviews .spr-review .spr-review-footer .spr-review-reportreview {

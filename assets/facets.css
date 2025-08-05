@@ -7,8 +7,11 @@
 .facets--bar {
   display: block;
   margin-bottom: 25px;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   z-index: 45; }
+  @media only screen and (min-width: 768px) {
+    .facets--bar {
+      font-size: 0.8125rem; } }
   @media only screen and (min-width: 1068px) {
     .facets--bar.facets--bar-inline {
       display: flex;
@@ -26,11 +29,14 @@
     display: inline-flex;
     align-items: center;
     font-weight: var(--font-body-bold-weight, 600);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     text-transform: uppercase;
     margin-right: 30px;
     letter-spacing: 0.1em;
     color: var(--color-body); }
+    @media only screen and (min-width: 768px) {
+      .facets--bar .facets-toggle {
+        font-size: 0.75rem; } }
     .facets--bar .facets-toggle svg {
       width: 14px;
       height: auto;
@@ -64,7 +70,7 @@
         right: 0; }
     .facets--bar .thb-filter-sort-count select {
       font-weight: var(--font-body-bold-weight, 600);
-      font-size: 0.75rem;
+      font-size: 0.6875rem;
       line-height: 1rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -73,6 +79,9 @@
       padding-left: 0;
       padding-top: 0;
       padding-bottom: 0; }
+      @media only screen and (min-width: 768px) {
+        .facets--bar .thb-filter-sort-count select {
+          font-size: 0.75rem; } }
   .facets--bar .facets__label {
     font-size: inherit;
     margin: 0 0 0 30px; }

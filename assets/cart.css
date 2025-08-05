@@ -68,7 +68,10 @@
     margin-top: -15px; }
   .cart-items tfoot .accordion summary {
     font-weight: 400;
-    font-size: 0.875rem; }
+    font-size: 0.75rem; }
+    @media only screen and (min-width: 768px) {
+      .cart-items tfoot .accordion summary {
+        font-size: 0.875rem; } }
     .cart-items tfoot .accordion summary span {
       right: 0; }
   .cart-items tfoot .accordion.shipping-estimator--container {
@@ -95,7 +98,10 @@
       display: table-cell; } }
   .cart-items tfoot .thb-cart-form--cart-collaterals .cart-notes {
     width: 100%;
-    font-size: 0.875rem; }
+    font-size: 0.75rem; }
+    @media only screen and (min-width: 768px) {
+      .cart-items tfoot .thb-cart-form--cart-collaterals .cart-notes {
+        font-size: 0.875rem; } }
     .cart-items tfoot .thb-cart-form--cart-collaterals .cart-notes + .proceed-to-checkout {
       margin-top: 15px; }
     .cart-items tfoot .thb-cart-form--cart-collaterals .cart-notes textarea {
@@ -136,9 +142,12 @@
 
 .cart-policy-text {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   margin-top: 20px;
   text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .cart-policy-text {
+      font-size: 0.75rem; } }
   .cart-policy-text a {
     text-decoration: underline;
     text-underline-offset: 2px; }

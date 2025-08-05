@@ -50,11 +50,14 @@
       min-height: 22px;
       color: rgba(var(--color-tabs), 0.6);
       margin-right: 34px;
-      font-size: 0.9375rem;
+      font-size: 0.8125rem;
       font-weight: var(--font-body-bold-weight, 600);
       padding: 15px 0;
       position: relative;
       z-index: 2; }
+      @media only screen and (min-width: 768px) {
+        .tabbed-content--tabs button {
+          font-size: 0.9375rem; } }
       .tabbed-content--tabs button:after {
         content: "";
         display: block;

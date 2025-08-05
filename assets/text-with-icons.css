@@ -58,7 +58,10 @@
     scroll-snap-align: center;
     scroll-snap-stop: always; }
     .text-with-icons__block-content {
-      font-size: 0.9375rem; }
+      font-size: 0.8125rem; }
+      @media only screen and (min-width: 768px) {
+        .text-with-icons__block-content {
+          font-size: 0.9375rem; } }
       .text-with-icons__block-content h6 {
         line-height: 1;
         margin-bottom: 5px;

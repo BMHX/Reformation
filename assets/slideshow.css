@@ -32,9 +32,13 @@
     @media only screen and (min-width: 768px) {
       .slideshow__slide .button {
         margin-top: 25px; } }
+    .slideshow__slide p.split-text.description-size--medium {
+      font-size: 1rem; }
     @media only screen and (min-width: 1068px) {
       .slideshow__slide p.split-text.description-size--medium {
         font-size: 1.25rem; } }
+    .slideshow__slide p.split-text.description-size--large {
+      font-size: 1.125rem; }
     @media only screen and (min-width: 1068px) {
       .slideshow__slide p.split-text.description-size--large {
         font-size: 1.5rem; } }
