@@ -31,14 +31,6 @@
             "show_custom_badges": true
           }
         },
-        "description_4nKBAB": {
-          "type": "description",
-          "settings": {
-            "seo_text_max_height": 1000,
-            "seo_text_read_more": "Read more",
-            "seo_text_read_less": "Read less"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -117,7 +109,6 @@
       "block_order": [
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
-        "description_4nKBAB",
         "variant_picker",
         "buy_buttons",
         "405a9ed0-786a-4f4d-ad46-566990341d8a",
