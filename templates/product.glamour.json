@@ -31,6 +31,14 @@
             "show_custom_badges": true
           }
         },
+        "description_eHUYTY": {
+          "type": "description",
+          "settings": {
+            "seo_text_max_height": 1000,
+            "seo_text_read_more": "Read more",
+            "seo_text_read_less": "Read less"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -58,7 +66,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Details",
-            "open": true,
+            "open": false,
             "content": "<p>Plastic, bold and colourful jewellery has captured the hearts of It Girls everywhere, integrating their holiday accessories into their everyday looks. Yala’s red beaded necklace pays homage to the cultural jewellery of the Maasai Mara ladies from the BMB Workshop and fits into this latest trend.</p>",
             "page": "",
             "custom_liquid": ""
@@ -109,6 +117,7 @@
       "block_order": [
         "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
+        "description_eHUYTY",
         "variant_picker",
         "buy_buttons",
         "405a9ed0-786a-4f4d-ad46-566990341d8a",
