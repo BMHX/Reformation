@@ -697,6 +697,27 @@
         "default": true
       },
       {
+        "type": "select",
+        "id": "product_title_truncation",
+        "label": "Product title truncation",
+        "options": [
+          {
+            "value": "none",
+            "label": "No truncation"
+          },
+          {
+            "value": "single",
+            "label": "Single line with ellipsis"
+          },
+          {
+            "value": "double",
+            "label": "Two lines with ellipsis"
+          }
+        ],
+        "default": "none",
+        "info": "Choose how to handle long product titles"
+      },
+      {
         "type": "header",
         "content": "Color swatch options"
       },
