@@ -135,13 +135,15 @@
           "type": "heading",
           "settings": {
             "text": "📿Bringing Dharma Into Daily Life",
-            "heading_size": "h4"
+            "heading_size": "h4",
+            "text_alignment": "center"
           }
         },
         "text_hLgRAj": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Dharma lives not only in temples,<br/>but also in quiet, everyday things—<br/>a bead, a bracelet, a whisper of faith.</strong></p>"
+            "text": "<p><strong>Dharma lives not only in temples,<br/>but also in quiet, everyday things—<br/>a bead, a bracelet, a whisper of faith.</strong></p>",
+            "text_alignment": "center"
           }
         }
       },
@@ -190,14 +192,16 @@
           "type": "heading",
           "settings": {
             "text": "🧵Supporting Village Life",
-            "heading_size": "h4"
+            "heading_size": "h4",
+            "text_alignment": "center"
           }
         },
         "text_XkgaNK": {
           "type": "text",
           "settings": {
             "text": "<p><br/>We support highland artisans not with aid,<br/>but with real, lasting income—<br/>so they can stay rooted and proud.<br/><br/></p>",
-            "description_size": "medium"
+            "description_size": "medium",
+            "text_alignment": "center"
           }
         }
       },
@@ -249,14 +253,16 @@
           "type": "heading",
           "settings": {
             "text": "💛Spreading Kindness, Connecting Believers",
-            "heading_size": "h4"
+            "heading_size": "h4",
+            "text_alignment": "center"
           }
         },
         "text_fdgRkk": {
           "type": "text",
           "settings": {
             "text": "<p>Not for show, but for the soul<br/>to remind us to stay kind,<br/>and keep moving with meaning.<br/></p>",
-            "description_size": "medium"
+            "description_size": "medium",
+            "text_alignment": "center"
           }
         }
       },
