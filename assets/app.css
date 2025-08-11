@@ -3471,7 +3471,9 @@ select {
     font-size: calc(var(--font-product-title-scale, 1) * 0.9375rem);
     line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.5);
     font-weight: var(--font-body-medium-weight, 500);
-    display: block; }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     .product-title-uppercase-true .product-cart-item .cart-product-link {
       text-transform: uppercase; }
   .product-cart-item.thb-loading {
@@ -3615,7 +3617,10 @@ select {
           .cart-drawer--recommendations .product-cart-item-image {
             margin: 0 0 15px 0; } }
       .cart-drawer--recommendations .product-cart-item .cart-product-link {
-        font-size: calc(var(--font-product-title-scale, 1) * 0.8125rem); }
+        font-size: calc(var(--font-product-title-scale, 1) * 0.8125rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
   .cart-drawer__empty-cart {
     height: 100%;
     padding: 10vh 0;

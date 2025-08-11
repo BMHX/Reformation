@@ -124,7 +124,7 @@
       <a
         href="{{ product_card_product.url | within: collection }}"
         title="{{ product_card_product.title | escape }}"
-        class="product-card-title{% if settings.product_title_truncation != 'none' %} product-card-title--truncated product-card-title--{{ settings.product_title_truncation }}{% endif %}"
+        class="product-card-title"
       >
         {{- product_card_product.title -}}
       </a>

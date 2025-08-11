@@ -135,7 +135,10 @@
         object-fit: cover; }
   .shop-the-look .thb-hotspot-product-content .thb-hotspot-product-title {
     font-size: 0.875rem;
-    line-height: 1.375rem; }
+    line-height: 1.375rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .shop-the-look .thb-hotspot-product-content a {
     font-size: 0.75rem;
     font-weight: var(--font-body-medium-weight, 500); }
