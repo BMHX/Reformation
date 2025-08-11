@@ -34,13 +34,30 @@
 						</div>
 					{%- endfor -%}
 					{%- if section.blocks.size > 1 -%}
-						<ol class="flickity-page-dots dot-style--{{ pagination }}">
-							{%- for block in section.blocks -%}
-							<li class="dot" aria-label="{{ forloop.index }}">
-								{%- render 'svg-icons' with 'thb-pagination-dot' -%}
-							</li>
-							{%- endfor -%}
-						</ol>
+						{%- if pagination == 'logos' -%}
+							<scroll-shadow>
+						{%- endif -%}
+							<ol class="flickity-page-dots dot-style--{{ pagination }}">
+								{%- for block in section.blocks -%}
+								<li class="dot" aria-label="{{ forloop.index }}">
+									{%- if pagination == 'dots' -%}
+										{%- render 'svg-icons' with 'thb-pagination-dot' -%}
+									{%- else -%}
+										{%- liquid
+											if block.settings.image != blank
+												assign image = block.settings.image
+												assign master_width = image.src.width | append: 'x' | append: image.src.height
+												assign width = '375x' | append: ',' | append: master_width
+												render 'responsive-image', image: image, sizes: width, retina: true
+											endif
+										-%}
+									{%- endif -%}
+								</li>
+								{%- endfor -%}
+							</ol>
+						{%- if pagination == 'logos' -%}
+							</scroll-shadow>
+						{%- endif -%}
 					{%- endif -%}
 				</slide-show>
 			</div>
@@ -75,7 +92,8 @@
         "label": "Pagination",
         "default": "dots",
         "options": [
-          { "value": "dots", "label": "Dots" }
+          { "value": "dots", "label": "Dots" },
+          { "value": "logos", "label": "Logos" }
         ]
       },
 			{
@@ -132,6 +150,11 @@
         "type": "quote",
         "name": "Testimonial",
         "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Logo"
+					},
 					{
 						"type": "select",
 						"id": "stars",
