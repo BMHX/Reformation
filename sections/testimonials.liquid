@@ -15,7 +15,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row-full{% endif %}">
 	<div class="small-12 columns">
-		<div class="testimonials section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }};">
+		<div class="testimonials section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }}; --logo-image: {% if section.settings.logo_image != blank %}url('{{ section.settings.logo_image | img_url: '96x' }}'){% endif %};">
 			<div class="testimonials__inner text-{{ text_size }}">
 				<slide-show class="testimonials__carousel carousel custom-dots" data-autoplay="{{ autoplay }}" data-dots="true" data-align="center" data-dot-style="{{ pagination }}">
 					{%- for block in section.blocks -%}
@@ -75,7 +75,7 @@
         "label": "Make section full width",
         "default": true
       },
-      {
+      			{
         "type": "select",
         "id": "text_size",
         "label": "Text size",
@@ -85,6 +85,12 @@
           { "value": "medium", "label": "Medium" },
           { "value": "large", "label": "Large" }
         ]
+      },
+			{
+        "type": "image_picker",
+        "id": "logo_image",
+        "label": "Logo above testimonials",
+        "info": "This logo will replace the default quote marks above each testimonial"
       },
 			{
         "type": "select",

@@ -130,11 +130,13 @@
     margin: 0 -15px;
     width: calc(100% + 30px); }
 .testimonials__testimonial p:before {
-  background: url(https://cdn.shopify.com/s/files/1/0642/5588/5510/files/quoteCustom.svg?v=1747080782)
+  background: var(--logo-image, url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-2 28l-8-8 2.83-2.83L22 28.34l13.17-13.17L38 18l-16 16z" fill="%23666"/></svg>'))
     no-repeat 50% 0%;
+  background-size: contain;
   min-width: 48px;
   min-height: 48px;
   display: flex;
   justify-self: center;
+  margin: 0 auto 20px;
 }
 .testimonials__testimonial p:before { content: ""; }
