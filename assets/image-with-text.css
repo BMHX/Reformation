@@ -79,6 +79,14 @@
         background: rgba(var(--color-text-rgb), 0.4); }
       .image-with-text__content .text-button:after {
         background: var(--color-text, --color-body); }
+    
+    /* Text alignment styles */
+    .image-with-text__content .text-left {
+      text-align: left; }
+    .image-with-text__content .text-center {
+      text-align: center; }
+    .image-with-text__content .text-right {
+      text-align: right; }
     @media only screen and (min-width: 1068px) {
       .image-with-text__content .rte.description-size--small {
         font-size: 0.875rem; } }

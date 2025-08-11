@@ -77,14 +77,16 @@
 									{%- endif -%}
 								</div>
 							{%- when 'subheading' -%}
-								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+								<p class="subheading text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+								<h3 class="{{ block.settings.heading_size }} text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 							{%- when 'text' -%}
-								<div class="rte description-size--{{ block.settings.description_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+								<div class="rte description-size--{{ block.settings.description_size }} text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
-									<a class="button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									<div class="text-{{ block.settings.text_alignment | default: 'left' }}">
+										<a class="button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									</div>
 								{% endif %}
 							{% when 'space' %}
 		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
@@ -321,6 +323,26 @@
 						"id": "text",
 						"label": "Text",
 						"default": "Add a tagline"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Text alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
 				]
 			},
@@ -357,10 +379,30 @@
 							}
 						],
 						"default": "h3"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Text alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
 				]
 			},
-			{
+			      {
         "type": "text",
         "name": "Text",
         "settings": [
@@ -389,6 +431,26 @@
 							}
 						],
 						"default": "medium"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Text alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
         ]
       },
@@ -407,6 +469,26 @@
 						"id": "button_link",
 						"type": "url",
 						"label": "Button link"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Button alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
         ]
       },
