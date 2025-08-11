@@ -15,7 +15,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row-full{% endif %}">
 	<div class="small-12 columns">
-		<div class="testimonials section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }}; --logo-image: {% if section.settings.logo_image != blank %}url('{{ section.settings.logo_image | img_url: '96x' }}'){% endif %};">
+		<div class="testimonials section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }};">
 			<div class="testimonials__inner text-{{ text_size }}">
 				<slide-show class="testimonials__carousel carousel custom-dots" data-autoplay="{{ autoplay }}" data-dots="true" data-align="center" data-dot-style="{{ pagination }}">
 					{%- for block in section.blocks -%}
@@ -24,7 +24,7 @@
 								{%- if block.settings.stars and block.settings.stars != '' -%}
 									<div class="star-rating" style="--star-rating: {{ block.settings.stars }};"></div>
 								{%- endif -%}
-								<p>{{ block.settings.text | newline_to_br }}</p>
+								<p style="--testimonial-logo-bg: url('{{ block.settings.image | image_url: width: 48 }}') center/24px no-repeat, var(--testimonial-logo-bg, #f5f5f5);">{{ block.settings.text | newline_to_br }}</p>
 								{%- if block.settings.author != empty -%}
 								<div class="testimonials__author">
 									{{- block.settings.author -}}
@@ -34,30 +34,13 @@
 						</div>
 					{%- endfor -%}
 					{%- if section.blocks.size > 1 -%}
-						{%- if pagination == 'logos' -%}
-							<scroll-shadow>
-						{%- endif -%}
-							<ol class="flickity-page-dots dot-style--{{ pagination }}">
-								{%- for block in section.blocks -%}
-								<li class="dot" aria-label="{{ forloop.index }}">
-									{%- if pagination == 'dots' -%}
-										{%- render 'svg-icons' with 'thb-pagination-dot' -%}
-									{%- else -%}
-										{%- liquid
-											if block.settings.image != blank
-												assign image = block.settings.image
-												assign master_width = image.src.width | append: 'x' | append: image.src.height
-												assign width = '375x' | append: ',' | append: master_width
-												render 'responsive-image', image: image, sizes: width, retina: true
-											endif
-										-%}
-									{%- endif -%}
-								</li>
-								{%- endfor -%}
-							</ol>
-						{%- if pagination == 'logos' -%}
-							</scroll-shadow>
-						{%- endif -%}
+						<ol class="flickity-page-dots dot-style--{{ pagination }}">
+							{%- for block in section.blocks -%}
+							<li class="dot" aria-label="{{ forloop.index }}">
+								{%- render 'svg-icons' with 'thb-pagination-dot' -%}
+							</li>
+							{%- endfor -%}
+						</ol>
 					{%- endif -%}
 				</slide-show>
 			</div>
@@ -75,7 +58,7 @@
         "label": "Make section full width",
         "default": true
       },
-      			{
+      {
         "type": "select",
         "id": "text_size",
         "label": "Text size",
@@ -87,19 +70,12 @@
         ]
       },
 			{
-        "type": "image_picker",
-        "id": "logo_image",
-        "label": "Logo above testimonials",
-        "info": "This logo will replace the default quote marks above each testimonial"
-      },
-			{
         "type": "select",
         "id": "pagination",
         "label": "Pagination",
         "default": "dots",
         "options": [
-          { "value": "dots", "label": "Dots" },
-          { "value": "logos", "label": "Logos" }
+          { "value": "dots", "label": "Dots" }
         ]
       },
 			{
