@@ -35,7 +35,7 @@
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
           "type": "description",
           "settings": {
-            "seo_text_max_height": 1000,
+            "seo_text_max_height": 100,
             "seo_text_read_more": "Read more",
             "seo_text_read_less": "Read less"
           }
