@@ -90,31 +90,46 @@
         "border_separator_full": false
       }
     },
-    "testimonials_dnwPAU": {
-      "type": "testimonials",
+    "rich_text_nJezpL": {
+      "type": "rich-text",
       "blocks": {
-        "quote_QUqjcy": {
-          "type": "quote",
+        "image_6ENF8q": {
+          "type": "image",
           "settings": {
-            "image": "shopify://shop_images/8_92b1535d-812e-430c-ac81-986e6ba3204c.png",
-            "stars": "",
+            "image": "shopify://shop_images/9_3f305117-5623-4792-964e-47e0c86b45a1.png",
+            "retina": true
+          }
+        },
+        "heading_xNnDHY": {
+          "type": "heading",
+          "settings": {
             "text": "Our Vision",
-            "author": "Mintravibes exists to bring calm and kindness to a noisy world."
+            "size": "h4"
+          }
+        },
+        "text_RcNJjX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mintravibes exists to bring calm and kindness to a noisy world.</p>",
+            "custom_liquid": "",
+            "size": "text-size-regular"
           }
         }
       },
       "block_order": [
-        "quote_QUqjcy"
+        "image_6ENF8q",
+        "heading_xNnDHY",
+        "text_RcNJjX"
       ],
-      "name": "Testimonials",
+      "name": "Rich text",
       "settings": {
-        "full_width": true,
-        "text_size": "medium",
-        "pagination": "logos",
-        "autoplay": true,
-        "autoplay_length": 5,
-        "color_bg": "rgba(0,0,0,0)",
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
         "color_text": "#ffffff",
+        "color_links": "#151515",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -465,7 +480,7 @@
     "image_with_text_overlay_wekBdT",
     "color_stripes_GiyVpE",
     "spacer_EBnetA",
-    "testimonials_dnwPAU",
+    "rich_text_nJezpL",
     "spacer_ifkkJg",
     "layered_images_with_text_CkeAkg",
     "1663684153cdd2cafb",
