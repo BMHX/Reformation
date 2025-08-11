@@ -36,7 +36,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
 	<div class="small-12 columns">
-		<div class="layered-images-with-text {{ desktop_layout }} {{ content_alignment }} layered-images-with-text--{{ content_position }}{% if text_center %} text-center{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+		<div class="layered-images-with-text {{ desktop_layout }} {{ content_alignment }} layered-images-with-text--{{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
 			<div class="layered-images-with-text__image layered-images-with-text__inner">
 				<layered-images class="layered-images-with-text__image-media-container">
 					<div class="layered-images-with-text__image-media-container-inner">
@@ -99,14 +99,16 @@
 					{%- for block in section.blocks -%}
 						{%- case block.type -%}
 							{%- when 'subheading' -%}
-								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+								<p class="subheading text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+								<h3 class="{{ block.settings.heading_size }} text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 							{%- when 'text' -%}
-								<div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+								<div class="rte text-{{ block.settings.text_alignment | default: 'left' }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
-									<a class="button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									<div class="text-{{ block.settings.text_alignment | default: 'left' }}">
+										<a class="button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									</div>
 								{% endif %}
 							{% when 'space' %}
 		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
@@ -272,13 +274,6 @@
 				 "default": "middle"
 			},
 			{
-				"type": "checkbox",
-				"id": "text_center",
-				"label": "Center text content",
-				"default": false,
-				"info": "Center align all text content within the section"
-			},
-			{
 				"type": "header",
 				"content": "Spacing"
 			},
@@ -305,6 +300,26 @@
 						"id": "text",
 						"label": "Text",
 						"default": "Add a tagline"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Text alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
 				]
 			},
@@ -341,6 +356,26 @@
 							}
 						],
 						"default": "h3"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Text alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
 				]
 			},
@@ -353,6 +388,26 @@
             "id": "text",
             "label": "Content",
             "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "left"
           }
         ]
       },
@@ -371,6 +426,26 @@
 						"id": "button_link",
 						"type": "url",
 						"label": "Button link"
+					},
+					{
+						"type": "select",
+						"id": "text_alignment",
+						"label": "Button alignment",
+						"options": [
+							{
+								"value": "left",
+								"label": "Left"
+							},
+							{
+								"value": "center",
+								"label": "Center"
+							},
+							{
+								"value": "right",
+								"label": "Right"
+							}
+						],
+						"default": "left"
 					}
         ]
       },
