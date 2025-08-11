@@ -130,12 +130,11 @@
     margin: 0 -15px;
     width: calc(100% + 30px); }
 .testimonials__testimonial p:before {
-  content: "";
-  background: #808080;
-  border-radius: 50%;
+  background: url(https://cdn.shopify.com/s/files/1/0642/5588/5510/files/quoteCustom.svg?v=1747080782)
+    no-repeat 50% 0%;
   min-width: 48px;
   min-height: 48px;
   display: flex;
   justify-self: center;
-  margin: 0 auto 20px;
 }
+.testimonials__testimonial p:before { content: ""; }
