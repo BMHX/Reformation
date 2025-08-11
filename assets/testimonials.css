@@ -126,18 +126,16 @@
       background: var(--color-text, var(--color-body)); }
       .testimonials .flickity-page-dots.dot-style--dots .dot .thb-pagination-svg circle {
         stroke: var(--color-text, var(--color-body)); }
-
+  .testimonials scroll-shadow {
+    margin: 0 -15px;
+    width: calc(100% + 30px); }
 .testimonials__testimonial p:before {
   content: "";
-  background: var(--testimonial-logo-bg, #f5f5f5);
+  background: #808080;
   border-radius: 50%;
   min-width: 48px;
   min-height: 48px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
   margin: 0 auto 20px;
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
