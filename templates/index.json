@@ -268,7 +268,7 @@
           "type": "button",
           "settings": {
             "button_text": "come on",
-            "button_link": "",
+            "button_link": "shopify://pages/brand-story",
             "button_outline": false,
             "button_bg_color": "#d89847",
             "button_text_color": "#ffffff",
@@ -738,53 +738,6 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
-    },
-    "promotional_banner_PP86KN": {
-      "type": "promotional-banner",
-      "blocks": {
-        "heading_g4dxDK": {
-          "type": "heading",
-          "settings": {
-            "text": "Our Vision",
-            "heading_size": "h1"
-          }
-        },
-        "text_Nk7YMG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We created Mintravibes out of a simple yet firm intention:<br/>To gently spread kindness in a world that’s becoming increasingly restless.</p>"
-          }
-        },
-        "button_rcQkPf": {
-          "type": "button",
-          "settings": {
-            "button_text": "Read Now",
-            "button_link": "shopify://pages/brand-story",
-            "button_outline": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_g4dxDK",
-        "text_Nk7YMG",
-        "button_rcQkPf"
-      ],
-      "name": "Promotional banner",
-      "settings": {
-        "section_width": "full-width-row-full",
-        "image": "shopify://shop_images/3_eefd854b-0c26-477f-abed-065c611823e8.jpg",
-        "image_height": "adapt",
-        "image_width": "split",
-        "frame_border": false,
-        "content_position": "text-left",
-        "split_layout": "image_first",
-        "color_bg": "#434343",
-        "color_text": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 20,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": true
-      }
     }
   },
   "order": [
@@ -801,7 +754,6 @@
     "image_with_text_overlay_Q6twAT",
     "scrolling_testimonials_wbYixk",
     "multicolumn_Epa33H",
-    "rich_text_FEHbAY",
-    "promotional_banner_PP86KN"
+    "rich_text_FEHbAY"
   ]
 }
