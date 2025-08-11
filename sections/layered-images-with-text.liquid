@@ -36,7 +36,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
 	<div class="small-12 columns">
-		<div class="layered-images-with-text {{ desktop_layout }} {{ content_alignment }} layered-images-with-text--{{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+		<div class="layered-images-with-text {{ desktop_layout }} {{ content_alignment }} layered-images-with-text--{{ content_position }}{% if text_center %} text-center{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
 			<div class="layered-images-with-text__image layered-images-with-text__inner">
 				<layered-images class="layered-images-with-text__image-media-container">
 					<div class="layered-images-with-text__image-media-container-inner">
@@ -270,6 +270,13 @@
 					 { "value": "bottom", "label": "Bottom" }
 				 ],
 				 "default": "middle"
+			},
+			{
+				"type": "checkbox",
+				"id": "text_center",
+				"label": "Center text content",
+				"default": false,
+				"info": "Center align all text content within the section"
 			},
 			{
 				"type": "header",
