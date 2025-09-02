@@ -1048,8 +1048,8 @@
   "platform_customizations": {
     "custom_css": [
       ".footer .full .widget--text .rte {max-width: unset;}",
-      "/* 单篇文章页面标题 */.article .article__title {font-size: 1rem !important;}",
-      "/* 单篇文章的描述或摘要 */.article .article__excerpt,.article .article__content p:first-child {font-size: 1.3rem !important;}"
+      "/* 单篇文章页面标题 */.article .article__title {font-size: 0rem !important;}",
+      "/* 单篇文章的描述或摘要 */.article .article__excerpt,.article .article__content p:first-child {font-size: 0rem !important;}"
     ]
   }
 }
