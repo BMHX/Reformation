@@ -1047,7 +1047,9 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".footer .full .widget--text .rte {max-width: unset;}"
+      ".footer .full .widget--text .rte {max-width: unset;}",
+      "/* 强制覆盖博客标题样式 */.thb-shop-title {font-size: 48px !important; font-weight: 700 !important;}",
+      "/* 强制覆盖博客描述样式 */.blog-header .rte {font-size: 18px !important; line-height: 1.6 !important;}"
     ]
   }
 }
