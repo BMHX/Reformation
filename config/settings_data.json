@@ -1048,8 +1048,8 @@
   "platform_customizations": {
     "custom_css": [
       ".footer .full .widget--text .rte {max-width: unset;}",
-      "/* 修改单篇文章标题字体大小 */.entry-title {font-size: 3rem !important; /* 调整这个值 */ font-weight: 700; line-height: 1.2;}",
-      "/* 修改文章摘要字体大小 */.post-excerpt p {font-size: 1.2rem !important; /* 调整这个值 */ line-height: 1.6; color: #666;}"
+      "/* 修改单篇文章标题字体大小 */.entry-title {font-size: 32px !important; /* 调整这个值 */ font-weight: 700; line-height: 1.2;}",
+      "/* 修改文章摘要字体大小 */.post-excerpt p {font-size: 0.5rem !important; /* 调整这个值 */ line-height: 1.6; color: #666;}"
     ]
   }
 }
